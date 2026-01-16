@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jesse.granola-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/jesse/jpt/meetings/extract_granola.py</string>
+        <string>--output</string>
+        <string>/Users/jesse/jpt/meetings</string>
+        <string>--quiet</string>
+    </array>
+
+    <!-- Watch Granola's cache file for changes -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/jesse/Library/Application Support/Granola/cache-v3.json</string>
+    </array>
+
+    <!-- Also run once per day as backup (in case cache watch misses something) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Throttle: don't run more than once per 60 seconds -->
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+
+    <!-- Log output -->
+    <key>StandardOutPath</key>
+    <string>/Users/jesse/jpt/meetings/granola-sync.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jesse/jpt/meetings/granola-sync.log</string>
+
+    <!-- Run at load (initial sync) -->
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>

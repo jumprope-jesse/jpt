@@ -1,0 +1,80 @@
+{
+  "summary": "Leadership team discussed organizational changes including new C-level positions (CTO/VP Product), AI tool budgets and implementation strategies, and AWS spending optimization. Key focus on measuring AI effectiveness and reducing costs through direct billing rather than AWS marketplace.",
+  "key_points": [
+    "Product division leadership change - shifting VP roles to C-level positions",
+    "AI budget approval of $1000-2000/month for development tools (primarily Claude)",
+    "AWS commitment issues - currently at $4.9M vs $2.4M commitment, affecting renewal discounts",
+    "Shift from offshore developers to AI-powered development approach",
+    "SMS cost reduction opportunity of 30-40% through new vendor",
+    "Anthropic offering 40% discount for portfolio companies through Blackstone partnership"
+  ],
+  "decisions": [
+    "Approved AI tool budget for Jesse ($1000-2000/month ceiling)",
+    "Will shift billing from AWS marketplace to direct billing to reduce AWS spend",
+    "Jesse to have weekly 1:1s with Randy on AI implementation",
+    "Trial period of one quarter for AI-powered development approach instead of offshore resources",
+    "Jesse to attend Anthropic webinar on January 23rd"
+  ],
+  "action_items": [
+    {
+      "owner": "Jesse",
+      "task": "Register for and attend Anthropic webinar on January 23rd",
+      "due": "2026-01-23"
+    },
+    {
+      "owner": "Jesse",
+      "task": "Set up weekly 1:1 meetings with Randy for AI implementation review",
+      "due": null
+    },
+    {
+      "owner": "Jesse",
+      "task": "Develop framework for measuring AI effectiveness with potential collaboration from Alicia",
+      "due": null
+    },
+    {
+      "owner": "Jesse",
+      "task": "Evaluate SMS vendor proposal for 30-40% cost reduction",
+      "due": null
+    },
+    {
+      "owner": "Randy",
+      "task": "Manage consolidated Claude billing and monitor usage",
+      "due": null
+    },
+    {
+      "owner": "Brent/Jonathan",
+      "task": "Follow up with Jesse about Jason's departure",
+      "due": null
+    }
+  ],
+  "risks": [
+    "AWS spending significantly over commitment ($4.9M vs $2.4M) affecting renewal negotiations",
+    "Uncertainty about CTO candidate acceptance of offer",
+    "Single point of failure risk with AI-powered development approach",
+    "Unclear reporting structure for Jesse (supervisor not clearly defined)",
+    "Potential for AI tool costs to exceed budget estimates"
+  ],
+  "people_insights": [
+    {
+      "name": "Jesse",
+      "insight": "Taking on AI-powered development initiative, comfortable working without direct supervision, excited about the 'Renaissance' opportunity in AI"
+    },
+    {
+      "name": "Randy",
+      "insight": "Energized by AI initiatives, will manage Claude billing, agrees that AI tools can replace offshore developers"
+    },
+    {
+      "name": "Jason",
+      "insight": "Recently departed from the organization, Jesse didn't have strong personal relationship with him"
+    },
+    {
+      "name": "Alicia",
+      "insight": "Potential collaborator for developing AI effectiveness measurement framework"
+    },
+    {
+      "name": "Justin_Meyer",
+      "insight": "Likely to handle performance reviews, noted as potentially awkward due to personal relationship with Jesse"
+    }
+  ],
+  "meeting_type_confidence": 85
+}
