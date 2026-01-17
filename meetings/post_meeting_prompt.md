@@ -46,7 +46,23 @@ Add any action items to `~/jpt/TASKS.md`:
 Only add CLEAR action items - things someone committed to do or was asked to do.
 Skip vague discussion points.
 
-## 3. Guidelines
+## 3. Output Action Items JSON
+
+After updating files, output a JSON block with all action items for automated processing.
+This enables automatic task creation in vibe-kanban.
+
+**REQUIRED**: At the end of your response, output this exact format:
+```json
+{"action_items": [{"task": "description", "owner": "Name or null", "due": "date or null"}]}
+```
+
+Rules for action_items JSON:
+- Include ALL action items you added to TASKS.md
+- "owner" should be the person responsible (or null if it's for Jesse/me)
+- "due" should be a date string if mentioned, otherwise null
+- Output valid JSON only - no trailing commas, proper quoting
+
+## 4. Guidelines
 
 - **Be conservative**: Only add information you're confident about
 - **Preserve context**: When adding to profiles, note which meeting the info came from
