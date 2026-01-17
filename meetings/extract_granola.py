@@ -581,8 +581,52 @@ def summary_has_content(summary_content: str) -> bool:
     return len(content_lines) >= 3
 
 
+def extract_action_items_json(output: str) -> list[dict]:
+    """Extract action items JSON from Claude's output."""
+    # Look for JSON block with action_items
+    json_match = re.search(r'```json\s*(\{[^`]*"action_items"[^`]*\})\s*```', output, re.DOTALL)
+    if json_match:
+        try:
+            data = json.loads(json_match.group(1))
+            return data.get('action_items', [])
+        except json.JSONDecodeError:
+            pass
+
+    # Fallback: try to find raw JSON object
+    json_match = re.search(r'\{"action_items":\s*\[.*?\]\}', output, re.DOTALL)
+    if json_match:
+        try:
+            data = json.loads(json_match.group())
+            return data.get('action_items', [])
+        except json.JSONDecodeError:
+            pass
+
+    return []
+
+
+def create_vibe_kanban_tasks(action_items: list[dict], meeting_title: str, meeting_date: str, quiet: bool = False):
+    """Create tasks in vibe-kanban from action items."""
+    if not action_items:
+        return
+
+    try:
+        from vibe_kanban_client import create_tasks_from_action_items
+        create_tasks_from_action_items(
+            action_items=action_items,
+            meeting_title=meeting_title,
+            meeting_date=meeting_date,
+            quiet=quiet
+        )
+    except ImportError:
+        if not quiet:
+            print(f"  ⚠ vibe_kanban_client not found - skipping task creation")
+    except Exception as e:
+        if not quiet:
+            print(f"  ⚠ Error creating vibe-kanban tasks: {e}")
+
+
 def run_post_meeting_processing(summary_path: Path, transcript_path: Path, quiet: bool = False):
-    """Run Claude to process a new meeting summary."""
+    """Run Claude to process a new meeting summary and create vibe-kanban tasks."""
     if not POST_MEETING_PROMPT.exists():
         if not quiet:
             print(f"  ⚠ Post-processing prompt not found: {POST_MEETING_PROMPT}")
@@ -610,6 +654,18 @@ def run_post_meeting_processing(summary_path: Path, transcript_path: Path, quiet
         if result.returncode == 0:
             if not quiet:
                 print(f"  ✅ Post-processing complete")
+
+            # Extract action items and create vibe-kanban tasks
+            action_items = extract_action_items_json(result.stdout)
+            if action_items:
+                # Extract meeting info from summary path
+                # Format: YYYY-MM-DD_Meeting_Title.md
+                filename = summary_path.stem
+                parts = filename.split('_', 1)
+                meeting_date = parts[0] if len(parts) > 0 else datetime.now().strftime('%Y-%m-%d')
+                meeting_title = parts[1].replace('_', ' ') if len(parts) > 1 else filename
+
+                create_vibe_kanban_tasks(action_items, meeting_title, meeting_date, quiet=quiet)
         else:
             if not quiet:
                 print(f"  ❌ Post-processing failed: {result.stderr[:200]}")
@@ -719,13 +775,13 @@ def extract_meetings(state: dict, output_dir: Path, recent_hours: float = None, 
         if doc.get('deleted_at'):
             continue
 
-        # Filter by specific ID
-        if doc_id and d_id != doc_id:
+        # Filter by specific ID (supports partial matching)
+        if doc_id and not d_id.startswith(doc_id):
             continue
 
-        # Filter by date
+        # Filter by date (skip if specific doc_id is provided)
         meeting_date = get_meeting_date(doc)
-        if cutoff_date and meeting_date < cutoff_date:
+        if cutoff_date and not doc_id and meeting_date < cutoff_date:
             skipped_date += 1
             continue
 

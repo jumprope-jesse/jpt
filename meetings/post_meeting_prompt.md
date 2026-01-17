@@ -1,6 +1,8 @@
 # Post-Meeting Processing Prompt
 
-You are processing a newly extracted meeting from Granola. Read the summary and transcript, then:
+You are processing a meeting extracted from Granola. Read the available files (summary and/or transcript) and perform the updates below.
+
+**Note**: Some meetings only have a summary (no transcript). Work with whatever content is available.
 
 ## 1. Update People Profiles
 
@@ -46,7 +48,23 @@ Add any action items to `~/jpt/TASKS.md`:
 Only add CLEAR action items - things someone committed to do or was asked to do.
 Skip vague discussion points.
 
-## 3. Guidelines
+## 3. Output Action Items JSON
+
+After updating files, output a JSON block with all action items for automated processing.
+This enables automatic task creation in vibe-kanban.
+
+**REQUIRED**: At the end of your response, output this exact format:
+```json
+{"action_items": [{"task": "description", "owner": "Name or null", "due": "date or null"}]}
+```
+
+Rules for action_items JSON:
+- Include ALL action items you added to TASKS.md
+- "owner" should be the person responsible (or null if it's for Jesse/me)
+- "due" should be a date string if mentioned, otherwise null
+- Output valid JSON only - no trailing commas, proper quoting
+
+## 4. Guidelines
 
 - **Be conservative**: Only add information you're confident about
 - **Preserve context**: When adding to profiles, note which meeting the info came from
@@ -57,6 +75,6 @@ Skip vague discussion points.
 ## Input Files
 
 - **Summary**: `{SUMMARY_PATH}`
-- **Transcript**: `{TRANSCRIPT_PATH}`
+- **Transcript**: `{TRANSCRIPT_PATH}` (may not exist for older meetings)
 
-Read both files, then perform the updates described above.
+Read the available files. If the transcript doesn't exist or is empty, work from the summary alone.

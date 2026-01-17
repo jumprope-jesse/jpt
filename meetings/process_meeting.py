@@ -315,13 +315,33 @@ def update_people_profiles(insights: list[dict]):
         print(f"  Updated profile: {profile_path.name}")
 
 
+def create_vibe_kanban_tasks(action_items: list[dict], meeting_title: str, meeting_date: str):
+    """Create tasks in vibe-kanban from action items."""
+    if not action_items:
+        return
+
+    try:
+        from vibe_kanban_client import create_tasks_from_action_items
+        create_tasks_from_action_items(
+            action_items=action_items,
+            meeting_title=meeting_title,
+            meeting_date=meeting_date,
+            quiet=False
+        )
+    except ImportError:
+        print(f"  ⚠ vibe_kanban_client not found - skipping vibe-kanban task creation")
+    except Exception as e:
+        print(f"  ⚠ Error creating vibe-kanban tasks: {e}")
+
+
 def append_tasks(action_items: list[dict], meeting_title: str):
-    """Append action items to TASKS.md."""
+    """Append action items to TASKS.md and create vibe-kanban tasks."""
     if not action_items:
         return
 
     date_str = datetime.now().strftime("%Y-%m-%d")
 
+    # Append to local TASKS.md
     tasks_content = TASKS_FILE.read_text() if TASKS_FILE.exists() else "# Tasks\n\n"
 
     new_tasks = f"\n## From: {meeting_title} ({date_str})\n"
@@ -336,6 +356,9 @@ def append_tasks(action_items: list[dict], meeting_title: str):
     tasks_content += new_tasks
     TASKS_FILE.write_text(tasks_content)
     print(f"  Added {len(action_items)} tasks to TASKS.md")
+
+    # Also create tasks in vibe-kanban
+    create_vibe_kanban_tasks(action_items, meeting_title, date_str)
 
 
 def process_new_meetings():
