@@ -279,19 +279,70 @@ def format_meeting_markdown(meeting: dict, processed: dict, template_name: str) 
     return content
 
 
+def match_name_to_profile(name: str, profiles: list[Path]) -> Path | None:
+    """Match a name to a profile, handling full names and first-name-only profiles.
+
+    Matching priority:
+    1. Exact match (normalized: spaces/underscores, case-insensitive)
+    2. Profile stem matches first name of the input (e.g., "Alicia" matches "Alicia Smith")
+    3. Input name is contained in profile stem (e.g., "Justin" in "Justin_Meyer")
+
+    Args:
+        name: The name to match (e.g., "Justin Meyer", "Alicia")
+        profiles: List of profile file paths
+
+    Returns:
+        The matching profile path, or None if no match found.
+    """
+    name_normalized = name.lower().replace('_', ' ').replace('-', ' ').strip()
+    name_parts = name_normalized.split()
+    first_name = name_parts[0] if name_parts else ''
+
+    best_match = None
+    best_score = 0
+
+    for p in profiles:
+        stem = p.stem.lower().replace('_', ' ').replace('-', ' ')
+        stem_parts = stem.split()
+        stem_first = stem_parts[0] if stem_parts else ''
+
+        # Exact match (highest priority)
+        if stem == name_normalized:
+            return p
+
+        # Profile is a full name and matches input full name
+        if len(stem_parts) >= 2 and len(name_parts) >= 2:
+            if stem_parts[0] == name_parts[0] and stem_parts[-1] == name_parts[-1]:
+                return p
+
+        # Profile first name matches input first name (good match)
+        if stem_first == first_name and len(first_name) > 1:
+            # Prefer full name profiles over first-name-only
+            score = 3 if len(stem_parts) >= 2 else 2
+            if score > best_score:
+                best_score = score
+                best_match = p
+
+        # Input name contained in profile (partial match)
+        elif name_normalized in stem or first_name in stem:
+            if best_score < 1:
+                best_score = 1
+                best_match = p
+
+    return best_match
+
+
 def update_people_profiles(insights: list[dict]):
     """Update people profiles with new insights."""
+    profiles = list(PEOPLE_DIR.glob("*.md")) if PEOPLE_DIR.exists() else []
+
     for insight in insights:
         name = insight.get("name", "").strip()
         if not name:
             continue
 
-        # Find matching profile (case-insensitive)
-        profile_path = None
-        for p in PEOPLE_DIR.glob("*.md"):
-            if p.stem.lower() == name.lower() or name.lower() in p.stem.lower():
-                profile_path = p
-                break
+        # Find matching profile using improved matching
+        profile_path = match_name_to_profile(name, profiles)
 
         if not profile_path:
             continue
