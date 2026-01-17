@@ -775,13 +775,13 @@ def extract_meetings(state: dict, output_dir: Path, recent_hours: float = None, 
         if doc.get('deleted_at'):
             continue
 
-        # Filter by specific ID
-        if doc_id and d_id != doc_id:
+        # Filter by specific ID (supports partial matching)
+        if doc_id and not d_id.startswith(doc_id):
             continue
 
-        # Filter by date
+        # Filter by date (skip if specific doc_id is provided)
         meeting_date = get_meeting_date(doc)
-        if cutoff_date and meeting_date < cutoff_date:
+        if cutoff_date and not doc_id and meeting_date < cutoff_date:
             skipped_date += 1
             continue
 

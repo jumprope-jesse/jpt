@@ -1,6 +1,8 @@
 # Post-Meeting Processing Prompt
 
-You are processing a newly extracted meeting from Granola. Read the summary and transcript, then:
+You are processing a meeting extracted from Granola. Read the available files (summary and/or transcript) and perform the updates below.
+
+**Note**: Some meetings only have a summary (no transcript). Work with whatever content is available.
 
 ## 1. Update People Profiles
 
@@ -73,6 +75,6 @@ Rules for action_items JSON:
 ## Input Files
 
 - **Summary**: `{SUMMARY_PATH}`
-- **Transcript**: `{TRANSCRIPT_PATH}`
+- **Transcript**: `{TRANSCRIPT_PATH}` (may not exist for older meetings)
 
-Read both files, then perform the updates described above.
+Read the available files. If the transcript doesn't exist or is empty, work from the summary alone.
