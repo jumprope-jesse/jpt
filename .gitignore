@@ -9,6 +9,7 @@ __pycache__/
 .venv
 env/
 venv/
+.mcp.json
 
 # IDE
 .idea/
