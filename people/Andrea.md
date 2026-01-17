@@ -27,3 +27,4 @@
 - Open to Jesse's proposal: take one of two budgeted positions + half the other salary for AI budget
 - Doesn't want Jesse working alone in engineering
 - Background is non-technical - impressed by idea of automating repetitive tasks
+- **Background** (from 2025-09-09 Edmod meeting): Came from accounting firms and an Amazon aggregator (not edtech background). Francisco Partners' person placed inside Aries team. Leading M&A for Aries.

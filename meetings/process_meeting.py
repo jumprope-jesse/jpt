@@ -169,6 +169,52 @@ def get_known_people() -> list[str]:
     return [f.stem for f in PEOPLE_DIR.glob("*.md")]
 
 
+def identify_speakers(meeting: dict, known_people: list[str]) -> list[str]:
+    """Use Claude to identify speakers from transcript patterns."""
+    system_prompt = """You are a speaker identification assistant. Analyze the transcript and identify who is speaking.
+
+Look for:
+- Self-identification ("This is Jesse", "It's Sarah here")
+- Role/title mentions ("As the product owner...", "I'm the CTO")
+- Name mentions by others ("Thanks John", "What do you think, Maria?")
+- Contextual clues about roles and relationships
+- Speaking patterns and topics that suggest expertise/role
+
+Output ONLY a JSON object:
+{
+  "speakers": ["Name1", "Name2"],
+  "confidence": 75,
+  "reasoning": "Brief explanation of how you identified each speaker"
+}
+
+Rules:
+- Output ONLY the JSON object, no markdown
+- Match names to known people when possible
+- If you can't identify specific names, use descriptive roles like "Product Owner", "Developer"
+- Jesse is usually one of the participants (the meeting recorder)"""
+
+    user_prompt = f"""Meeting Title: {meeting["title"]}
+Known People: {", ".join(known_people)}
+
+TRANSCRIPT:
+{meeting["transcript"][:5000]}
+
+Identify the speakers:"""
+
+    try:
+        response = call_claude(user_prompt, system_prompt)
+        json_match = re.search(r'\{[\s\S]*\}', response)
+        if json_match:
+            result = json.loads(json_match.group())
+            speakers = result.get("speakers", [])
+            print(f"  Identified speakers: {speakers} (confidence: {result.get('confidence', 'N/A')}%)")
+            return speakers
+    except Exception as e:
+        print(f"  Speaker identification failed: {e}")
+
+    return []
+
+
 def process_meeting(meeting: dict) -> dict:
     """Process a meeting through Claude to generate structured output."""
     template_name = detect_template(meeting)
@@ -176,6 +222,10 @@ def process_meeting(meeting: dict) -> dict:
     template_content = template_file.read_text() if template_file.exists() else ""
 
     known_people = get_known_people()
+
+    # First, try to identify speakers if not already known
+    if not meeting.get("speakers"):
+        meeting["speakers"] = identify_speakers(meeting, known_people)
 
     system_prompt = """You are a meeting processing assistant. Analyze transcripts and output ONLY valid JSON, no other text.
 
@@ -187,6 +237,7 @@ Required JSON structure:
   "action_items": [{"owner": "Name", "task": "description", "due": "date or null"}],
   "risks": ["risk or concern 1"],
   "people_insights": [{"name": "PersonName", "insight": "what we learned about them"}],
+  "participants": ["Name1", "Name2"],
   "meeting_type_confidence": 85
 }
 
@@ -194,12 +245,15 @@ Rules:
 - Output ONLY the JSON object, no markdown, no explanation
 - Be concise and actionable
 - For people_insights, only include substantive new information about people mentioned
-- Match names to known people when possible"""
+- Match names to known people when possible
+- For participants, list everyone who spoke in the meeting"""
+
+    speakers_hint = f"\nIdentified Speakers: {', '.join(meeting['speakers'])}" if meeting.get('speakers') else ""
 
     user_prompt = f"""Meeting Title: {meeting["title"]}
 Date: {meeting["created_at"]}
 Detected Type: {template_name}
-Known People: {", ".join(known_people)}
+Known People: {", ".join(known_people)}{speakers_hint}
 
 TRANSCRIPT:
 {meeting["transcript"]}
@@ -250,11 +304,15 @@ def format_meeting_markdown(meeting: dict, processed: dict, template_name: str) 
     # Build risks
     risks_md = "\n".join(f"- {r}" for r in processed.get("risks", []))
 
+    # Get participants - prefer processed output, fall back to meeting speakers
+    participants = processed.get("participants") or meeting.get("speakers") or []
+    participants_str = ", ".join(participants) if participants else "Unknown"
+
     content = f"""# {meeting["title"]}
 
 **Date**: {date_str}
 **Template**: {template_name}
-**Participants**: {", ".join(meeting.get("speakers", [])) or "Unknown"}
+**Participants**: {participants_str}
 
 ## Summary
 {processed.get("summary", "")}

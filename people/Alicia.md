@@ -17,6 +17,8 @@
 - Previously worked closely with Jason (who recently left)
 
 ## Meeting History
+- 2026-01-16: Has authority to decide on format requirements; currently has no expected format for tech requirements; will likely want to handle conversion herself
+- 2026-01-16: Has no expected format for tech requirements yet; will likely want to take ownership of formatting/reconciliation; understands source of truth problems
 - 2026-01-16: Identified as good resource for developing AI effectiveness measurement framework.
 - 2026-01-14: (mentioned in product meeting) Team checking on her after Jason's departure; will be asked about Aries TRD timeline
 

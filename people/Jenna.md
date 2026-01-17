@@ -18,6 +18,7 @@
 - Working on product integration matters
 
 ## Meeting History
+- 2026-01-16: TRD format discussion - Considers tech requirements done since October; discussing whether to convert AI-generated format to spreadsheet for Alicia review; concerned about version control if doc exists in multiple formats
 - 2026-01-12: (per Jesse/Justin discussion) Proposed Nathan hiring idea to Justin; collaborating with Jesse on TRD
 - 2026-01-14: JumpRope Product Meeting - Discussed Kent ISD requirements, questions about Business Analyst role and duties
 
