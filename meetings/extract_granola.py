@@ -264,6 +264,49 @@ def load_granola_cache():
     return cache['state']
 
 
+def extract_full_name(display_name: str = None, email: str = None) -> str:
+    """Extract the best possible full name from display name and/or email.
+
+    Prefers displayName if it looks like a real name (has at least first and last).
+    Falls back to deriving a name from email address if possible.
+
+    Args:
+        display_name: The displayName field (e.g., "Jesse Olsen")
+        email: The email address (e.g., "jesse.olsen@company.com")
+
+    Returns:
+        The best full name available, or email if no name can be derived.
+    """
+    # Try display_name first if it looks like a full name (has space = likely first+last)
+    if display_name:
+        display_name = display_name.strip()
+        # If display name has multiple parts, it's likely a full name
+        if ' ' in display_name:
+            return display_name
+        # Single word display name - check if we can do better with email
+
+    # Try to extract name from email
+    if email:
+        email = email.strip()
+        local_part = email.split('@')[0] if '@' in email else email
+
+        # Common patterns: first.last, first_last, firstlast
+        # Try splitting on . or _
+        if '.' in local_part or '_' in local_part:
+            parts = re.split(r'[._]', local_part)
+            # Filter out common non-name parts and numbers
+            name_parts = [p for p in parts if p and not p.isdigit() and len(p) > 1]
+            if len(name_parts) >= 2:
+                # Title case each part
+                full_name = ' '.join(p.capitalize() for p in name_parts[:2])
+                return full_name
+
+    # Fall back to display_name (even if single word) or email
+    if display_name:
+        return display_name
+    return email or ''
+
+
 def sanitize_filename(name: str) -> str:
     """Convert a string to a safe filename."""
     # Remove or replace invalid characters
@@ -373,7 +416,7 @@ def extract_summary(doc_id: str, document_panels: dict, doc: dict) -> str:
     # Get attendees
     cal_event = doc.get('google_calendar_event') or {}
     if cal_event.get('attendees'):
-        attendees = [a.get('displayName') or a.get('email', '') for a in cal_event['attendees']]
+        attendees = [extract_full_name(a.get('displayName'), a.get('email')) for a in cal_event['attendees']]
         lines.append(f"**Attendees**: {', '.join(attendees)}")
 
     lines.append("")
@@ -464,7 +507,7 @@ def extract_meeting(doc: dict, transcript: list = None) -> str:
     cal_event = doc.get('google_calendar_event') or {}
     if cal_event:
         if cal_event.get('attendees'):
-            attendees = [a.get('displayName') or a.get('email', '') for a in cal_event['attendees']]
+            attendees = [extract_full_name(a.get('displayName'), a.get('email')) for a in cal_event['attendees']]
             lines.append(f"**Attendees**: {', '.join(attendees)}")
         if cal_event.get('location'):
             lines.append(f"**Location**: {cal_event['location']}")
@@ -475,7 +518,7 @@ def extract_meeting(doc: dict, transcript: list = None) -> str:
         names = []
         for p in people:
             if isinstance(p, dict):
-                name = p.get('name') or p.get('email', '')
+                name = extract_full_name(p.get('name'), p.get('email'))
                 if name:
                     names.append(name)
             elif isinstance(p, str):
