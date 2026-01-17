@@ -1,0 +1,11 @@
+{
+  "_comment": "Copy this to ~/.config/notion_reading.json and fill in your values",
+  "_comment2": "Token will fall back to ~/.config/notion_sync.json if not specified here",
+
+  "token": "ntn_your_notion_integration_token_here",
+
+  "databases": {
+    "reading_list": "your-main-reading-list-database-id",
+    "archive": "your-archive-or-secondary-database-id"
+  }
+}
