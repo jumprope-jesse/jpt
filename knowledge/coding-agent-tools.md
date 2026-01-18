@@ -2,6 +2,108 @@
 
 Tools and interfaces for running AI coding agents.
 
+---
+
+## Heatmap (0github.com)
+
+*Source: https://0github.com/ - Added: 2026-01-18*
+
+A heatmap diff viewer that color-codes code changes by how much human attention they need during code review.
+
+### Key Features
+
+- **Attention-Based Coloring** - Color-codes diff lines/tokens by priority, not just bugs
+- **Beyond Bug Detection** - Flags hard-coded secrets, weird crypto modes, gnarly logic
+- **Easy to Try** - Replace `github.com` with `0github.com` in any PR URL
+- **Open Source** - Full source available
+
+### How It Works
+
+1. Clones repo into a VM
+2. Runs GPT-5 Codex on every diff
+3. Outputs JSON structure parsed into colored heatmap
+
+### Why It's Interesting
+
+- Different philosophy from PR-review bots: "worth a second look" vs "is it a bug"
+- Zero friction to try (URL replacement)
+- Focuses human attention where it matters most
+
+---
+
+## Strands Agents
+
+*Source: https://strandsagents.com/latest/ - Added: 2026-01-18*
+
+An enterprise-ready AI agent framework used by companies like Smartsheet for building production AI assistants.
+
+### Key Features
+
+- **Conversation Memory** - Built-in robust conversation memory system for context-aware interactions
+- **Dynamic Tool Registration** - Tools can be registered dynamically, adapting to changing project needs
+- **Enterprise-Ready** - Designed for secure, scalable production deployments
+- **Development Efficiency** - Aims to balance enterprise features with quick implementation
+
+### Notable Users
+
+- **Smartsheet** - Used Strands for their next-generation AI capabilities, citing it as providing "the perfect balance of enterprise-ready features and development efficiency"
+
+### Why It's Interesting
+
+- Positions itself for enterprise use cases where security and scalability matter
+- Conversation memory is a first-class feature, not an afterthought
+- Dynamic tool registration suggests good extensibility
+
+### Notes
+
+- More of an SDK/framework than a UI tool (unlike Conductor or 1Code)
+- Good option to evaluate if building enterprise AI assistants
+- Compare with other agent frameworks like LangGraph, CrewAI, AutoGen
+
+## Conductor
+
+*Source: https://www.conductor.build/ - Added: 2026-01-18*
+
+A macOS app for running parallel Claude Code agents in isolated workspaces. Monitor what they're working on, then review and merge their changes.
+
+### Key Features
+
+- **Parallel Agents** - Run multiple Claude Code agents simultaneously
+- **Isolated Workspaces** - Each agent works in its own workspace to prevent conflicts
+- **Real-time Monitoring** - See at a glance what each agent is working on
+- **Review & Merge** - Review agent changes before merging into your codebase
+
+### Authentication
+
+Uses your existing Claude Code login—no separate API key needed:
+- Works with Claude Pro/Max plan credentials
+- Works with API keys if you're using those instead
+
+### How It Compares
+
+| Feature | Conductor | 1Code | Aizen | Vibe Kanban |
+|---------|-----------|-------|-------|-------------|
+| Primary Focus | Parallel Claude Code | Multi-agent UI | Worktree management | Kanban orchestration |
+| Agent Support | Claude Code only | Multiple (Claude, OpenCode, Codex) | ACP-compatible | Agent-agnostic |
+| Isolation | Workspace-based | Git worktrees | Per-worktree | Conflict prevention |
+| Platform | macOS | Cross-platform | macOS | Web |
+| Auth | Uses Claude login | Separate config | Unknown | Unknown |
+
+### Why It's Interesting
+
+- Minimal friction - uses existing Claude Code credentials
+- Purpose-built for Claude Code users rather than agent-agnostic
+- Combines workspace isolation with visual monitoring
+- Good fit for Claude Max subscribers who want to parallelize work
+
+### Notes
+
+- macOS only
+- Early stage - see what's new in version updates (currently 0.28.6)
+- Similar conceptually to Vibe Kanban but focused specifically on Claude Code
+
+---
+
 ## 1Code (21st.dev)
 
 *Source: https://github.com/21st-dev/1code - Added: 2026-01-18*
@@ -284,6 +386,42 @@ Restart your AI tool (Claude Desktop, VS Code, Cursor, etc.). Libraries in your 
 - Pronounced "LIB-ruh-jen"
 - SQLite-based - portable single files
 - Good fit for self-hosting setup (see self-hosting-guide.md)
+
+## Blocks (Sandboxed Cloud VMs)
+
+*Source: https://www.blocks.team/ - Added: 2026-01-18*
+
+Run coding agents in sandboxed cloud VMs. Offload agent execution to the cloud without straining local resources.
+
+### Key Features
+
+- **Cloud VM Sandboxes** - Run coding agents in isolated cloud environments
+- **No Local Resource Strain** - Heavy agent workloads run remotely
+- **Experimentation Friendly** - Test new languages or frameworks without local setup
+
+### Why It's Interesting
+
+- Reduces local machine load during intensive agent sessions
+- Safe environment for experimenting with untrusted or unfamiliar code
+- Good for trying new programming languages/frameworks without polluting local environment
+- Cloud-based approach enables remote work from lower-powered devices
+
+### How It Compares
+
+| Feature | Blocks | Sprites.dev | yolobox | Container Use |
+|---------|--------|-------------|---------|---------------|
+| Provider | Managed cloud | Fly.io | Self-hosted Docker | Self-hosted Docker |
+| Checkpoints | Unknown | Yes (300ms) | No | No |
+| Local Setup | None | CLI install | Docker required | Docker required |
+| Use Case | Agent execution | Agent execution + API | Safe yolo mode | Parallel agent review |
+
+### Considerations
+
+- Cloud-based means data leaves your machine
+- Evaluate security and data privacy policies for sensitive projects
+- Pricing model unknown (check site for details)
+
+---
 
 ## Sprites.dev (Fly.io Sandbox Platform)
 
@@ -1484,3 +1622,1006 @@ Free ($0)
 
 - Website: https://www.omnara.com/
 - Twitter: @omnaraai
+
+---
+
+## Claude Code On-The-Go (Mobile VM Setup)
+
+*Source: https://granda.org/en/2026/01/02/claude-code-on-the-go/ - Added: 2026-01-18*
+
+Run six Claude Code agents in parallel from a phone using Termius, Tailscale, and a cloud VM. No laptop required.
+
+### The Setup
+
+```
+Phone → Tailscale VPN → Vultr VM → Claude Code
+                    ↓
+             Push notification (via Poke webhook)
+```
+
+The workflow: kick off a task, pocket the phone, get notified when Claude needs input. Async development from anywhere.
+
+### Infrastructure
+
+**Vultr VM** (Silicon Valley):
+- Pay only when working (~$0.29/hr)
+- Two scripts: `vm-start` and `vm-stop`
+- iOS Shortcut calls Vultr API directly to start VM from phone
+
+**Security (Defense in Depth)**:
+- Public IP has no SSH listener
+- All access through Tailscale's private network
+- Cloud firewall blocks everything except Tailscale coordination
+- Local nftables as backup
+- fail2ban for good measure
+
+### Mobile Terminal
+
+**Termius** handles SSH and mosh on iOS/Android. Mosh is the key—it survives network transitions:
+- Switch from WiFi to cellular
+- Walk through a dead zone
+- Put the phone to sleep
+- The connection persists
+
+```bash
+mosh --ssh="ssh -p 47892" user@100.107.156.125
+```
+
+**Gotcha**: mosh doesn't forward SSH agent. For git operations needing GitHub auth, use regular SSH inside tmux.
+
+### Session Persistence
+
+Shell auto-attaches to tmux on login:
+
+```bash
+# In .zshrc
+if [[ -z "$TMUX" ]]; then
+    tmux attach -t main 2>/dev/null || tmux new -s main
+fi
+```
+
+Multiple Claude agents run in parallel windows. `C-a c` for new window, `C-a n` to cycle. Works well on a phone keyboard.
+
+### Push Notifications (The Key Feature)
+
+Without notifications, you'd constantly check the terminal. With them, you can walk away.
+
+**Hook in `~/.claude/settings.json`:**
+```json
+{
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "AskUserQuestion",
+      "hooks": [{
+        "type": "command",
+        "command": "~/.claude/hooks/poke-notify.sh question"
+      }]
+    }]
+  }
+}
+```
+
+When Claude calls AskUserQuestion, the hook fires and POSTs to Poke's webhook. Phone buzzes with the question. Tap, respond, continue.
+
+### Parallel Development with Git Worktrees
+
+```
+~/Code/myproject/              # main
+~/Code/myproject-sidebar/      # feature branch
+~/Code/myproject-dark-mode/    # another feature
+```
+
+Each worktree gets its own tmux window with a Claude agent. Port allocation is hash-based—deterministic from branch name, no conflicts.
+
+Six agents, six features, one phone.
+
+### Trust Model
+
+- Claude Code runs in permissive mode
+- VM is isolated—no access to production systems
+- Worst case: Claude does something unexpected on a disposable VM
+- Cost control adds another layer (~$0.29/hr caps daily cost)
+
+### What This Enables
+
+- Review PRs while waiting for coffee
+- Kick off a refactor on the train
+- Fix a bug from the couch while watching TV
+
+The pattern: start a task that will take Claude 10-20 minutes, do something else, get notified, respond, repeat. Development fits into the gaps of the day instead of requiring dedicated desk time.
+
+### How It Compares
+
+| Feature | On-The-Go Setup | Omnara | Sprites.dev |
+|---------|-----------------|--------|-------------|
+| Platform | Phone + Cloud VM | Mobile web app | Cloud VM |
+| Setup Complexity | High (DIY) | None | Medium |
+| Cost | ~$0.29/hr (Vultr) | Free | ~$0.46/4hrs |
+| Parallel Agents | Yes (tmux) | Unknown | Yes |
+| Push Notifications | Yes (Poke webhook) | Unknown | No |
+| Isolation | Tailscale VPN | Unknown | Managed sandbox |
+
+### Why It's Interesting
+
+- **Async development paradigm** - Work fits into gaps in the day
+- **Security-first design** - No exposed SSH, Tailscale-only access
+- **Cost-effective** - Pay only for active use
+- **Works with existing Claude Code** - No special app required
+- **Good for parents** - Tackle small tasks while waiting for kids' activities
+
+### Components Needed
+
+- **Vultr** (or similar cloud VM provider)
+- **Tailscale** - Private network access
+- **Termius** - iOS/Android SSH client
+- **mosh** - Network-resilient terminal
+- **tmux** - Session persistence
+- **Poke** (or similar) - Push notification webhook
+
+### Notes
+
+- The whole setup was built in one Claude Code session
+- Perfect for work-life balance scenarios
+- Challenges the "tied to a desk" development model
+- Inspirational for showing kids the possibilities of technology
+
+---
+
+## Playwriter (Browser Extension MCP)
+
+*Source: https://github.com/remorses/playwriter - Added: 2026-01-18*
+
+A browser extension alternative to Playwright MCP. Works via Chrome extension instead of launching a separate browser, giving full Playwright API access with 90% less context window usage.
+
+**Status:** Still in development. Not ready for production use.
+
+### How It Works
+
+```
+┌─────────────────────┐     ┌───────────────────┐     ┌─────────────────┐
+│   BROWSER           │     │   LOCALHOST       │     │   MCP CLIENT    │
+│                     │     │                   │     │                 │
+│  +---------------+  │     │ WebSocket Server  │     │  +-----------+  │
+│  │   Extension   │<--------->  :19988         │     │  │ AI Agent  │  │
+│  │  (bg script)  │  │ WS  │                   │     │  │ (Claude)  │  │
+│  +-------+-------+  │     │  /extension       │     │  +-----------+  │
+│          |          │     │       |           │     │        |        │
+│          v          │     │       v           │     │        v        │
+│  +---------------+  │     │  /cdp/:id <------------> │  execute  │  │
+│  │ Tab (green)   │  │     │                   │  WS │  │   tool    │  │
+│  +---------------+  │     └───────────────────┘     │  +-----------+  │
+│                     │                               │        |        │
+│  Tab 2 (gray)       │     Only green tabs           │  Playwright API │
+│  not controlled     │     are controlled            └─────────────────┘
+└─────────────────────┘
+```
+
+### vs Playwright MCP
+
+| Feature | Playwriter | Playwright MCP |
+|---------|------------|----------------|
+| Browser | Uses existing Chrome | Launches new Chrome |
+| Extensions | Keep ad blockers, password managers | Fresh browser, no extensions |
+| Context Window | 1 tool (execute) | Many tools |
+| Detection Bypass | Can disconnect extension temporarily | Always detected |
+| Collaboration | Work alongside AI in same browser | Separate window |
+| Resources | Shared browser process | New Chrome instance |
+
+### vs BrowserMCP / Antigravity
+
+These tools expose 17+ separate browser tools (click, type, screenshot, etc.). Playwriter exposes just one `execute` tool that accepts Playwright code. Benefits:
+
+- Less context window bloat (no tool schemas for every action)
+- LLMs already know Playwright API from training
+- Full API access vs limited predefined actions
+- No need to spawn subagents for browser tasks
+
+### Installation
+
+1. Install extension from Chrome Web Store
+2. Pin extension to toolbar
+3. Click extension icon on tabs you want to control (turns green)
+4. Configure MCP:
+
+```json
+{
+  "mcpServers": {
+    "playwriter": {
+      "command": "npx",
+      "args": ["-y", "playwriter"]
+    }
+  }
+}
+```
+
+### Programmatic Usage
+
+```javascript
+import { chromium } from 'playwright-core'
+import { startPlayWriterCDPRelayServer, getCdpUrl } from 'playwriter'
+
+const server = await startPlayWriterCDPRelayServer()
+const browser = await chromium.connectOverCDP(getCdpUrl())
+
+const context = browser.contexts()[0]
+const page = context.pages()[0]
+
+await page.goto('https://example.com')
+await page.screenshot({ path: 'screenshot.png' })
+
+await browser.close()
+server.close()
+```
+
+### Security Model
+
+- **Local WebSocket only** - Server on localhost:19988, no CORS headers, cannot be accessed by web pages
+- **Explicit consent** - Only controls tabs where you clicked the extension icon
+- **Visual indicator** - Green icon = controlled, Chrome shows automation banner
+- **No passive monitoring** - Extension cannot read tabs you haven't connected
+
+### Why It's Interesting
+
+- Solves the "two browsers" problem - no context switching
+- Can bypass automation detection by disconnecting extension, logging in, reconnecting
+- Keeps existing browser session state, cookies, extensions
+- Full Playwright API means LLMs can use existing knowledge
+- Lower resource usage (shared Chrome process)
+
+### Considerations
+
+- Still in development (not production ready)
+- Chrome only (extension-based)
+- Requires manual tab connection (click extension icon per tab)
+- Security relies on localhost-only WebSocket
+
+---
+
+## CloudWatch Alert Automation with Blocks
+
+*Source: https://www.reddit.com/r/aws/comments/1pnfjs1/claude_code_codex_and_aws_cloudwatch_quicker/ - Added: 2026-01-18*
+
+A practical workflow for automating CloudWatch alarm investigations using Blocks with Claude Code and Codex on Slack.
+
+### The Problem
+
+CloudWatch alarms in dev/staging hit Slack constantly during metric filter tuning. Each investigation took 30-45 minutes, and most were false alarms. Teams started ignoring alerts entirely.
+
+### The Solution
+
+Use Blocks to hand off alarm investigation to AI agents:
+
+**Initial investigation with Codex:**
+```
+@blocks /codex Look through the associated CloudWatch logs and find the
+offending code causing these errors. Give me the root cause analysis.
+```
+
+**Condensed command:**
+```
+@blocks /codex /alarm
+```
+
+**Optional: Create PR with Claude Code:**
+```
+@blocks Create a PR for this
+```
+
+### Why Codex + Claude Code
+
+- **Codex** - Good at diagnosing issues, analyzing logs, identifying root causes
+- **Claude Code** - Good at creating PRs with fixes
+
+Even when the suggested fix isn't used verbatim, having an agent zoom in on the issue saves significant investigation time.
+
+### Security Warning
+
+**Limit IAM permissions for agents:**
+- Read-only access to CloudWatch log events
+- Restrict to specific log groups
+- No write permissions to production resources
+
+### Why This Workflow Matters
+
+- Turns 30-45 minute investigations into quick agent handoffs
+- Prevents alert fatigue from false alarms
+- Allows time for actual fixes instead of investigation overhead
+- Agents can suggest (and sometimes implement) simple fixes like updating console.logs
+
+### Related
+
+- See Blocks section above for the platform overview
+- Works well with the async development patterns from "Claude Code On-The-Go"
+
+---
+
+## Zencoder (AI Coding Agent)
+
+*Source: https://zencoder.ai/download - Added: 2026-01-18*
+
+An AI-driven coding agent. Limited information available from the download page.
+
+### Status
+
+**Needs Investigation** - The download page doesn't have much detail. Worth revisiting to evaluate features and how it compares to Claude Code, OpenCode, Codex, etc.
+
+### Links
+
+- Download: https://zencoder.ai/download
+- Pricing/Enterprise info available on site
+
+---
+
+## Sim Studio (AI Agent Workflow Builder)
+
+*Source: https://github.com/simstudioai/sim - Added: 2026-01-18*
+
+An open-source platform for visually building and deploying AI agent workflows. Design workflows on a canvas, connect agents and tools, then run them instantly.
+
+### Key Features
+
+- **Visual Workflow Canvas** - Design agent workflows by connecting nodes visually
+- **Copilot Integration** - Generate nodes, fix errors, and iterate on flows using natural language
+- **Vector Database Support** - Upload documents to a vector store and let agents answer questions grounded in your content
+- **Self-Hosting** - Full control via Docker Compose or manual setup
+- **Local LLM Support** - Works with Ollama and vLLM for self-hosted models
+
+### Quick Start
+
+**Cloud-hosted:** sim.ai
+
+**Self-hosted (NPM):**
+```bash
+npx simstudio
+# → http://localhost:3000
+# Requires Docker running
+```
+
+**Self-hosted (Docker Compose):**
+```bash
+git clone https://github.com/simstudioai/sim.git
+cd sim
+docker compose -f docker-compose.prod.yml up -d
+```
+
+### Local Model Support
+
+**Ollama:**
+```bash
+# With GPU support (auto-downloads gemma3:4b)
+docker compose -f docker-compose.ollama.yml --profile setup up -d
+
+# CPU-only
+docker compose -f docker-compose.ollama.yml --profile cpu --profile setup up -d
+
+# Add more models
+docker compose -f docker-compose.ollama.yml exec ollama ollama pull llama3.1:8b
+```
+
+**External Ollama Instance:**
+```bash
+# macOS/Windows (Docker Desktop)
+OLLAMA_URL=http://host.docker.internal:11434 docker compose -f docker-compose.prod.yml up -d
+
+# Linux: Use host IP or add extra_hosts to compose file
+```
+
+**vLLM:**
+```bash
+VLLM_BASE_URL=http://your-vllm-server:8000
+VLLM_API_KEY=your_optional_api_key  # Only if required
+```
+
+### Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Runtime:** Bun
+- **Database:** PostgreSQL with Drizzle ORM
+- **Auth:** Better Auth
+- **UI:** Shadcn, Tailwind CSS
+- **State:** Zustand
+- **Flow Editor:** ReactFlow
+- **Docs:** Fumadocs
+- **Monorepo:** Turborepo
+- **Realtime:** Socket.io
+- **Jobs:** Trigger.dev
+- **Code Execution:** E2B
+
+### How It Compares
+
+| Feature | Sim Studio | n8n | Langflow | Flowise |
+|---------|------------|-----|----------|---------|
+| Primary Focus | AI agent workflows | General automation | LangChain flows | LangChain apps |
+| Visual Editor | Yes (ReactFlow) | Yes | Yes | Yes |
+| Local LLM Support | Yes (Ollama, vLLM) | Limited | Yes | Yes |
+| Self-Hosted | Yes | Yes | Yes | Yes |
+| Copilot | Yes | No | No | No |
+| License | Apache 2.0 | Fair-code | MIT | Apache 2.0 |
+
+### Why It's Interesting
+
+- **Visual-first for AI workflows** - Good for prototyping and iterating on agent architectures
+- **Copilot differentiator** - Natural language to modify flows is unique
+- **Full local LLM story** - Ollama + vLLM support means no API costs for experimentation
+- **Modern stack** - Bun, Next.js App Router, ReactFlow are current best practices
+- **E2B integration** - Safe code execution for agent tools
+
+### Personal Use Cases (from Notion notes)
+
+- Quick AI agent workflow creation for home or work automation
+- Visual design appeals to creative side, makes complex processes intuitive
+- Vector databases could enhance family or business data management
+- Copilot helps innovate faster, generating ideas and fixing issues in real-time
+- Self-hosting maintains control over data while experimenting with cutting-edge tech
+
+### Considerations
+
+- Learning curve may take time away from other activities initially
+- Requires Docker for self-hosted setup
+- PostgreSQL with pgvector extension needed for AI embeddings
+- Copilot is a Sim-managed service - requires API key from sim.ai for self-hosted use
+
+### Notes
+
+- Apache License 2.0
+- Active development with contributions welcomed
+- Good fit for those who prefer visual workflow design over code-first agent development
+- Complements CLI tools like Claude Code - use Sim for workflow orchestration, Claude Code for implementation
+
+---
+
+## Rowboat (Agent Swarm Builder)
+
+*Source: https://github.com/rowboatlabs/rowboat - Added: 2026-01-18*
+
+AI-powered CLI for building and managing agent swarms with natural language. Build workflows, integrate tools, and automate complex multi-agent tasks.
+
+### Key Features
+
+- **Natural Language Setup** - Build agent swarms through conversation with a copilot
+- **One-Click Integrations** - Connect tools (Slack, calendars, etc.) easily
+- **Native RAG Support** - Add documents for knowledge-powered agents
+- **Triggers & Actions** - Set up automated workflows
+- **API/SDK Access** - Deploy agents anywhere
+
+### Use Cases (from Demos)
+
+- **Meeting-prep assistant** - Build via copilot, connect calendar trigger, auto-prepares briefs
+- **Customer support assistant** - Connect MCP server and knowledge base for RAG
+- **Personal assistant** - General-purpose agent for daily tasks
+
+### Quick Start
+
+1. Set OpenAI API key
+2. Clone repository
+3. Access the app
+
+Advanced features include custom LLM providers and API/SDK integration.
+
+### How It Compares
+
+| Feature | Rowboat | RowboatX | Sim Studio | Vibe Kanban |
+|---------|---------|----------|------------|-------------|
+| Primary Focus | Agent swarm building | Everyday task automation | Visual workflow design | Parallel agent orchestration |
+| Interface | CLI + copilot | CLI | Visual canvas | Kanban board |
+| Natural Language Build | Yes | No | Yes (copilot) | No |
+| RAG Support | Native | Unknown | Yes | No |
+| Target User | Agent builders | Knowledge workers | Visual designers | Developers |
+
+### Why It's Interesting
+
+- Natural language agent swarm creation lowers barrier to entry
+- Good for automating multi-agent workflows without coding each agent manually
+- Integration focus (Slack, calendars) makes it practical for work scenarios
+- Part of the rowboatlabs ecosystem (see also RowboatX below)
+
+### Personal Use Cases
+
+- Automate routine tasks, freeing time for family
+- Tailor agent workflows for both work and home (scheduling, school events)
+- Integrate with tools already in use (Slack, calendars)
+- Explore balance between adopting new tech and daily life impact
+- Stay ahead in tech trends while enjoying smart home benefits
+
+### Considerations
+
+- Requires OpenAI API key
+- Learning curve for setting up complex swarms
+- Evaluate how much automation is appropriate vs overwhelming
+
+### Links
+
+- GitHub: https://github.com/rowboatlabs/rowboat
+- Cloud hosted version available
+
+---
+
+## RowboatX (Everyday Task Automation CLI)
+
+*Source: https://www.rowboatx.com/ - Added: 2026-01-18*
+
+Open-source CLI for automating everyday tasks (not coding). Brings the Claude Code workflow to daily work like preparing meeting briefs, research, and routine automation.
+
+### Key Features
+
+- **Background Agents** - Spawn agents that run tasks asynchronously
+- **MCP Server Support** - Connect to any MCP server
+- **Unix Tools** - Integrates with standard Unix utilities
+- **Human-in-the-Loop** - Control over agent actions
+- **Any LLM** - Works with multiple language model providers
+
+### Use Case Example
+
+> "Before each meeting, research the attendees and create a brief with their background, recent work, and talking points."
+
+This is the kind of everyday task RowboatX is designed for - recurring knowledge work that benefits from AI assistance but isn't coding.
+
+### How It Compares to Claude Code
+
+| Feature | RowboatX | Claude Code |
+|---------|----------|-------------|
+| Primary Focus | Everyday tasks | Software development |
+| Background Agents | Yes | Yes (via Task tool) |
+| MCP Support | Yes | Yes |
+| Human-in-the-Loop | Native | Permission prompts |
+| Target User | Knowledge workers | Developers |
+
+### Why It's Interesting
+
+- Fills the gap between "AI for coding" and "AI for everything else"
+- Background agent pattern enables async workflows
+- Apache-2.0 licensed - fully open source
+- Built for terminal users who want Claude Code's workflow for non-coding tasks
+- Pre-meeting research automation is a strong use case
+
+### Considerations
+
+- Different from Claude Code despite similar UX patterns
+- Evaluate for non-coding automation needs
+- Terminal-based may not suit all knowledge workers
+
+### Links
+
+- Website: https://www.rowboatx.com/
+- License: Apache-2.0
+
+---
+
+## Strands Agents (Enterprise AI Framework)
+
+*Source: https://strandsagents.com/latest/ - Added: 2026-01-18*
+
+An enterprise-focused AI agent framework with conversation memory and dynamic tool registration.
+
+### Key Features (from Smartsheet case study)
+
+- **Conversation Memory** - Persistent context across interactions
+- **Dynamic Tool Registration** - Register tools/capabilities at runtime
+- **Enterprise-Ready** - Designed for secure, scalable production deployments
+
+### Smartsheet Testimonial
+
+> "At Smartsheet, we chose Strands for our next generation of AI capabilities because it provided the perfect balance of enterprise-ready features and development efficiency. Its robust conversation memory and dynamic tool registration systems were crucial for creating a responsive, context-aware intelligent AI assistant. With Strands, we were able to quickly implement a secure and scalable solution, giving us a production-ready foundation to deliver a secure, high-performance, and enterprise-grade AI experience."
+
+### How It Compares
+
+| Feature | Strands | LangChain | Claude Code SDK |
+|---------|---------|-----------|-----------------|
+| Primary Focus | Enterprise AI assistants | General LLM orchestration | Coding agents |
+| Conversation Memory | Native | Via memory classes | Session-based |
+| Tool Registration | Dynamic at runtime | Static definition | MCP protocol |
+| Target User | Enterprise teams | Developers | Individual developers |
+
+### Why It's Interesting
+
+- Enterprise validation (Smartsheet case study)
+- Emphasis on conversation memory suggests focus on multi-turn interactions
+- Dynamic tool registration could enable runtime extensibility
+
+### Considerations
+
+- Limited public documentation on the landing page
+- Would need deeper investigation to understand technical architecture
+- Compare against alternatives like LangChain, CrewAI, AutoGen for specific use cases
+
+### Links
+
+- Documentation: https://strandsagents.com/latest/
+
+---
+
+## Port of Context (pctx) - Code Mode Framework
+
+*Source: https://portofcontext.com/ - Added: 2026-01-18*
+
+An open-source framework that replaces LLM tool calling with "Code Mode" - AI agents write code that executes in secure sandboxes instead of making direct tool calls. Follows Anthropic and Cloudflare's Code Mode approach.
+
+### The Problem with Tool Calling
+
+Traditional MCP presents servers as discrete tools that the LLM calls one at a time. This has limitations:
+- Context inefficiency from repeated tool call overhead
+- Large datasets don't pass through context well
+- Lower task completion success rates
+
+### The Code Mode Solution
+
+pctx presents MCP servers as **code APIs** rather than direct tool calls. The LLM writes TypeScript code that gets:
+1. Type-checked in a compiler sandbox
+2. Executed in a restricted sandbox with authenticated MCP connections
+
+```
+AI Agents (Any LLM)
+        ↓
+      pctx
+        ↓
+┌─────────────────────────────────────┐
+│ TypeScript Compiler Sandbox         │
+│ • Type checking                     │
+│ • Rich error feedback               │
+│ • No network access                 │
+└─────────────────────────────────────┘
+        ↓
+┌─────────────────────────────────────┐
+│ Execution Sandbox                   │
+│ • Authenticated MCP client conns    │
+│ • Restricted network                │
+│ • Tool call execution               │
+│ • Connects to: Local, Slack,        │
+│   GitHub, Custom MCPs               │
+└─────────────────────────────────────┘
+```
+
+### Benefits
+
+- **Context efficiency** - Pass large datasets through context instead of repeated tool calls
+- **Higher task completion rates** - More complex operations in a single execution
+- **Type safety** - Compile-time checks catch errors before execution
+- **Security** - Two-stage sandbox (compiler + execution) with restricted network
+
+### How It Compares
+
+| Feature | pctx (Code Mode) | Standard MCP | Direct Tool Calls |
+|---------|------------------|--------------|-------------------|
+| LLM generates | TypeScript code | Tool call JSON | Tool call JSON |
+| Type checking | Yes (compile stage) | No | No |
+| Batch operations | Native (code) | Sequential calls | Sequential calls |
+| Context efficiency | High | Medium | Medium |
+| Error feedback | Rich (compiler) | Tool response | Tool response |
+
+### Why It's Interesting
+
+- Aligns with Anthropic's and Cloudflare's direction on Code Mode
+- Open-source alternative to proprietary Code Mode implementations
+- Could significantly improve complex multi-tool workflows
+- Type safety adds reliability layer for agent-generated code
+
+### Considerations
+
+- Requires LLM to generate valid TypeScript (most modern LLMs handle this well)
+- Two-sandbox architecture adds complexity but improves security
+- Early stage - evaluate for production readiness
+
+### Links
+
+- Website: https://portofcontext.com/
+
+---
+
+## Intraview (AI Agent Walkthroughs)
+
+*Source: https://www.intraview.ai/ - Added: 2026-01-18*
+
+Tools for AI agents to turn code into collaborative walkthroughs you can explore directly in your IDE. Reduces the need for extensive reports and manual context-switching.
+
+### The Problem
+
+Your agent generates a ten-page report referencing scattered files and code snippets. You spend hours decoding what it means, hunting down references, and cross-checking for hallucinations. You find inconsistencies. You give up and redo the work manually.
+
+### The Solution
+
+Click through your agent's explanation step-by-step. Each step highlights the exact code it's referencing—inline, in your IDE. Give feedback in context. Maintain a clear mental model from start to finish.
+
+### Key Insight
+
+> "The next big AI model release won't fix a broken workflow."
+
+Coding velocity isn't how fast the machine can generate code and plans—it's about how fast you can **understand**, **trust**, and add your expertise. Intraview is positioned as the collaboration layer that closes that gap.
+
+### How It Works
+
+- Agent generates interactive walkthroughs instead of static reports
+- Each step shows the exact code being referenced, highlighted in your IDE
+- No context-switching between report and codebase
+- Feedback happens in context, not in a separate document
+
+### Why It's Interesting
+
+- Addresses a real pain point: understanding AI-generated code changes
+- Shifts from "homework" (decoding reports) to "collaboration" (walking through together)
+- IDE-native approach keeps you in flow state
+- Could significantly reduce the review bottleneck in AI-assisted development
+
+### How It Compares
+
+| Feature | Intraview | Standard Claude Code Output | PR Code Reviews |
+|---------|-----------|----------------------------|-----------------|
+| Format | Interactive walkthrough | Terminal text | Diff view |
+| Code Highlighting | In-context, per-step | None | Line-by-line |
+| Context Switching | None (in IDE) | High | Medium |
+| Feedback Loop | In-place | Chat-based | Comments |
+| Mental Model Support | Step-by-step guided | Self-navigated | Self-navigated |
+
+### Considerations
+
+- Requires IDE integration (evaluate compatibility)
+- May add friction if walkthroughs are overly detailed for simple changes
+- Dependency on Intraview tooling vs standard Claude Code workflow
+- Alternate view: reliance on guided walkthroughs could reduce ability to navigate code independently
+
+### Links
+
+- Website: https://www.intraview.ai/
+
+---
+
+## llms.py (Multi-Provider LLM CLI)
+
+*Source: https://github.com/ServiceStack/llms - Added: 2026-01-18*
+
+A lightweight CLI and OpenAI-compatible server for querying multiple LLM providers. Single Python file with minimal dependencies that routes requests across providers.
+
+### Key Features
+
+- **Multi-Provider Support** - OpenRouter, Ollama, Anthropic, Google, OpenAI, Grok, Groq, Qwen, Z.ai, Mistral
+- **Automatic Routing** - Requests routed to available providers supporting the requested model
+- **Cost Optimization** - Define free/cheap/local providers first; failures auto-retry on next provider
+- **OpenAI-Compatible Server** - Works with any client supporting OpenAI's chat completion API
+- **160+ Models** - Support for a wide variety of LLMs across providers
+- **Multimodal** - Image processing (vision models), audio processing, PDF/document handling
+
+### Installation
+
+```bash
+pip install llms-py
+```
+
+### Quick Start
+
+```bash
+# 1. Set API keys
+export OPENROUTER_API_KEY="..."
+
+# 2. Enable providers
+llms --enable openrouter_free google_free groq  # Free/free-tier providers
+llms --enable openrouter anthropic google openai mistral grok qwen  # Paid providers
+
+# 3. Run UI + API server
+llms --serve 8000
+# → UI at http://localhost:8000
+# → OpenAI-compatible API at http://localhost:8000/v1/chat/completions
+
+# 4. CLI usage
+llms "What is the capital of France?"
+llms -m gemini-2.5-pro "Write a Python function to sort a list"
+llms -m grok-4 "Explain this code with humor"
+```
+
+### Multimodal Support
+
+**Images (Vision Models):**
+```bash
+llms --image ./screenshot.png "What's in this image?"
+llms -m gemini-2.5-flash --image chart.png "Analyze this chart"
+```
+
+**Audio:**
+```bash
+llms --audio ./recording.mp3 "Summarize this meeting"
+llms -m gpt-4o-audio-preview --audio interview.mp3 "Extract the main topics"
+```
+
+**Documents (PDF):**
+```bash
+llms --file ./docs/handbook.pdf "Summarize the key changes"
+```
+
+### Configuration
+
+Config file at `~/.llms/llms.json` defines providers, models, and defaults:
+
+```json
+{
+  "defaults": {
+    "headers": {},
+    "text": { /* chat completion template */ }
+  },
+  "providers": {
+    "openrouter": {
+      "enabled": true,
+      "type": "OpenAiProvider",
+      "api_key": "$OPENROUTER_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "models": { /* local → provider name mappings */ }
+    }
+  }
+}
+```
+
+### Why It's Interesting
+
+- **Single file, minimal deps** - Just `aiohttp`, easy to understand and modify
+- **Provider abstraction** - Write once, switch providers without code changes
+- **Cost optimization built-in** - Automatic fallback from free → paid tiers
+- **Self-hosted option** - Run local models via Ollama alongside API providers
+- **ChatGPT-like UI included** - `llms --serve` provides web UI for all your models
+
+### How It Compares
+
+| Feature | llms.py | LiteLLM | OpenRouter Direct |
+|---------|---------|---------|-------------------|
+| Primary Focus | CLI + server | Python library | API gateway |
+| Multi-provider | Yes (10+) | Yes (100+) | Yes |
+| Local models | Ollama | Ollama, vLLM | No |
+| Built-in UI | Yes | No | No |
+| Multimodal | Yes (image/audio/file) | Yes | Varies by model |
+| Setup | pip install | pip install | API key only |
+
+### Use Cases
+
+- **Cost-conscious development** - Route to free/cheap models first, fall back to premium
+- **Model comparison** - Quickly test same prompt across different providers/models
+- **Local + cloud hybrid** - Use Ollama locally, fall back to API when needed
+- **Team API server** - Run OpenAI-compatible server that routes to your preferred providers
+
+### Considerations
+
+- Python-based (requires Python environment)
+- Config management via JSON file
+- UI is basic ChatGPT clone - functional but not feature-rich
+- API key management across multiple providers can get complex
+
+### Links
+
+- GitHub: https://github.com/ServiceStack/llms
+- Blog post: (mentioned in README)
+
+---
+
+## AWS MCP Proxy Server
+
+*Source: https://github.com/aws/mcp-proxy-for-aws - Added: 2026-01-18*
+
+A lightweight, client-side bridge between MCP clients (AI assistants and developer tools) and AWS MCP servers. Handles SigV4 authentication using local AWS credentials.
+
+### Key Features
+
+- **SigV4 Authentication** - Automatically signs requests using local AWS credentials
+- **Dynamic Tool Discovery** - Discovers available tools from backend AWS MCP servers
+- **Lightweight Client-Side** - No complex gateway setup required
+- **Multiple Installation Options** - PyPi, local repo, or Docker
+
+### Installation
+
+```bash
+# Via PyPi (simplest)
+uvx mcp-proxy-for-aws@latest <SigV4 MCP endpoint URL>
+
+# Via Docker
+docker build -t mcp-proxy-for-aws .
+```
+
+### MCP Client Configuration
+
+Add to your MCP client config (e.g., `~/.aws/amazonq/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "aws-proxy": {
+      "disabled": false,
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/mcp_proxy_for_aws",
+        "run",
+        "server.py",
+        "<SigV4 MCP endpoint URL>",
+        "--service",
+        "<your service code>",
+        "--profile",
+        "default",
+        "--region",
+        "us-east-1",
+        "--read-only",
+        "--log-level",
+        "INFO"
+      ]
+    }
+  }
+}
+```
+
+### Prerequisites
+
+- Python 3.10+
+- `uv` package manager
+- AWS CLI configured with credentials
+- (Optional) Docker Desktop
+
+### Why It's Interesting
+
+- **Official AWS Tool** - Built and maintained by AWS
+- **Secure by Default** - Uses proper SigV4 authentication
+- **Works with Amazon Q** - Integrates with Amazon Q Developer CLI
+- **Extends AI Assistants** - Gives Claude Code, Amazon Q, etc. access to AWS services via MCP
+
+### Security Considerations
+
+- You're responsible for IAM configuration and access controls
+- LLMs are non-deterministic - always test before using on customer-facing accounts
+- Use `--read-only` flag when appropriate to limit blast radius
+
+### Links
+
+- GitHub: https://github.com/aws/mcp-proxy-for-aws
+- SigV4 Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html
+
+## Quibbler
+
+*Source: https://github.com/fulcrumresearch/quibbler - Added: 2026-01-18*
+
+A "critic" for coding agents that runs in the background and automatically observes and corrects agent behavior. Learns rules from usage and enforces them so you don't have to.
+
+### Key Features
+
+- **Background Monitoring** - Runs passively and critiques agent actions
+- **Automatic Correction** - Intervenes when agents fail in common ways
+- **Rule Learning** - Learns patterns from your usage and saves to `.quibbler/rules.md`
+- **Persistent Context** - Maintains context across reviews, building project understanding over time
+
+### What It Prevents
+
+- Fabricating results without running commands
+- Skipping tests or verification steps
+- Ignoring your coding style and patterns
+- Hallucinating numbers, metrics, or functionality
+- Creating new patterns instead of following existing ones
+- Making changes that don't align with user intent
+
+### Integration Modes
+
+1. **Hook Mode** (Claude Code only)
+   - Uses Claude Code's hook system for event-driven monitoring
+   - Fire-and-forget feedback injection via file writes
+   - More powerful but Claude Code-specific
+
+2. **MCP Mode** (Universal)
+   - Uses Model Context Protocol for any MCP-compatible agent
+   - Agent calls `review_code` tool after making changes
+   - Works with Cursor, etc.
+
+### Installation
+
+```bash
+uv tool install quibbler
+# or
+pip install quibbler
+```
+
+### Configuration
+
+- Uses Claude Haiku 4.5 by default for speed
+- Override model in `~/.quibbler/config.json` or `.quibbler/config.json`
+- Customize system prompt via `~/.quibbler/prompt.md`
+
+### Why It's Interesting
+
+- Addresses a real pain point: agents ignoring instructions or making the same mistakes
+- Hook Mode is elegant - hooks into Claude Code's native system
+- Rule learning could compound value over time
+- Lightweight approach vs. heavier orchestration frameworks
+
+### Links
+
+- GitHub: https://github.com/fulcrumresearch/quibbler

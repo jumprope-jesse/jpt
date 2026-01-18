@@ -1,0 +1,230 @@
+---
+type: link
+source: notion
+url: https://github.com/fulcrumresearch/quibbler
+notion_type: Software Repo
+tags: ['Running']
+created: 2025-10-31T13:04:00.000Z
+---
+
+# GitHub - fulcrumresearch/quibbler
+
+## Overview (from Notion)
+- Quibbler can enhance your coding workflow by providing real-time feedback, allowing you to focus on your projects without micromanaging.
+- With its ability to learn and enforce coding standards, it reduces the time spent on revisions and increases productivity.
+- The integration modes (Hook Mode and MCP Mode) offer flexibility depending on your tools, making it adaptable to your existing setup.
+- Since you live in NYC, leveraging such technology can help you balance work and family life, freeing up time for personal connections.
+- Community engagement through platforms like Discord allows you to network with other developers, potentially leading to collaborations or new insights.
+- Consider the potential of Quibbler not just as a tool, but as a way to foster better coding habits in teams, enhancing overall project quality.
+- An alternate view could be that dependency on such tools might stifle creativity, as engineers may rely too heavily on automated feedback instead of developing their own judgment.
+
+## AI Summary (from Notion)
+Quibbler is a background tool that critiques coding agents, preventing issues like fabricating results and ignoring coding styles. It learns from usage to enforce rules automatically. Users can install it via uv or pip, and it supports two modes: Hook Mode for Claude Code users and MCP Mode for others. Quibbler maintains context across reviews, providing feedback on code changes and ensuring adherence to user intent. Configuration options allow customization of prompts and rules, and contributions are welcome through GitHub.
+
+## Content (from Notion)
+
+# Quibbler
+
+Quibbler is a critic for your coding agent. It runs in the background and critiques your coding agent's actions, either via hooks or an MCP. When your coding agent is once again failing in the same ways, or ignoring your spec, instead of having to prompt it, the Quibbler agent will automatically observe and correct it.
+
+It will also learn rules from your usage, and then enforce them so you don't have to.
+
+## Demo
+
+## What Quibbler Prevents
+
+We've found Quibbler useful in automatically preventing agents from:
+
+- Fabricating results without running commands
+- Not running tests or skipping verification steps
+- Not following your coding style and patterns
+- Hallucinating numbers, metrics, or functionality
+- Creating new patterns instead of following existing ones
+- Making changes that don't align with user intent
+Quibbler maintains context across reviews, learning your project's patterns and rules over time.
+
+## Installation
+
+Using uv:
+
+```plain text
+uv tool install quibbler
+```
+
+Using pip:
+
+```plain text
+pip install quibbler
+```
+
+## Choosing Your Mode
+
+Quibbler supports two integration modes:
+
+### Hook Mode (For Claude Code users)
+
+- Uses Claude Code's hook system for event-driven monitoring
+- Passively observes all agent actions (tool use, prompts, etc.)
+- Fire-and-forget feedback injection via file writes
+- More powerful affordances but Claude Code-specific
+### MCP Mode (For users of all other coding agents)
+
+- Uses the Model Context Protocol for universal compatibility
+- Agent calls review_code tool after making changes
+- Synchronous review with immediate feedback
+- Simple setup via MCP server configuration
+## Setup
+
+Choose your mode and follow the appropriate setup instructions:
+
+### Option A: MCP Mode Setup
+
+### 1. Configure MCP Server
+
+Add Quibbler to your agent's MCP server configuration.
+
+For Cursor (.cursor/mcp.json):
+
+```plain text
+{
+  "mcpServers": {
+    "quibbler": {
+      "command": "quibbler mcp",
+      "env": {
+        "ANTHROPIC_API_KEY": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+For other MCP-compatible agents: Refer to your agent's documentation for MCP server configuration.
+
+### 2. Add to AGENTS.md
+
+Create or update AGENTS.md in your project root to instruct your agent to use Quibbler:
+
+```plain text
+## Code Review Process
+
+After making code changes, you MUST call the `review_code` tool from the Quibbler MCP server with:
+
+- `user_instructions`: The exact instructions the user gave you
+- `agent_plan`: **A summary of the specific changes you made** (include which files were modified, what was added/changed, and key implementation details)
+- `project_path`: The absolute path to this project
+
+Review Quibbler's feedback and address any issues or concerns raised.
+
+### Example
+
+User asks: "Add logging to the API endpoints"
+
+After implementing, call:
+
+review_code(
+user_instructions="Add logging to the API endpoints",
+agent_plan="""Changes made:
+
+1. Added logger configuration in config/logging.py
+2. Updated routes/api.py to log incoming requests and responses
+3. Added request_id middleware for tracing
+4. Created logs/ directory with .gitignore""",
+   project_path="/absolute/path/to/project"
+   )
+```
+
+### Option B: Hook Mode Setup
+
+### 1. Start Quibbler Hook Server
+
+In a terminal, start the Quibbler hook server:
+
+```plain text
+export ANTHROPIC_API_KEY="your-api-key-here"
+quibbler hook server
+# Or specify a custom port:
+quibbler hook server 8081
+```
+
+Keep this server running in the background. It will receive hook events from Claude Code.
+
+### 2. Configure Hooks in Your Project
+
+In your project directory, run:
+
+```plain text
+quibbler hook add
+```
+
+This creates or updates .claude/settings.json with the necessary hooks to forward events to the Quibbler server.
+
+### 3. Verify Setup
+
+The .claude/settings.json should now contain hooks that:
+
+- Forward tool use events to Quibbler (quibbler hook forward)
+- Display Quibbler feedback to the agent (quibbler hook notify)
+When Claude Code runs in this project, Quibbler will automatically observe and intervene when needed.
+
+## Configuration
+
+By default, Quibbler uses Claude Haiku 4.5 for speed. You can change this by creating or editing:
+
+Global config (~/.quibbler/config.json):
+
+```plain text
+{
+  "model": "claude-sonnet-4-5"
+}
+```
+
+Project-specific config (.quibbler/config.json in your project):
+
+```plain text
+{
+  "model": "claude-sonnet-4-5"
+}
+```
+
+Project-specific config takes precedence over global config.
+
+## How It Works
+
+### MCP Mode
+
+1. Your agent makes code changes, then calls the review_code tool with user instructions and a summary of changes made
+1. Quibbler maintains a persistent review agent per project that: 
+1. Quibbler returns feedback or approval synchronously
+1. Your agent addresses any issues found in the review
+### Hook Mode
+
+1. Claude Code triggers hooks on events (tool use, prompt submission, etc.)
+1. Hook events are forwarded to the Quibbler HTTP server
+1. Quibbler maintains a persistent observer agent per session that: 
+1. Feedback is automatically displayed to the agent via the notify hook
+1. The agent sees the feedback and can adjust its behavior
+Both modes build understanding over time, learning your project's patterns and saving rules to .quibbler/rules.md.
+
+## Customizing Prompts
+
+You can customize Quibbler's system prompt by editing ~/.quibbler/prompt.md. The default prompt will be created on first run.
+
+Project-specific rules in .quibbler/rules.md are automatically loaded and added to the prompt.
+
+Note for Hook Mode: Quibbler writes feedback to a message file that is intended for the agent to read and act on (though users have oversight and can see it). Your agent's system prompt should include a {message_file} placeholder to tell Quibbler where to write its feedback. For example:
+
+```plain text
+When you need to provide feedback to the agent, write it to {message_file}. This is agent-to-agent communication intended for the coding agent to read and act on.
+```
+
+## Contributing
+
+If you notice an issue or bug, please open an issue. We welcome contributions - feel free to open a PR.
+
+Join our community on Discord to discuss workflows and share experiences.
+
+## License
+
+See LICENSE for details.
+
+
