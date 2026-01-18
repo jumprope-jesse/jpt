@@ -10212,3 +10212,3303 @@ Traceback (most recent call last):
   File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
     def _get_valid_token(self) -> str | None:
 TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+Traceback (most recent call last):
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 56, in <module>
+    class GranolaAPIClient:
+  File "/Users/jesse/jpt/meetings/extract_granola.py", line 169, in GranolaAPIClient
+    def _get_valid_token(self) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

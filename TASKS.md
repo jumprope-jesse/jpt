@@ -15,6 +15,8 @@
 
 | Task | Source | Added | Notes |
 |------|--------|-------|-------|
+| Try the "5 whys" technique in next retrospective | Inbox: Engineering Leadership article | 2026-01-18 | From Sarah Chen article on root cause analysis |
+| Share engineering leadership article with the engineering leads | Inbox: Engineering Leadership article | 2026-01-18 | https://example.com/engineering-leadership |
 | Complete employee self-reflection for performance review | Meeting: ACE Leadership | 2026-01-12 | Due January 20th (next Monday) |
 | Schedule one-on-ones with team members this week | Meeting: ACE Leadership | 2026-01-12 | Address impacts from leadership changes; check in on how team is feeling |
 | Coordinate AriesCon flight plan with Leslie | Meeting: Weekly Wrap | 2026-01-09 | @Yamaris - flying into San Jose, need to match van timing (most arriving 9:30-11:30am Monday) |
