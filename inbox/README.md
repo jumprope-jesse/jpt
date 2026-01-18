@@ -2,7 +2,60 @@
 
 Clearinghouse for all incoming captures. Items here get processed automatically and routed to the appropriate destination.
 
-## How to Add Items
+## Automated Notion Sync
+
+Links saved to the **My Links** Notion database are automatically fetched and processed.
+
+### How It Works
+
+1. **Share a link** to the My Links Notion database (any status except "Synced and Done")
+2. **Fetcher polls** every 60 seconds for unsynced items (`com.jpt.inbox-fetcher.plist`)
+   - Processes newest items first (new links take priority)
+   - Fetches up to 5 items per run (gradually catches up backlog)
+3. **Markdown file created** in `inbox/` with Notion page content
+4. **Status updated** to "Synced and Done" in Notion immediately (prevents duplicates)
+5. **Processor runs** every 120 seconds (`com.jpt.inbox-processor.plist`)
+6. **Content routed** to `knowledge/`, `people/`, `personal/`, `work/`, or `TASKS.md`
+7. **Original archived** to `.archive/`
+
+### Sync Tracking
+
+Items are marked as "Synced and Done" in Notion **immediately after saving** to the inbox (before processing). This prevents duplicates even if the inbox processor takes a while to run.
+
+### Manual Fetch
+
+```bash
+# Fetch oldest unsynced item
+python fetch_one_link.py
+
+# Pick from list
+python fetch_one_link.py --pick
+
+# Fetch newest unsynced
+python fetch_one_link.py --newest
+
+# Include already-synced items
+python fetch_one_link.py --include-synced --pick
+```
+
+### Service Management
+
+```bash
+# Check service status
+launchctl list | grep jpt
+
+# View fetcher logs
+tail -f ~/jpt/inbox/.fetcher.log
+
+# View processor logs
+tail -f ~/jpt/inbox/.processor.log
+
+# Reload services
+launchctl unload ~/Library/LaunchAgents/com.jpt.inbox-fetcher.plist
+launchctl load ~/Library/LaunchAgents/com.jpt.inbox-fetcher.plist
+```
+
+## Manual Capture
 
 Create a markdown file with any name. The processor will pick it up within 2 minutes.
 

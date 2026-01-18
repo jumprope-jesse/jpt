@@ -15,6 +15,11 @@
 
 | Task | Source | Added | Notes |
 |------|--------|-------|-------|
+| Run tailsnitch audit on home Tailscale network | Inbox: Tailsnitch | 2026-01-18 | Security auditor for Tailscale configs; `go install github.com/Adversis/tailsnitch@latest`; see knowledge/tailscale-security-auditing.md |
+| Try Monarch Money for family budgeting | Inbox: Monarch | 2026-01-18 | Personal finance app; see personal/budgeting-tools.md |
+| Consider joining MMPCIA (Mount Morris Park Community Improvement Association) | Inbox: MMPCIA Membership | 2026-01-18 | Harlem neighborhood association; good for family involvement, civic engagement, local networking; https://www.mmpcia.org/membership/ |
+| Try Aviator free trial (14 days, no CC required) | Inbox: Aviator Pricing | 2026-01-18 | Evaluate MergeQueue, Stacked PRs CLI; see knowledge/aviator-developer-platform.md |
+| Decide on UPLIFT standing desk purchase (sale ends 02/03) | Inbox: UPLIFT Desk | 2026-01-18 | Coupon code MOVE; see personal/home-office-equipment.md |
 | Try the "5 whys" technique in next retrospective | Inbox: Engineering Leadership article | 2026-01-18 | From Sarah Chen article on root cause analysis |
 | Share engineering leadership article with the engineering leads | Inbox: Engineering Leadership article | 2026-01-18 | https://example.com/engineering-leadership |
 | Complete employee self-reflection for performance review | Meeting: ACE Leadership | 2026-01-12 | Due January 20th (next Monday) |
