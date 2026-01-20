@@ -37,3 +37,4 @@ For non-virtual environments, use `--python` flag to specify the target path.
 - **ruff**: Fast Python linter (also from Astral)
 - **mypy**: Traditional Python type checker
 - **pyright**: Microsoft's Python type checker
+- **pyrefly**: Facebook's fast type checker with LSP (see pyrefly-python-type-checker.md)

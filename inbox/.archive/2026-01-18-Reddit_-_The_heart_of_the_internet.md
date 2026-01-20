@@ -1,64 +1,49 @@
 ---
 type: link
 source: notion
-url: https://www.reddit.com/r/aws/comments/1pnfjs1/claude_code_codex_and_aws_cloudwatch_quicker/
-notion_type: Tech Deep Dive
+url: https://www.reddit.com/r/shortcuts/s/rbkHBmqHHu
+notion_type: Software Repo
 tags: ['Running']
-created: 2025-12-16T03:58:00.000Z
+created: 2025-06-16T03:52:00.000Z
 ---
 
 # Reddit - The heart of the internet
 
 ## Overview (from Notion)
-- Automating repetitive tasks like CloudWatch alarm investigations can save significant time and reduce burnout, which is crucial for balancing work and family life.
-- Utilizing AI tools like Claude Code and Codex can streamline debugging processes, allowing you to focus on high-level strategies and family engagements rather than getting bogged down in technical details.
-- Living in NYC, the fast-paced environment might make such efficiencies even more valuable, contributing to a better work-life balance.
-- Engaging with community insights about these tools can foster collaboration and innovation in your projects, enriching both professional and personal networks.
-- Conversely, there can be concerns about over-reliance on automation—potential risks include reduced deep understanding of systems and reliance on tools that may not always be accurate.
-- Exploring various viewpoints on AI's role in software development can help you stay informed and adaptable in your approach to technology and family priorities.
+- This project highlights the integration of personal finance management with technology, showcasing how Apple Shortcuts can streamline budgeting and expense tracking, which could resonate with your busy lifestyle.
+- The creation of a personal finance spreadsheet demonstrates an innovative approach to financial literacy, allowing for better control over family finances while balancing work and parenting.
+- The emphasis on community engagement through shared resources (like Reddit posts and YouTube videos) reflects a collaborative spirit that can inspire similar initiatives in your professional network.
+- Unique insights include the potential for automation in daily tasks, freeing up time for family or personal interests, which is valuable for anyone juggling a demanding career and home life.
+- An alternate view could be the challenge of relying too heavily on technology for personal finance, which might overlook the importance of fundamental financial education and hands-on management.
+- The project serves as a reminder of the importance of continuous learning and adaptation in both personal and professional spheres, encouraging exploration of tools that can enhance productivity and financial awareness.
 
 ## AI Summary (from Notion)
-Automating CloudWatch alert investigations with Claude Code and Codex on Slack has improved efficiency by diagnosing issues quickly, reducing the time spent on false alarms. Alerts are now processed with simple commands, allowing for faster identification of the offending codebases and optional PR creation. Security precautions include limiting IAM permissions for agents.
+A personal finance Apple Numbers spreadsheet combines previous income management tools with Apple Shortcuts for input, featuring charts from a Reddit user's post. It includes links to set up financial accounts, manage savings goals, and log transactions. The spreadsheet is available for free or pay-what-you-want on Payhip, and feedback on efficiency improvements is welcomed.
 
 ## Content (from Notion)
 
-We're tuning metric filters right now and CloudWatch alarms hit our Slack constantly
+Shortcuts
 
-The problem: everyone started ignoring dev/staging alerts because investigating each one meant 30-45 minutes of:
+Adds required dictionaries to Data Jar: https://www.icloud.com/shortcuts/bba32bcedd25479f9ea1489bad59e118
 
-- 
-- 
-- 
-- 
-A lot of the times were false alarms which meant a simple change to a few console.logs or print statements, a change we couldn't be bothered to do (and of course punted it until later, which never comes...)
+Log Transaction: https://www.icloud.com/shortcuts/5d8c2227992c4c3987a5d3c8cf6404b6
 
-So we decided to automate this with Claude Code, Codex on Slack by using Blocks (https://blocks.team)
+Set up your payees for each currency you use: https://www.icloud.com/shortcuts/73c833714a534611b06dbe62175b3450
 
-Now every time we have a new alert we hand it off to Codex (it does a great job for diagnosing issues):
+Set up what financial accounts you have: https://www.icloud.com/shortcuts/b89a65510d5a49ed8953460d081980ab
 
-```plain text
-@blocks /codex Look through the associated CloudWatch logs and find the
-offending code causing these errors. Give me the root cause analysis.
-```
+Set up and manage savings goals: https://www.icloud.com/shortcuts/86352ed5a9c24a00a40fc573e343e04c
 
-Which we condensed to
+Set up investment accounts and their stock tickers: https://www.icloud.com/shortcuts/ff8de9d9d8c049c3a39b45d6666e0162
 
-```plain text
-@blocks /codex /alarm
-```
+Set up subscription notes: https://www.icloud.com/shortcuts/31976355c9684039a7b269203ef84884
 
-And Codex identifies the offending codebases, code. At which point we sometimes pass it to Claude Code (our default agent) in the same Slack thread
+Created a personal finance Apple Numbers Spread Sheet with Apple numbers input. It is a combination of my old personal finance spreadsheet income manager and apple shortcuts for input, but then added the charts from u/Own-Place6492 post a few months ago and revised their design. I made a video on YouTube showing how to set it up and how it works if you want to check it out: https://youtu.be/fAf8dRgQayY
 
-```plain text
-@blocks Create a PR for this
-```
+Own-Place post: https://www.reddit.com/r/AppleNumbers/comments/1jx8fq4/personal_finance_dashboard_in_numbers/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
-Which is of course optional, even when the suggested code fix isn't used verbatim, having an agent zoom in to the issue saves a lot of time
+The spread sheet is hosted at Payhip for free or pay what you want. I don't expect anything at all. If you like it and decide to use it, would love to hear from you on YouTube.
 
-Security warning: Make sure to give your agents limited IAM permissions (read access to log events, specific log groups, ect.)
-
-> 
-
-Curious if anyone's getting value out of AWS's Q agent or how they are handling investigations augmented by agents
+Most importantly, this is my first time making a big Apple Shortcuts project like this so if you know how to make it more efficient or convenient, I absolutely want to know. I wish there was a service where you can sort of hire a tutor/editor for stuff like this.
 
 

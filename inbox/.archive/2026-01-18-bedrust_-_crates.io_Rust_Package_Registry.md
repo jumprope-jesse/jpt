@@ -1,0 +1,206 @@
+---
+type: link
+source: notion
+url: https://crates.io/crates/bedrust
+notion_type: Software Repo
+tags: ['Running']
+created: 2024-04-03T02:42:00.000Z
+---
+
+# bedrust - crates.io: Rust Package Registry
+
+## AI Summary (from Notion)
+- Project Overview: Bedrust is a Rust application designed for invoking models on Amazon Bedrock, enabling conversational interactions with LLMs (Large Language Models).
+- Key Features:
+- Chat functionality allowing contextual conversations with LLMs.
+- Supports various models including Claude V2, Claude V3, Llama2 70B, and others.
+- Getting Started:
+- Requires AWS credentials configured locally to interact with Amazon Bedrock.
+- Installation requires Rust and essential development packages.
+- Configuration files (bedrust_config.ron and model_config.ron) must be set up in the user’s home directory.
+- Usage Instructions:
+- Basic command structure to run Bedrust and invoke models.
+- New feature for image captioning using Claude V3, enhancing accessibility by generating captions for images.
+- Configuration: Users can customize application behavior and model parameters through configuration files.
+- Future Improvements: Planned features include user input, better error handling, and enhancements to the user interface.
+
+## Content (from Notion)
+
+# Bedrust 🦀🧠⛅🪨
+
+screenshot of bedrust
+
+A neat way to invoke models on Amazon Bedrock. Written in Rust, and LIVE on Twitch.
+
+NOW WITH CHAT 💬 Yes, you can actually have a conversation with LLMs now🥳! Instead of it being able to just send one question at a time, you can now have contextual conversation with a LLM of your choice. This feature is available since version 0.6.0.
+
+Currently supporting the following models:
+
+- Claude V2
+- Claude V3 Sonnet
+- Claude V3 Haiku
+- Llama2 70B
+- Cohere Command
+- Jurrasic 2 Ultra
+- Titan Text Express V1
+- Mistral AI models (Mixtral and Mistral)
+## Getting Started
+
+To get started using this you need to do a few things:
+
+### Get AWS credentials configured locally ☁️
+
+To be able to interact with Amazon Bedrock you need to have a set of AWS Credentials on the machine Bedrust will run on. The easiest way to get this set up, is by configuring the AWS CLI. Make sure to install the AWS CLI, and run the aws configure command to set your credentials.
+
+To verify if you have your AWS credentials set correctly, you can run aws sts get-caller-identity:
+
+```plain text
+darko@devbox [~/workspace/projects/bedrust]: aws sts get-caller-identity
+{
+    "UserId": "AIDAXXXXXXXXXXXXXXXXXX5",
+    "Account": "123456789999999",
+    "Arn": "arn:aws:iam::123456789999999:user/alan-ford"
+}
+
+```
+
+Oh, yeah, make sure the user whose credentials you configure has permissions to InvokeModel on Amazon Bedrock.
+
+### Make sure you have Rust and requrements installed 🦀
+
+Well that just makes sense, this is a Rust application. The easiest way to get started is by using rustup.
+
+Now, you need some additional packages to be able to compile bedrust. Namely you need the build-essential (or similar) package group. Depending on your operating system, and package manager the name may differ.
+
+Ubuntu/Debian:
+
+```plain text
+sudo apt install build-essential
+
+```
+
+Arch Linux:
+
+```plain text
+sudo pacman -S base-devel
+
+```
+
+MacOS:
+
+```plain text
+xcode-select --install
+
+```
+
+Amazon Linux/Red Hat/CentOS:
+
+```plain text
+yum groupinstall "Development Tools"
+
+```
+
+### Install it locally
+
+To install the application locally, just run:
+
+```plain text
+cargo install bedrust
+
+```
+
+This will install the compiled binary into your $CARGO_HOME/bin directory. If you have the $PATH set up correctly you should be able to run it now. But before you do ...
+
+Let's initialize the configuration. Because bedrust uses two configuration files (bedrust_config.ron and model_config.ron) they (along with some other resources) need to be stored inside of your $HOME/.config/bedrust directory. Now, you can do this manually, but we have a feature to do it for you. Just run:
+
+```plain text
+bedrust --init
+
+```
+
+This will create all the necessary files for you to be able to use bedrust. There is no need to modify these files, unless you want to.
+
+### Running the application 🚀
+
+Finally, to run the application just use the following cargo command:
+
+```plain text
+bedrust -m <MODELNAME> # replacing the model name with one of the supported ones
+
+```
+
+## Usage
+
+```plain text
+Usage: bedrust [OPTIONS] --model-id <MODEL_ID>
+
+Options:
+      --init
+  -m, --model-id <MODEL_ID>  [possible values: llama270b, cohere-command, claude-v2, claude-v21, claude-v3-sonnet, claude-v3-haiku, jurrasic2-ultra, titan-text-express-v1, mixtral8x7b-instruct, mistral7b-instruct]
+  -c, --caption <CAPTION>
+  -x
+  -h, --help                 Print help
+  -V, --version              Print version
+
+```
+
+Once, prompted enter your question, and hit ENTER. 🚀 To quit the program, just type /q in your question prompt.
+
+## Captioning images
+
+screenshot of bedrust running the captioner
+
+🚀 NEW feature: Thanks to the multimodality of Claude V3, you can now pass images to this Large Language Model. This means we can do some fun things like caption images for the sake of accessibility. This feature is available in Bedrust from version 0.5.0.
+
+> 
+
+To use captioning you just need to pass it the -c parameter, along with the directory where you have your images:
+
+```plain text
+bedrust -m claude-v3-sonnet -c /tmp/test-images/
+
+```
+
+This will retrieve the supported images, and produce captions for them. Ultimately producing a captions.json file in the current working directory with the captions connected to image paths.
+
+Here is an example of the output:
+
+```plain text
+[
+  {
+    "path": "/tmp/test-images/4slika.jpeg",
+    "caption": "A computer CPU fan cooling a circuit board with Ethernet and other ports."
+  },
+  {
+    "path": "/tmp/test-images/kompjuter.jpeg",
+    "caption": "An open circuit board with various electronic components and wires, placed in an office or workshop setting with shelves and equipment visible in the background."
+  },
+  {
+    "path": "/tmp/test-images/c64.jpeg",
+    "caption": "Vintage Commodore computer monitor displaying the Twitch logo on the screen."
+  }
+]
+
+```
+
+Additionally you can customize captioning prompt and supported image file formats by editing the bedrust_config.ron file in the root of this project.
+
+## Configuration files
+
+There are two important configuration files that ship with bedrust:
+
+- bedrust_config.ron - stores configuration parameters related to the application itself.
+- model_config.ron - stores configuration parameters related to the LLMs. Things like max tokens, temperature, top_p, top_k, etc.
+They need to be in your $HOME/.config/bedrust/ directory. The application will warn you if they do not exist, and fail to run. You can create them automatically by running bedrust --init
+
+## TODO
+
+- Ability to get user input
+- Being able to select a model
+- Have a conversation with the model
+- Stream the responses back word by word
+- Better error handling
+- Code Testing
+- Ability to generate images
+- Make it prettier
+

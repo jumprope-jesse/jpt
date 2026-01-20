@@ -15,7 +15,7 @@ Links saved to the **My Links** Notion database are automatically fetched and pr
 3. **Markdown file created** in `inbox/` with Notion page content
 4. **Status updated** to "Synced and Done" in Notion immediately (prevents duplicates)
 5. **Processor runs** every 120 seconds (`com.jpt.inbox-processor.plist`)
-6. **Content routed** to `knowledge/`, `people/`, `personal/`, `work/`, or `TASKS.md`
+6. **Content routed** to `knowledge/`, `people/`, `personal/`, `work/`, or **Notion Tasks**
 7. **Original archived** to `.archive/`
 
 ### Sync Tracking
@@ -80,7 +80,7 @@ The frontmatter is optional - the processor will figure out what to do with plai
 
 The processor (Claude) reads each item and routes it appropriately:
 
-- **Tasks** → Appended to `TASKS.md`
+- **Tasks** → Created in **Notion Tasks** database (via `lib/notion_tasks.py`)
 - **Knowledge** → Created/updated in `knowledge/`
 - **People insights** → Added to `people/{Name}.md`
 - **Personal notes** → Routed to `personal/`

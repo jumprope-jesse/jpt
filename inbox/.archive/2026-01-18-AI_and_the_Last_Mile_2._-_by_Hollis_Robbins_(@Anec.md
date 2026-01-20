@@ -1,0 +1,42 @@
+---
+type: link
+source: notion
+url: https://hollisrobbinsanecdotal.substack.com/p/ai-and-the-last-mile-2
+notion_type: Tech Deep Dive
+tags: ['Running']
+created: 2024-11-29T02:31:00.000Z
+---
+
+# AI and the Last Mile 2. - by Hollis Robbins (@Anecdotal)
+
+## Content (from Notion)
+
+In AI and the Last Mile, I focused on what algorithms can't capture, local expertise and human knowledge. Long before ChatGPT began striving to understand local context, the Catholic Church’s principle of subsidiarity offered a rule that was simple but profound: push decisions to the lowest effective level. Let local experts take responsibility. What works at the local level – letting parish priests rather than Vatican officials handle community issues – might guide us for the most intelligent deployment of AI systems. The "last mile" problem isn't new.
+
+The principle of subsidiarity as formally articulated in Catholic social teaching comes from Pope Pius XI's 1931 encyclical Quadragesimo Anno, which stated that it is "a grave evil and disturbance of right order" to transfer to larger organizations what "lesser and subordinate organizations can do." The concept became operational in modern governance through the 1992 Maastricht Treaty, which established subsidiarity as a core principle of European Union law, specifying that the EU should act only if objectives cannot be sufficiently achieved by member states. These two documents establish our modern understanding of subsidiarity. (I drew upon this principle explicitly as a dean, deferring to academic departments decisions best made by department faculty, occasionally referring to departments as “parishes.”)
+
+How might this principle help us understand new AI systems? Most of the LLMs on the market centralize enormous amounts of data through unified models to generate broadly applicable outputs. Yet these systems struggle with local context, current information, and specific circumstances – not only because of technical limitations, but also because their fundamental architecture prioritizes finding patterns across vast datasets rather than preserving specific, local knowledge. This tension between centralized processing and local accuracy mirrors the very problems that subsidiarity was designed to address.
+
+For example, the value of local knowledge in lending is documented in the FDIC's 2012 Community Banking Study. Community banks, despite accounting for only a small percent of all banking assets, provided nearly half of small-denomination farm and business loans, outperforming large banks in this sector precisely because of their ability to factor in "soft information" about borrowers and local market conditions. The study specifically found that community banks' competitive advantage came from "their ability to develop and maintain long-term relationships" (1-1) as well as knowledge of the local economy and the unique characteristics of their customers. This relationship lending model proved especially resilient during the 2008 financial crisis – community banks experienced a lower loan default rate than larger institutions that relied more heavily on automated underwriting.
+
+Similarly, the Harvard Business School's 2021 Hidden Workers: Untapped Talent study provides evidence of algorithmic hiring's limitations. Examining data from 8,000 hidden workers and 2,250 executives across the US, UK, and Germany, researchers found that automated screening systems routinely rejected millions of qualified candidates simply because they didn't precisely match predetermined criteria. The study specifically calls out how rigid automated filters miss candidates with unconventional career paths who might actually bring valuable perspective and experience, excluding from consideration “viable candidates whose resumes do not match the criteria but who could perform at a high level with training.”
+
+Most people understand this best in the real estate realm. A Zillow app might report that the Victorian on Maple Street is an "excellent value" based on its square footage, lot size, and recent comps. But it doesn't know that the neighbor's garage band practices death metal covers every Sunday and that the coffee shop with a pretty garden across the street has been sold to a builder of skateboard parks. The local realtor, who's sold houses here for twenty years, will say "trust me, you want the ranch house two blocks over" – and she's right.
+
+The AI Paradox: Scale vs. Specificity
+
+The great paradox of modern AI is that companies like Anthropic, Google, Meta, and OpenAI pursue ever-larger models and more centralized data collection while simultaneously promising more "personalized" experiences. Their marketing promises local relevance through global reach. Yet the larger these models grow, the more they necessarily abstract away from “last mile” specific, granular details.
+
+AI can optimize manufacturing processes down to the microsecond but can't replicate the local baker who adjusts her sourdough recipe based on humidity, elevation, and whether her regulars prefer a crunchier crust this season. Garden planning software can tell you everything about optimal plant spacing and soil chemistry but can't match the local nursery owner who knows that despite what the zone map says, gardenias actually thrive in the town’s odd microclimate.
+
+The deeper paradox is economic: As AI gets better at handling the standardized 85-95% of decisions, the remaining "last mile" of human judgment becomes both more valuable and more difficult to scale. Companies face an impossible choice – either build ever-larger models that still miss crucial local context, or develop expensive networks of human experts who can provide that context but destroy the economics of AI's promised efficiency.
+
+What makes the Catholic Church's insights about subsidiarity so striking are that they emerged from an institution that mastered both global scale and local knowledge. The same Church that built a worldwide hierarchy also knew that parish priests rather than Vatican officials needed to handle marriages, counsel troubled parishioners, and decide whether to repair the church roof. They understood that some forms of knowledge and authority had to remain local to remain legitimate. Today's tech companies, racing to build their own versions of universal authority through AI, could learn from this 2,000-year case study in balancing scale with local control.
+
+Current market data shows the economic value of this balanced approach. Many of the widely circulating studies (Deloitte 2022, 2023; JPMorgan 2023) on AI implementation found that companies found that organizations combining AI tools with local expertise saw the highest ROI; and advised incorporating "neighborhood knowledge" and preserving "human in the loop" decision-making for complex client interactions as best practice.
+
+Adrian Vermeule's 2020 Common Good Constitutionalism article in The Atlantic (and the many critiques it provoked), though predating today's AI debates, offers a relevant framework through his treatment of subsidiarity and more broadly how to frame approaches with the common good in mind. The principle that some decisions belong at local levels – not because smaller is inherently better, but because certain choices work best when made closest to their impact – speaks directly to AI's central tension. Local knowledge can be essential yet flawed; general principles can be reliable yet incomplete. Just as subsidiarity wrestles with balancing local and central authority, AI systems must navigate between granular expertise and broad pattern recognition. Neither pure localism nor pure aggregation yields optimal results.
+
+Of course, local authority can fail catastrophically when left unchecked – history (including Church history) offers stark reminders of what happens when institutions protect local autonomy at the expense of oversight and accountability. But this is precisely why subsidiarity remains relevant: it's not about blind faith in local wisdom or unquestioning trust in centralized systems, but about finding the level at which each decision best serves the common good. As we navigate the AI revolution, this balance becomes crucial. When we get it right – when global AI systems enhance rather than replace local expertise, when big data informs but doesn't override human judgment –we move closer to what subsidiarity promises: decisions made at the right level, by the right people, for the right reasons.
+
+

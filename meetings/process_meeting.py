@@ -5,7 +5,7 @@ Meeting Processing Pipeline
 Watches Meetily SQLite DB for new meetings, processes them through Claude,
 and outputs:
 - Structured meeting notes (using appropriate template)
-- Action items → TASKS.md
+- Action items → Notion Tasks database
 - People insights → /people/*.md updates
 """
 
@@ -25,7 +25,9 @@ JPT_ROOT = Path.home() / "jpt"
 TEMPLATES_DIR = JPT_ROOT / "meetings/templates"
 TRANSCRIPTS_DIR = JPT_ROOT / "meetings/transcripts"
 PEOPLE_DIR = JPT_ROOT / "people"
-TASKS_FILE = JPT_ROOT / "TASKS.md"
+# Notion tasks module
+sys.path.insert(0, str(JPT_ROOT / "lib"))
+from notion_tasks import create_task
 PROCESSED_FILE = JPT_ROOT / "meetings/.processed_meetings.json"
 
 # Template definitions with detection rules
@@ -444,27 +446,38 @@ def create_vibe_kanban_tasks(action_items: list[dict], meeting_title: str, meeti
 
 
 def append_tasks(action_items: list[dict], meeting_title: str):
-    """Append action items to TASKS.md and create vibe-kanban tasks."""
+    """Create action items in Notion Tasks database and vibe-kanban."""
     if not action_items:
         return
 
     date_str = datetime.now().strftime("%Y-%m-%d")
+    source = f"Meeting: {meeting_title}"
 
-    # Append to local TASKS.md
-    tasks_content = TASKS_FILE.read_text() if TASKS_FILE.exists() else "# Tasks\n\n"
-
-    new_tasks = f"\n## From: {meeting_title} ({date_str})\n"
+    # Create tasks in Notion
+    created_count = 0
     for item in action_items:
-        owner = item.get("owner", "TBD")
+        owner = item.get("owner", "")
         task = item.get("task", "")
-        if "jesse" in owner.lower() or owner.lower() == "me" or owner.lower() == "you":
-            new_tasks += f"- [ ] {task}\n"
-        else:
-            new_tasks += f"- [ ] {task} (@{owner})\n"
+        due = item.get("due")
 
-    tasks_content += new_tasks
-    TASKS_FILE.write_text(tasks_content)
-    print(f"  Added {len(action_items)} tasks to TASKS.md")
+        if not task:
+            continue
+
+        # Add owner to notes if not Jesse
+        notes = None
+        if owner and owner.lower() not in ("jesse", "me", "you", "tbd", ""):
+            notes = f"Owner: @{owner}"
+
+        result = create_task(
+            task_name=task,
+            source=source,
+            notes=notes,
+            due_date=due if due and due != "null" else None,
+        )
+        if result:
+            created_count += 1
+
+    print(f"  Created {created_count} tasks in Notion")
 
     # Also create tasks in vibe-kanban
     create_vibe_kanban_tasks(action_items, meeting_title, date_str)

@@ -84,3 +84,66 @@ Source: [Dinesh Pandiyan - Stacked Diffs with git rebase --onto](https://dineshp
 - Both aim to avoid large, long-lived feature branches
 
 Source: [HN Discussion](https://news.ycombinator.com/item?id=46103571)
+
+## Mega Merge Workflow
+
+A powerful workflow for working on multiple branches simultaneously by creating merge commits that combine all your WIP features in one working directory. Coined by Austin Seipp, documented by Benjamin Tan.
+
+### Why This Matters
+- Test multiple WIP features together holistically
+- Make quick bugfixes without stashing/switching branches
+- Avoid the "Git dance" of context switching
+- Maintain Pull Request-style workflow while getting Stacked Diff benefits
+
+### Core Commands
+
+**Create a merge commit with multiple parents:**
+```bash
+jj new qkl zoz  # Creates new commit with 2 parents
+```
+
+**Add a new parent to existing merge:**
+```bash
+jj rebase -s orl -d "all:orl-" -d NEW_PARENT_ID
+# all:orl- = all existing parents, then add new one
+```
+
+**Remove a parent from merge:**
+```bash
+jj rebase -s orl -d "all:orl- ~ qkl"
+# Set difference removes qkl from parents
+```
+
+**Rebase all feature branches onto updated main:**
+```bash
+jj rebase -s "all:roots(main..@)" -d main
+# roots() finds the first commits of each arm
+# Rebases all at once with one command
+```
+
+**Move a working copy change to a specific parent:**
+```bash
+jj new rwq --no-edit     # Insert empty commit after target
+jj squash --from ovy --into lqks  # Move changes into it
+jj branch set test -r lqks  # Update branch
+```
+
+### Key Revset Expressions
+- `@` - working copy commit
+- `orl-` - all parents of orl
+- `all:X` - prefix for commands expecting single commit but getting multiple
+- `roots(A..B)` - commits in A..B with no ancestors in the set
+- `X ~ Y` - set difference (X minus Y)
+- `X | Y` - set union
+
+### Conflict Handling
+- Jujutsu stores full conflict metadata, not just markers
+- Merge commit can be conflict-free even if children have conflicts
+- After manual resolution in a branch, merge may show conflict (metadata lost)
+- Use `jj restore --from ORIGINAL_COMMIT_ID` to restore pre-conflict state
+
+### Related Tools
+- **GG** - GUI app for Jujutsu with good visualization of this workflow
+- **GitButler** - Similar "virtual branches" concept for Git
+
+Source: [Benjamin Tan - A Better Merge Workflow with Jujutsu](https://ofcr.se/jujutsu-merge-workflow/)

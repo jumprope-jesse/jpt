@@ -4,27 +4,41 @@ source: notion
 url: https://www.vibekanban.com/
 notion_type: Software Repo
 tags: ['Running']
-created: 2026-01-05T07:10:00.000Z
+created: 2025-07-11T15:59:00.000Z
 ---
 
 # Vibe Kanban - Orchestrate AI Coding Agents
 
 ## Overview (from Notion)
-- Vibe Kanban's parallel coding agents could free up your time for family and personal projects, reducing the mental load associated with coding tasks.
-- The reliance on coding agents suggests a shift in the engineering landscape, allowing you to focus on higher-level planning and quality rather than routine debugging.
-- The rapid improvement of coding agents means you'll be able to leverage more efficient tools in the near future, enhancing productivity.
-- The idea that foundational model labs will compete to create better coding agents opens the door to innovation, potentially leading to tools that could transform your workflow.
-- Consider the potential downsides: increased reliance on AI could lead to skill degradation in areas like manual coding and debugging.
-- An alternate view might argue that while coding agents are useful, they could also introduce new complexities in managing AI outputs and ensuring code quality.
+- Vibe Kanban offers a streamlined way to manage multiple coding agents, which could save you significant time and effort in your software projects.
+- The ability to orchestrate coding agents in parallel means you can tackle more complex tasks without getting bogged down, allowing for more efficient work-life balance as a founder.
+- The emphasis on reliability and improvement in coding agents suggests that your role may shift from hands-on coding to more strategic oversight, potentially freeing up time for family and personal pursuits.
+- Consider how the rapid advancement of coding agent technology might influence your hiring decisions, focusing on engineers who can adapt to these new tools.
+- Alternative views might argue that reliance on coding agents could lead to a loss of in-depth coding skills among engineers, which might affect problem-solving capabilities in the long run.
+- The evolving landscape of coding agents could inspire you to rethink your company's approach to software development, possibly integrating more AI-driven solutions to stay competitive.
 
 ## AI Summary (from Notion)
-Vibe Kanban enables parallel operation of coding agents with conflict-free execution and efficient code reviews. The reliability of coding agents has reached a level where they are preferred for most tasks, and their rapid improvement is expected to continue. As foundational models evolve, engineers will need tools that adapt to these advancements without altering their workflows.
+Vibe Kanban facilitates the use of coding agents like Claude Code, Gemini CLI, and Amp by allowing users to switch between agents, orchestrate their execution, review work, track task statuses, and centralize configurations. It emphasizes the reliability of coding agents and anticipates significant improvements in their performance, suggesting that engineers will need to adapt their workflows as these tools evolve.
 
 ## Content (from Notion)
 
-Vibe Kanban lets you run coding agents in parallel without conflicts, and perform code review through our diff tool. Now you can focus on planning and quality instead of watching terminal logs.
+An overview of vibe-kanban
 
-## Motivation
+Vibe Kanban helps you get the most out of coding agents like Claude Code, Gemini CLI and Amp. Vibe Kanban helps you:
+
+1. Easily switch between different coding agents
+1. Orchestrate the execution of multiple coding agents in parallel or in sequence
+1. Quickly review work and start dev servers
+1. Track the status of tasks that your coding agents are working on
+1. Centralise configuration of coding agent MCP configs
+Make sure you have a coding agent installed, and have completed any login/auth steps required by the coding agent you want to use. Then in your terminal run:
+
+```plain text
+npx vibe-kanban
+
+```
+
+Vibe Kanban will find an available port on your machine and open the app in your browser.
 
 Coding agents are reliable enough to be the default: We've built and tested coding agents for years and realised recently that reliability crossed an invisible threshold that means we now prefer starting most tasks with coding agents.
 

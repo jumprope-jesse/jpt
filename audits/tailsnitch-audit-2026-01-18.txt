@@ -1,0 +1,417 @@
+
+  ████████╗ █████╗ ██╗██╗     ███████╗███╗   ██╗██╗████████╗ ██████╗██╗  ██╗
+  ╚══██╔══╝██╔══██╗██║██║     ██╔════╝████╗  ██║██║╚══██╔══╝██╔════╝██║  ██║
+     ██║   ███████║██║██║     ███████╗██╔██╗ ██║██║   ██║   ██║     ███████║
+     ██║   ██╔══██║██║██║     ╚════██║██║╚██╗██║██║   ██║   ██║     ██╔══██║
+     ██║   ██║  ██║██║███████╗███████║██║ ╚████║██║   ██║   ╚██████╗██║  ██║
+     ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
+
+  Tailscale Security Auditor by Adversis
+  Version: dev
+
+  ─────────────────────────────────────────────────────────────────────────
+  Tailnet: -
+  ─────────────────────────────────────────────────────────────────────────
+
+  Running security checks...
+
+Completed at 2026-01-18 22:40:06
+
+━━━ ACCESS CONTROLS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[CRITICAL] ACL-001: Default 'allow all' policy active (Access Rules)
+  Found 1 ACL rule(s) with wildcard sources and destinations
+  allowing unrestricted access.
+
+  Affected items:
+    • Rule 1: src=[*] dst=[*:*]
+
+  Remediation:
+  Define explicit ACL rules following least privilege principle.
+  Remove rules with src: ["*"] or dst: ["*:*"]. See
+  https://tailscale.com/kb/1192/acl-samples for examples.
+
+  Admin: https://login.tailscale.com/admin/acls/visual/general-access-rules
+  Docs: https://tailscale.com/kb/1192/acl-samples
+────────────────────────────────────────────────────────────────────
+
+[LOW] ACL-003: No ACL tests defined (Tests)
+  No ACL tests are defined. Without tests, policy changes could
+  accidentally revoke permissions or expose systems.
+
+  Remediation:
+  Add a 'tests' section to your ACL policy with both 'accept' and
+  'deny' assertions. Tests are validated when policies update.
+
+  Admin: https://login.tailscale.com/admin/acls/visual/tests
+  Docs: https://tailscale.com/kb/1196/security-hardening
+────────────────────────────────────────────────────────────────────
+
+[INFO] ACL-008: No groups defined in ACL policy (Groups)
+  No groups are defined in the ACL policy. Using groups makes ACL
+  management easier and reduces the risk of misconfiguration when
+  user membership changes.
+
+  Remediation:
+  Define groups in your ACL policy to organize users logically.
+  Example: "groups": {"group:engineers": ["user@example.com"]}
+
+  Admin: https://login.tailscale.com/admin/acls/visual/groups
+  Docs: https://tailscale.com/kb/1337/policy-syntax
+────────────────────────────────────────────────────────────────────
+
+━━━ DEVICE SECURITY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[MEDIUM] DEV-003: Outdated Tailscale clients
+  Found 7 device(s) with outdated Tailscale clients. Additionally,
+  2 device(s) are running clients older than v1.34 and cannot
+  generate network flow logs.
+
+  Affected items:
+    • Expected: v1.92.5 (after 7-day auto-update rollout)
+    • jesse-c9-al2023.tailnet-5165.ts.net (ip-172-16-1-54): 1.58.2-t6a2a8457f-g8c7d4563e (34 minor versions behind)
+    • jesse-c9-ubuntu20-dev.tailnet-5165.ts.net (ip-172-16-1-154): 1.84.0-t160c11f37-gbf6042458 (8 minor versions behind)
+    • jrdev-east-2.tailnet-5165.ts.net (ip-172-31-4-203): 1.42.0-t3a83d61ec-g6702f39bf (50 minor versions behind)
+    • jrdev.tailnet-5165.ts.net (ip-172-16-1-235): 1.60.1-ta8e06a7df-g7c984f402 (32 minor versions behind)
+    • jumper-15.tailnet-5165.ts.net (Jumper-15): 1.80.2-t62b8bf6a0-g3c35ee987 (12 minor versions behind)
+    • jumper-pro.tailnet-5165.ts.net (jumper-pro): 1.32.2-t2f1a945ad-g07d934fd1 (60 minor versions behind)
+    • old-jrservices-dev.tailnet-5165.ts.net (ip-172-16-2-238): 1.30.0-t7fd4d617a-g7395c0dee (62 minor versions behind)
+
+  Remediation:
+  Enable auto-updates in Device management. Use MDM to enforce
+  updates. Monitor client versions.
+
+  Admin: https://login.tailscale.com/admin/settings/device-management
+  Docs: https://tailscale.com/kb/1212/shared-responsibility
+────────────────────────────────────────────────────────────────────
+
+[MEDIUM] DEV-004: Stale devices not seen recently
+  Found 7 device(s) not seen in over 60 days.
+
+  Affected items:
+    • jesse-c9-al2023.tailnet-5165.ts.net (ip-172-16-1-54): last seen 676 days ago
+    • jesse-c9-ubuntu20-dev.tailnet-5165.ts.net (ip-172-16-1-154): last seen 63 days ago
+    • jrdev-east-2.tailnet-5165.ts.net (ip-172-31-4-203): last seen 945 days ago
+    • jrdev.tailnet-5165.ts.net (ip-172-16-1-235): last seen 615 days ago
+    • jumper-15.tailnet-5165.ts.net (Jumper-15): last seen 312 days ago
+    • jumper-pro.tailnet-5165.ts.net (jumper-pro): last seen 1161 days ago
+    • old-jrservices-dev.tailnet-5165.ts.net (ip-172-16-2-238): last seen 1234 days ago
+
+  Remediation:
+  Review and remove unused devices. Implement device lifecycle
+  policies.
+
+  Admin: https://login.tailscale.com/admin/machines
+  Docs: https://tailscale.com/kb/1068/tags
+────────────────────────────────────────────────────────────────────
+
+[LOW] DEV-013: User devices with key expiry disabled
+  Found 1 user device(s) with key expiry disabled. These devices
+  never require re-authentication.
+
+  Affected items:
+    • jrdev.tailnet-5165.ts.net (ip-172-16-1-235) - user: jesse@jumpro.pe
+
+  Remediation:
+  Review devices with disabled key expiry. Re-enable expiry unless
+  there's a specific operational need.
+
+  Admin: https://login.tailscale.com/admin/machines
+  Docs: https://tailscale.com/kb/1028/key-expiry
+────────────────────────────────────────────────────────────────────
+
+[INFO] DEV-006: External devices in tailnet
+  Found 1 external (shared) device(s) in tailnet.
+
+  Affected items:
+    • hello.ts.net (hello) - user: 
+
+  Remediation:
+  Review external devices and verify they should have access.
+  Remove any unexpected shared devices.
+
+  Admin: https://login.tailscale.com/admin/machines
+  Docs: https://tailscale.com/kb/1084/sharing
+────────────────────────────────────────────────────────────────────
+
+[INFO] DEV-009: Device approval configuration
+  All 8 devices are authorized. Verify device approval is enabled
+  in admin console - if not, new devices join automatically
+  without review.
+
+  Details: MANUAL CHECK REQUIRED: Verify device approval is enabled in Device management settings.
+
+  Remediation:
+  Enable device approval in Device management console. Review and
+  approve only trusted, workplace-managed devices.
+
+  Admin: https://login.tailscale.com/admin/settings/device-management
+  Docs: https://tailscale.com/kb/1099/device-authorization
+────────────────────────────────────────────────────────────────────
+
+[INFO] DEV-010: Tailnet Lock not enabled
+  Cannot check Tailnet Lock status: tailscale binary not found in
+  known paths or PATH (use --tailscale-path to specify)
+
+  Affected items:
+    • The tailscale CLI binary could not be located securely.
+    • 
+    • NOTE: This check runs on the LOCAL machine and may not reflect
+    • the status of the tailnet being audited via --tailnet flag.
+    • 
+    • To check Tailnet Lock status manually:
+    •   1. Install Tailscale CLI: https://tailscale.com/download
+    •   2. Run: tailscale lock status
+    • 
+    • See: https://tailscale.com/kb/1226/tailnet-lock
+
+  Remediation:
+  Enable Tailnet Lock to require device signing. Run: tailscale
+  lock init
+
+  Docs: https://tailscale.com/kb/1226/tailnet-lock
+────────────────────────────────────────────────────────────────────
+
+━━━ NETWORK EXPOSURE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[HIGH] NET-001: Funnel exposes services to public internet
+  Found 1 Funnel configuration(s). These expose services to the
+  public internet.
+
+  Affected items:
+    • Target: [autogroup:member], Attr: funnel
+
+  Remediation:
+  Review nodeAttrs for funnel attribute. Restrict Funnel to
+  specific users/tags. Ensure only intended services are exposed.
+
+  Admin: https://login.tailscale.com/admin/acls
+  Docs: https://tailscale.com/kb/1223/funnel
+────────────────────────────────────────────────────────────────────
+
+━━━ SSH & DEVICE SECURITY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[INFO] SSH-001: SSH session recording not enforced
+  No SSH rules have session recording configured. Consider
+  enabling recording for compliance and security.
+
+  Remediation:
+  Set enforceRecorder:true for compliance-critical SSH rules.
+  Deploy multiple recorders for failover.
+
+  Docs: https://tailscale.com/kb/1246/tailscale-ssh-session-recording
+────────────────────────────────────────────────────────────────────
+
+[INFO] SSH-004: Tailscale SSH configuration
+  Found 1 Tailscale SSH rule(s). Review access patterns and
+  security controls.
+
+  Affected items:
+    • Rule 1: check - src=[autogroup:member] dst=[autogroup:self] users=[autogroup:nonroot root]
+
+  Remediation:
+  Review SSH rules regularly. Use check mode for sensitive access.
+  Implement session recording for compliance.
+
+  Admin: https://login.tailscale.com/admin/acls
+  Docs: https://tailscale.com/kb/1193/tailscale-ssh
+────────────────────────────────────────────────────────────────────
+
+━━━ LOGGING & ADMIN ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[INFO] LOG-001: Network flow logs configuration
+  Network flow logs are disabled by default and only available for
+  Premium/Enterprise plans.
+
+  Details: MANUAL CHECK REQUIRED: Verify network flow logs are enabled in admin console.
+
+  Remediation:
+  Navigate to admin console > Network flow logs > Start logging.
+  Enable log streaming for retention beyond 30 days.
+
+  Admin: https://login.tailscale.com/admin/logs/network
+  Docs: https://tailscale.com/kb/1219/network-flow-logs
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-002: Log streaming for long-term retention
+  Configuration audit logs are retained for 90 days, network flow
+  logs for 30 days. Log streaming required for longer retention.
+
+  Details: MANUAL CHECK REQUIRED: Verify log streaming is configured if retention >30/90 days is required.
+
+  Remediation:
+  Configure log streaming to SIEM or S3 for compliance
+  requirements exceeding retention limits.
+
+  Admin: https://login.tailscale.com/admin/logs
+  Docs: https://tailscale.com/kb/1203/audit-logging
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-005: Webhook secrets never expire
+  Webhook endpoint secrets have no automatic expiration. If
+  compromised, anyone can send fake events.
+
+  Details: MANUAL CHECK REQUIRED: Review webhook configurations and implement rotation schedule.
+
+  Remediation:
+  Implement periodic manual rotation schedule for webhook secrets.
+  Store secrets securely.
+
+  Admin: https://login.tailscale.com/admin/settings/webhooks
+  Docs: https://tailscale.com/kb/1213/webhooks
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-006: OAuth clients persist after user removal
+  OAuth clients continue functioning after creating user loses
+  tailnet access, creating persistent access vectors.
+
+  Details: MANUAL CHECK REQUIRED: Review OAuth clients in admin console and verify creators still have access.
+
+  Remediation:
+  Review all OAuth clients in Trust credentials page. Identify
+  clients created by former employees. Add OAuth client review to
+  offboarding checklist.
+
+  Admin: https://login.tailscale.com/admin/settings/oauth
+  Docs: https://tailscale.com/kb/1215/oauth-clients
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-007: SCIM API keys never expire
+  SCIM API keys have no automatic expiration, increasing exposure
+  window if compromised. SCIM-suspended users retain access until
+  key expiry.
+
+  Details: MANUAL CHECK REQUIRED: If using SCIM, implement key rotation schedule and verify user suspension handling.
+
+  Remediation:
+  Implement manual rotation schedule for SCIM keys. Manually
+  remove suspended users if immediate revocation required.
+
+  Admin: https://login.tailscale.com/admin/settings/scim
+  Docs: https://tailscale.com/kb/1252/key-secret-management
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-008: Passkey-authenticated backup admin
+  If SSO identity provider fails, all users may be locked out
+  without a passkey-authenticated admin account.
+
+  Details: MANUAL CHECK REQUIRED: Verify passkey-authenticated backup admin exists for IdP failure recovery.
+
+  Remediation:
+  Create a passkey-authenticated admin account with Owner or Admin
+  role. Test passkey login periodically. Document recovery
+  procedures.
+
+  Admin: https://login.tailscale.com/admin/settings/user-management
+  Docs: https://tailscale.com/kb/1341/tailnet-passkey-admin
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-011: Security contact email configuration
+  A security contact email ensures your team receives important
+  security notifications and bulletins from Tailscale.
+
+  Details: MANUAL CHECK REQUIRED: Verify security contact email is configured in admin console Contact preferences.
+
+  Remediation:
+  Set a security contact email in Contact preferences. Use a group
+  email (e.g., security@example.com) for multi-person coverage.
+  Subscribe to the security RSS feed.
+
+  Admin: https://login.tailscale.com/admin/settings/general
+  Docs: https://tailscale.com/kb/1196/security-hardening
+────────────────────────────────────────────────────────────────────
+
+[INFO] LOG-012: Webhooks for critical events
+  Webhooks can notify external systems about critical tailnet
+  events (device additions, ACL changes, user changes). Enable
+  webhooks for security monitoring.
+
+  Affected items:
+    • MANUAL CHECK REQUIRED: Verify webhooks are configured for critical events.
+    • 
+    • Recommended webhook events to enable:
+    •   - nodeCreated: New device added to tailnet
+    •   - nodeDeleted: Device removed from tailnet
+    •   - nodeApproved: Pending device approved
+    •   - nodeKeyExpiringInOneDay: Key expiry warning
+    •   - aclUpdated: ACL policy changed
+    •   - userCreated: New user added
+    •   - userDeleted: User removed
+    •   - userRoleUpdated: User permissions changed
+
+  Remediation:
+  Configure webhooks for critical event types: nodeCreated,
+  nodeDeleted, nodeApproved, aclUpdated, userCreated, userDeleted.
+  Integrate with your SIEM or alerting system.
+
+  Admin: https://login.tailscale.com/admin/settings/webhooks
+  Docs: https://tailscale.com/kb/1213/webhooks
+────────────────────────────────────────────────────────────────────
+
+[INFO] USER-001: Review user roles and ownership
+  User roles (Owner, Admin, Member, IT Admin, Network Admin,
+  Auditor, Billing Admin) control access to tailnet
+  administration. Regular review prevents privilege creep.
+
+  Affected items:
+    • MANUAL CHECK REQUIRED: Review user roles in admin console.
+    • 
+    • Role hierarchy (highest to lowest privilege):
+    •   - Owner: Full control, cannot be removed, irrevocable
+    •   - Admin: Full control, can manage users/ACLs/devices
+    •   - IT Admin: Device management only
+    •   - Network Admin: ACL and network settings
+    •   - Auditor: Read-only access to logs and settings
+    •   - Billing Admin: Billing and subscription only
+    •   - Member: Regular user, no admin access
+    • 
+    • Security recommendations:
+    •   - Minimize Owner accounts (ideally 1-2)
+    •   - Review Admin accounts quarterly
+    •   - Use specific roles (IT Admin, Network Admin) instead of full Admin
+
+  Remediation:
+  Audit user roles periodically. Apply least privilege - most
+  users should be Members. Review Owners (cannot be removed) and
+  Admins (full control). Use IT Admin for helpdesk roles.
+
+  Admin: https://login.tailscale.com/admin/users
+  Docs: https://tailscale.com/kb/1352/roles
+────────────────────────────────────────────────────────────────────
+
+[INFO] DEV-013: Device posture configuration
+  Device posture integrations (Intune, Jamf, CrowdStrike, etc.)
+  can restrict tailnet access based on device health and
+  compliance status. Enterprise feature.
+
+  Affected items:
+    • MANUAL CHECK REQUIRED: Review device posture configuration if available on your plan.
+    • 
+    • Device posture integrations:
+    •   - Intune: Microsoft endpoint management
+    •   - Jamf: Apple device management
+    •   - CrowdStrike Falcon: EDR posture
+    •   - Kolide: Cross-platform device health
+    •   - Custom: Define posture attributes via API
+    • 
+    • To use device posture:
+    •   1. Configure integration in Settings > Integrations
+    •   2. Define posture requirements in ACL nodeAttrs
+    •   3. Non-compliant devices can be restricted from accessing resources
+    • 
+    • Note: Device posture is an Enterprise feature.
+
+  Remediation:
+  If available on your plan, configure device posture integration
+  with your MDM/EDR. Define posture attributes in nodeAttrs to
+  restrict non-compliant devices.
+
+  Admin: https://login.tailscale.com/admin/settings/integrations
+  Docs: https://tailscale.com/kb/1288/device-posture
+────────────────────────────────────────────────────────────────────
+
+SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Critical: 1  High: 1  Medium: 2  Low: 2  Info: 16
+  Total suggestions: 22
+

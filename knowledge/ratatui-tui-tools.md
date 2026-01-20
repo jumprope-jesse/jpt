@@ -83,6 +83,16 @@ API client for the terminal.
 ### taskwarrior-tui
 Terminal user interface for taskwarrior.
 
+### JiraTUI
+Terminal UI for Jira task management. Create, update, search and track Jira issues without leaving the terminal. Features include:
+- JQL search with saved queries
+- Task creation with title, description, priority
+- Comment management
+- Subtask/related task linking
+- Highly configurable shortcuts and settings
+
+Website: https://jiratui.sh/
+
 ### openapi-tui
 View OpenAPI documentation in your terminal.
 

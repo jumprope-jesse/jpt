@@ -1,52 +1,44 @@
 ---
 type: link
 source: notion
-url: https://www.reddit.com/r/programminghumor/s/59khLHDR1N
+url: https://www.reddit.com/r/aws/comments/1k7n0hu/show_raws_an_mcp_server_to_query_and_analyze/
 notion_type: Software Repo
 tags: ['Running']
-created: 2026-01-09T05:04:00.000Z
+created: 2025-04-26T04:18:00.000Z
 ---
 
 # Reddit - The heart of the internet
 
 ## Overview (from Notion)
-- Balancing work-life as a software engineer and a father can lead to relatable humor about the struggles of coding and family life.
-- The concept of "Meeting Driven Development" can resonate, highlighting how meetings can sometimes feel like time sinks that detract from actual coding time.
-- The memes about senior developers protecting juniors may reflect your mentoring role, navigating office dynamics while ensuring your team thrives.
-- The discussion around job security in IT may provide comfort, knowing the demand for tech talent is strong, especially in a bustling city like NYC.
-- Humor about complex tools like ffmpeg can mirror your own experiences with software that, despite its quirks, proves essential for projects.
-- Consider the need for simplicity in coding, echoing your approach to manage not just code but also family responsibilities efficiently.
-- The unique environment in NYC could lead to diverse tech interactions, with a community that shares both the challenges and victories in tech and parenting.
+- Cost Management Insight: The platform helps track cloud-related expenses, crucial for maintaining a budget in personal or business contexts.
+- Efficiency Boost: Utilizing LLMs to analyze AWS costs can save time, allowing you to focus on strategy and growth rather than data analysis.
+- Community Engagement: Sharing knowledge about tools like MCP servers can enhance networking opportunities within tech circles, fostering collaboration.
+- Work-Life Balance: Leveraging automated tools can reduce stress, giving you more time for family while still effectively managing your business.
+- Innovation Awareness: Staying updated on the latest tech trends can inspire creative solutions for your own projects and ventures.
+- Alternative Perspectives: Consider the potential downsides of relying on automated tools, such as losing touch with the granular details of your expenditures or underestimating the need for human oversight.
 
 ## AI Summary (from Notion)
-Developers often find humor in their struggles, with relatable memes highlighting themes like the challenge of maintaining functional code, the preference for simplicity, and the desire for offline functionality. Many computer science graduates secure jobs quickly compared to math graduates, and senior developers frequently support juniors while passing on tougher tasks. The IT job market is seen as more forgiving, and despite frustrations with complex tools, developers continue to use them for their effectiveness.
+Vantage.sh launched an MCP server for analyzing AWS cost and usage data using LLMs, offering insights into cloud spending and enabling multi-tool workflows. A free tier is available for users with a Vantage account.
 
 ## Content (from Notion)
 
-r/programminghumor - Meeting Driven Development
+Hey all, we (vantage.sh) run a platform for tracking and optimizing cloud cost and usage data.
 
- Programming can be a challenging yet rewarding field, and developers often find humor in their shared struggles and experiences. Here are some of the most relatable programming memes and sentiments from Redditors that capture the essence of a developer's life:  
-•   Code Still Standing: Many developers relate to the struggle of keeping their code functional and not turning into a "skeleton." "Your code is still upright and is not a skeleton. Teach me your ways."  
-•   Simplicity Over Complexity: There's a shared desire for code that is simplified and not overly complicated, especially if it's functional. "Not only that, but appears to be simplified and not overly complicated; if it’s functional I’d take it."  
-•   Offline Functionality: The wish for code that works offline is a common sentiment among developers. "Shit. I wish my code was that good and could work offline."    
-•   CS vs. Math Jobs: Many computer science graduates find jobs more easily compared to those in mathematics. "I don't know, everyone who graduated computer science with me has a job, but people that graduated in math dont."  
-•   Quick Job Offers: Graduating with a CS degree often leads to quick job offers. "Im in the same boat, the second I got my undergrad in CS I was instantly offered a job and been doing well, same with all my CS friends."  
-•   IT Job Market: The IT field is seen as more forgiving for unemployment. "You're unemployed for 5 minutes or less in IT. Not so easy with math."    
-•   Senior Dev Tactics: Senior developers often cover for juniors while subtly passing on the tough tasks. "I want the juniors to become seniors and stay long enough to have Stockholm syndrome. Then I will pass on all the shitty senior dev tasks to them."  
-•   Covering for Mistakes: Many junior developers appreciate senior devs who cover for their mistakes. "Shoutout and BIG THANK YOU to all awesome Sr Devs out there covering our asses when we truly fuck up."  
-•   Protecting Juniors: Senior developers often protect juniors from client and management pressure. "On Friday I said to her 'your only worry is to focus on getting this done, let me handle the client and our boss.'"    
-•   Love-Hate Relationship with Tools: Developers often use complex, messy tools like ffmpeg because they work, despite their flaws. "Yeah, its a horrible horrible mess, but literally everyone fucking uses it and it works."  
-•   Debugging Nightmares: Debugging complex issues in widely used tools can be a nightmare. ["I once been debugging weird desync where chunked video slowly accumulated audio offset. It took me hours to “guess” the issue (welcome to the world of ffmpeg)..."](https://www.reddit.com   
+We just published an MCP server so you can use LLMs to make sense of your AWS cost and usage data. (You have to have a Vantage account to use it since it's using the Vantage API, but we have a free tier.)
 
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
-- •  
+It has been eye-opening for us how capable the latest-gen models are (we've been testing with Claude) at making sense of the massive complexity of AWS costs.
+
+Blog post: https://www.vantage.sh/blog/vantage-mcp
+
+Repo: https://github.com/vantage-sh/vantage-mcp-server
+
+So far we have found it useful for:
+
+- 
+- 
+- 
+If you're wondering, the difference between using this vs a community-sourced MCP that goes directly to AWS API's is primarily: (1) Access to multiple AWS accounts, cost data from other platforms (2) Normalization and tagging of data seems to make it more usable to LLMs
+
+Thought I'd share, let me know if you have questions
+
 

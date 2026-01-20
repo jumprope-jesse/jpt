@@ -1,0 +1,81 @@
+[2026-01-18 21:05:30] === Starting Knowledge Curation (DRY RUN) ===
+[2026-01-18 21:05:30] Recent changes: 116 files
+[2026-01-18 21:05:30] Found 76 topic clusters across 113 files
+[2026-01-18 21:05:30] Asking Claude for curation recommendations...
+[2026-01-18 21:05:55] Recommendations: Create aws/ and ai/ subfolders for large clusters (17 and 12 files respectively), merge related type checker and MCP files, and reorganize python/django content. Keep most other clusters flat as they're below the 5-file threshold.
+[2026-01-18 21:05:55] Creating folders...
+[2026-01-18 21:05:55]   [DRY-RUN] Would create folder: /Users/jesse/jpt/knowledge/aws
+[2026-01-18 21:05:55]     Would move: aws-ai-powered-sdlc-patterns.md
+[2026-01-18 21:05:55]     Would move: aws-arc-region-switch.md
+[2026-01-18 21:05:55]     Would move: aws-aurora-database-activity-streams.md
+[2026-01-18 21:05:55]     Would move: aws-backup-snapshot-copy.md
+[2026-01-18 21:05:55]     Would move: aws-lambda-arm64-performance.md
+[2026-01-18 21:05:55]     Would move: aws-lambda-python-runtimes.md
+[2026-01-18 21:05:55]     Would move: aws-lambda-snapstart.md
+[2026-01-18 21:05:55]     Would move: aws-mwaa-serverless.md
+[2026-01-18 21:05:55]     Would move: aws-q-developer-cost-management.md
+[2026-01-18 21:05:55]     Would move: aws-quicksight-embedding.md
+[2026-01-18 21:05:55]     Would move: aws-quicksuite-embedded-chat.md
+[2026-01-18 21:05:55]     Would move: aws-ses-email-validation.md
+[2026-01-18 21:05:55]     Would move: aws-sqs-fair-queues.md
+[2026-01-18 21:05:55]     Would move: aws-verified-access.md
+[2026-01-18 21:05:55]     Would move: aws-waf-logging-costs.md
+[2026-01-18 21:05:55]     Would move: aws-xray-adaptive-sampling.md
+[2026-01-18 21:05:55]     Would move: aws-zero-etl-integrations.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would create folder: /Users/jesse/jpt/knowledge/ai
+[2026-01-18 21:05:55]     Would move: ai-agent-architecture.md
+[2026-01-18 21:05:55]     Would move: ai-audience-simulation.md
+[2026-01-18 21:05:55]     Would move: ai-automation-ironies.md
+[2026-01-18 21:05:55]     Would move: ai-elements-ui-library.md
+[2026-01-18 21:05:55]     Would move: ai-fluency-framework.md
+[2026-01-18 21:05:55]     Would move: ai-image-generation-prompts.md
+[2026-01-18 21:05:55]     Would move: ai-information-sources.md
+[2026-01-18 21:05:55]     Would move: ai-pdf-tools.md
+[2026-01-18 21:05:55]     Would move: ai-pkm-tools.md
+[2026-01-18 21:05:55]     Would move: ai-safety-policy-discourse.md
+[2026-01-18 21:05:55]     Would move: ai-therapeutic-journaling.md
+[2026-01-18 21:05:55]     Would move: ai-verification-engineering.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would create folder: /Users/jesse/jpt/knowledge/django
+[2026-01-18 21:05:55]     Would move: django-chronos-performance-overlay.md
+[2026-01-18 21:05:55]     Would move: django-generic-notifications.md
+[2026-01-18 21:05:55]     Would move: django-reliable-signals.md
+[2026-01-18 21:05:55]     Would move: django-remake-migrations.md
+[2026-01-18 21:05:55]     Would move: django-watchfiles-autoreload.md
+[2026-01-18 21:05:55]     Would move: django-wtf-package-index.md
+[2026-01-18 21:05:55] Merging files...
+[2026-01-18 21:05:55]   [DRY-RUN] Would merge into: /Users/jesse/jpt/knowledge/python-type-checkers.md
+[2026-01-18 21:05:55]     Source: pyrefly-python-type-checker.md
+[2026-01-18 21:05:55]     Source: ty-python-type-checker.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would merge into: /Users/jesse/jpt/knowledge/mcp-ecosystem.md
+[2026-01-18 21:05:55]     Source: mcp-browser-embedded.md
+[2026-01-18 21:05:55]     Source: mcp-protocol-adoption.md
+[2026-01-18 21:05:55]     Source: mcp-ui-sdk.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would merge into: /Users/jesse/jpt/knowledge/python-package-managers.md
+[2026-01-18 21:05:55]     Source: pnpm-package-manager.md
+[2026-01-18 21:05:55]     Source: uv-python-package-manager.md
+[2026-01-18 21:05:55] Moving files...
+[2026-01-18 21:05:55]   [DRY-RUN] Would move: /Users/jesse/jpt/knowledge/agentic-coding-practices.md -> /Users/jesse/jpt/knowledge/ai/agentic-coding-practices.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would move: /Users/jesse/jpt/knowledge/coding-agent-tools.md -> /Users/jesse/jpt/knowledge/ai/coding-agent-tools.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would move: /Users/jesse/jpt/knowledge/context-engineering-agents.md -> /Users/jesse/jpt/knowledge/ai/context-engineering-agents.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would move: /Users/jesse/jpt/knowledge/iommi-django-toolkit.md -> /Users/jesse/jpt/knowledge/django/iommi-django-toolkit.md
+[2026-01-18 21:05:55]   [DRY-RUN] Would move: /Users/jesse/jpt/knowledge/localstack-vscode-integration.md -> /Users/jesse/jpt/knowledge/aws/localstack-vscode-integration.md
+[2026-01-18 21:05:55] === Curation Complete ===
+[2026-01-18 21:21:01] [people] === Starting People Curation (DRY RUN) ===
+[2026-01-18 21:21:01] [people] Found 59 people profiles
+[2026-01-18 21:21:01] [people] Changes this week: 60 files
+[2026-01-18 21:21:01] [people] Generated weekly digest
+[2026-01-18 21:21:01] [people] Pre-analysis: 0 archive candidates, 10 merge candidates, 0 rename candidates
+[2026-01-18 21:21:01] [people] Asking Claude for curation recommendations...
+[2026-01-18 21:21:23] [people] Recommendations: Found 5 high-confidence merges (duplicate profiles for same people), 2 rename candidates for consistency, and 1 archival candidate. No major inconsistencies detected. Most profiles are active (60 changed this week suggests system is working well).
+[2026-01-18 21:21:23] [people] Archiving profiles...
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would archive: Ismail_Parks.md
+[2026-01-18 21:21:23] [people] Merging profiles...
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would merge: Alicia.md → Alicia_Gragnani.md
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would merge: Caleb.md → Caleb_Allen.md
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would merge: James.md → James_Mallory.md
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would merge: Haley.md → Hayley_Tanler.md
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would merge: Jenny.md → Jenny_Allen.md
+[2026-01-18 21:21:23] [people] Renaming profiles...
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would rename: Jon.md → Jon_Rossman.md
+[2026-01-18 21:21:23] [people]   [DRY-RUN] Would rename: Ellen.md → Ellen_Meltonyan.md
+[2026-01-18 21:21:23] [people] === People Curation Complete ===

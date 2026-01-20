@@ -1,0 +1,172 @@
+---
+type: link
+source: notion
+url: https://notashelf.dev/posts/curse-of-knowing
+notion_type: Tech Deep Dive
+tags: ['Running']
+created: 2025-05-06T15:03:00.000Z
+---
+
+# The Curse of Knowing How, or; Fixing Everything | Blog
+
+## Overview (from Notion)
+- Balancing Control and Responsibility: The text highlights the struggle between wanting to fix issues in your environment and the overwhelming sense of responsibility that comes with technical capability. This resonates with the challenges of managing both personal and professional domains.
+
+- Emotional Regulation through Creation: It suggests that creating tools or scripts can be a coping mechanism for stress or dissatisfaction in other areas of life. This might reflect your own experiences in finding solace in coding amidst life's chaos.
+
+- The Illusion of Finality: This viewpoint challenges the belief that a perfect system can be built, emphasizing that technology is constantly evolving and decaying. This can relate to the ongoing challenges of adapting to changes in both family life and business.
+
+- Learning to Let Go: The idea of recognizing that not everything needs fixing can liberate you from unnecessary burdens. This could encourage a healthier perspective on parenting and leadership, allowing for acceptance of imperfections.
+
+- Burnout from Overresponsibility: The text addresses the guilt and pressure that come from feeling responsible for every inefficiency. This could be a reminder to set boundaries and prioritize self-care.
+
+- Alternate Views: Some may argue that striving for improvement is inherently valuable, fostering innovation and growth. However, the piece suggests that sometimes, accepting the status quo can lead to greater peace of mind.
+
+- Technical Capability as a Moral Weight: This challenges the notion that technical skills are purely beneficial, highlighting the emotional toll they can take, which could resonate with the dual pressures of work and family life.
+
+## AI Summary (from Notion)
+Technical skills can become a burden, leading to feelings of guilt and overresponsibility for fixing software issues. It's important to recognize that not every problem is yours to solve and to learn when to let things remain broken for emotional clarity and well-being.
+
+## Content (from Notion)
+
+It starts innocently.
+
+You rename a batch of files with a ten-line Python script, or you alias a common git command to shave off two keystrokes. Maybe you build a small shell function to format JSON from the clipboard.
+
+You’re not even trying to be clever. You’re just solving tiny problems. Making the machine do what it should have done in the first place. And then something happens. You cross a threshold. You look at your tools, your environment, your operating system—even your editor—and suddenly everything is fair game.
+
+You could rebuild that (if you wanted to).
+
+You could improve that (if you wanted to).
+
+Then someone challenges you. As banter maybe, perhaps jokingly but also with a dash of hope. Then the air in the room changes.
+
+It suddenly becomes something else. It becomes:
+
+You should.
+
+And from that moment forward, the world is broken in new and specific ways that only you can see.
+
+## Technical Capability as a Moral Weight
+
+Before I could program, broken software was frustrating but ignorable. For years I’ve simply “used” a computer, as a consumer. I was what companies were concerned with tricking into buying their products, or subscribing to their services. Not the technical geek that they prefer to avoid with their software releases, or banning from their games based on an OS.
+
+Now it has become provocative. I can see the patterns that I wish I couldn’t, find oversights that I can attribute to a certain understanding (or the lack thereof) of a certain concept and I can hear what has been echoing in the head of the computer illiterate person who conjured the program I have to debug.
+
+I notice flaws like a good surgeon notices a limp.
+
+Why the hell does this site send ten megabytes of JavaScript for a static page?
+
+Why is the CLI output not parseable by awk?
+
+Why is this config hardcoded when it could be declarative?
+
+Those things are not just questions, they are accusations. And, unfortunately, they do not stop.
+
+Now that I’ve learned to notice, my perception of software has changed in its entirety.
+
+Every piece of software becomes a TODO list.
+
+Every system becomes a scaffolding for a better one.
+
+Every inconvenience becomes an indictment of inaction.
+
+## One Must Imagine Sisyphus Happy
+
+Like Camus’ Sisyphus, we are condemned to push the boulder of our own systems uphill—one fix, one refactor, one script at a time. But unlike the story of Sisyphus, the curse is not placed onto you by some god. We built the boulder ourselves. And we keep polishing it on the way up.
+
+I’ve lost count of how many projects I have started that began with some variation of “Yeah, I could build this but better.”
+
+- A static site generator because the existing ones had too many opinions.
+- A note-taking tool because I didn’t like the way others structured metadata.
+- A CLI task runner because Make is cryptic and Taskfile is YAML hell.
+- A personal wiki engine in Rust, then in Go, then in Nim, then back to Markdown.
+- A homelab dashboard because I don’t like webslop.
+The list continues, and trust me it does continue. My dev directory, as it stands, is nearing 30 gigabytes.
+
+If you ask me, I was solving real, innocent problems. But in hindsight, I was also feeding something else: a compulsion to assert control. Every new tool I built was a sandbox I owned: No weird bugs. No legacy constraints. No decisions I didn’t entirely agree with. Until, of course, I became the legacy.
+
+Kafka once wrote that “a cage went in search of a bird.” 1 That is what these projects can become. Empty systems we keep building, waiting for purpose, for clarity, for… salvation? I’m not sure how else would you call this pursuit.
+
+## Entropy Is Undefeated
+
+Now let’s go back. Back to when we didn’t know better.
+
+Software doesn’t stay solved. Every solution you write starts to rot the moment it exists. Not now, not later, but eventually. Libraries deprecate. APIs change. Performance regressions creep in. Your once-perfect tool breaks silently because libfoo.so is now libfoo.so.2. 2
+
+I have had scripts silently fail because a website changed its HTML layout.
+
+I have had configuration formats break because of upstream version bumps.
+
+I have had Docker containers die because Alpine Linux rotated a mirror URL.
+
+In each case, the immediate emotional response was not just inconvenience but something that moreso resembles guilt. I built this, and I do know better. How could I not have foreseen this? Time to fix it.
+
+If you replace every part of the system over time, is it still the same tool? Does it still serve the same purpose? Do you?
+
+## The Illusion of Finality
+
+I think we lie to ourselves.
+
+> 
+
+It is, I admit, a seductive lie. It frames programming as a conquest of sorts. A series of battles you win, or challenges you complete. But the imaginary war never ends. You don’t build a castle. You dig trenches. And they flood every time it rains. The trials are never complete.
+
+## Technical Work as Emotional Regulation
+
+On the theme of filling this post with literary references, let me quote the Stoic Marcus Aurelius.
+
+> 
+
+But programming lures us into believing we can control the outside events. That is where the suffering begins. There is something deeper happening here. This is not just about software.
+
+I believe sometimes building things is how we self-soothe. We write a new tool or a script because we are in a desperate need for a small victory. We write a new tool because we are overwhelmed. Refactor it, not because the code is messy, but your life is. We chase the perfect system because it gives us something to hold onto when everything else is spinning. This is the lesson I’ve taken from using NixOS.
+
+I have written entire applications just to avoid thinking about why I was unhappy. Programming gives you instant feedback. You run the thing, and it works. Or it doesn’t, and you fix it. Either way, you’re doing something.
+
+That kind of agency is addictive. Especially when the rest of life doesn’t offer it. We program because we can, even when we shouldn’t. Because at least it gives us something to rebel against.
+
+## The Burnout You Don’t See Coming
+
+Burnout doesn not just come from overwork. It comes from overresponsibility.
+
+And programming, once internalized deeply enough, makes everything feel like your responsibility. The bloated website. The inefficient script. The clunky onboarding process at your job. You could fix it. So why aren’t you?
+
+The truth you are very well aware of is that you can’t fix it all. You know this, you always knew it regardless of your level of skill. But try telling that to the part of your brain that sees every inefficiency as a moral failing.
+
+Nietzsche warned of gazing too long into the abyss. But he didn not warn what happens when the abyss is a Makefile or a 30k line of code Typescript project.
+
+## Learning to Let Go
+
+So where is the exit? Is this akin to Sartre’s depiction of hell, where hell is other people and how they interact with your software? Or is it some weird backwards hell where people create software that you have to interact with?
+
+The first step is recognizing that not everything broken is yours to fix.
+
+Not every tool needs replacing.
+
+Not every bad experience is a call to action.
+
+Sometimes, it’s OK to just use the thing. Sometimes it’s enough to know why it’s broken—even if you don’t fix it. Sometimes the most disciplined thing you can do is walk away from the problem you know how to solve. There’s a kind of strength in that.
+
+Not apathy, no. Nor laziness. Just… some restraint.
+
+## A New Kind of Skill
+
+What if the real skill isn’t technical mastery? Or better yet what if it’s emotional clarity?
+
+- Knowing which problems are worth your energy.
+- Knowing which projects are worth maintaining.
+- Knowing when you’re building to help—and when you’re building to cope.
+- Knowing when to stop.
+This is what I’m trying to learn now. After the excitement. After the obsession. After the burnout. I’m trying to let things stay a little broken. Because I’ve realized I don’t want to fix everything. I just want to feel OK in a world that often isn’t. I can fix something, but not everything.
+
+You learn how to program. You learn how to fix things. But the hardest thing you’ll ever learn is when to leave them broken.
+
+And maybe that’s the most human skill of all.
+
+## Footnotes
+
+1. 
+1. 
+1. 
+

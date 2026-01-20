@@ -114,5 +114,5 @@ nano-pdf edit slides.pdf 1 "Make the header background blue" \
 
 ### Related
 
-- **Poppler**: PDF rendering library used by Nano PDF (see separate entry if added)
+- [[poppler-pdf-library]] - PDF rendering library used by Nano PDF
 - **Tesseract**: OCR engine for text layer restoration

@@ -88,7 +88,7 @@ ls ~/jpt/meetings/transcripts/
 
 When a NEW summary is extracted (first time seen), the script automatically runs Claude to:
 1. **Update people profiles** in `~/jpt/people/` - creates/updates profiles for each attendee
-2. **Extract action items** to `~/jpt/TASKS.md` - adds clear commitments to the inbox
+2. **Extract action items** to **Notion Tasks** database - adds clear commitments to task list
 
 The prompt is in `~/jpt/meetings/post_meeting_prompt.md` - edit it to customize the behavior.
 

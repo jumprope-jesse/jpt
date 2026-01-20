@@ -40,10 +40,10 @@ For each attendee (except Jesse Olsen, who is me):
 
 ## 2. Extract Action Items
 
-Add any action items to `~/jpt/TASKS.md`:
-- Add to the **INBOX** section for later triage
-- Include: Task description, Source (meeting name + date), Owner if mentioned
-- Format: `| {task} | Meeting: {meeting_title} | {date} | {any notes} |`
+Create tasks in the **Notion Tasks** database using the CLI:
+```bash
+python3 ~/jpt/lib/notion_tasks.py create "Task description" "Meeting: {meeting_title}" "Owner: @Name (if not Jesse)"
+```
 
 Only add CLEAR action items - things someone committed to do or was asked to do.
 Skip vague discussion points.
@@ -59,7 +59,7 @@ This enables automatic task creation in vibe-kanban.
 ```
 
 Rules for action_items JSON:
-- Include ALL action items you added to TASKS.md
+- Include ALL action items you created in Notion
 - "owner" should be the person responsible (or null if it's for Jesse/me)
 - "due" should be a date string if mentioned, otherwise null
 - Output valid JSON only - no trailing commas, proper quoting

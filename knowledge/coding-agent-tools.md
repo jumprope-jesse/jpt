@@ -4,6 +4,648 @@ Tools and interfaces for running AI coding agents.
 
 ---
 
+## Double - AI Coding Copilot for VS Code
+
+*Source: https://docs.double.bot/introduction - Added: 2026-01-20*
+
+AI coding assistant from a YC-backed team emphasizing craftsmanship and attention to detail. VS Code only for now.
+
+### Key Features
+
+- **Chat** - GPT-4o or Claude 3.5 Sonnet in sidebar with code context
+- **CodeSnap** - Generate and apply code changes with one click
+- **Autocomplete** - Tab-based code suggestions
+- **Inline Edit** - Cmd-based code modifications within editor
+- **Custom Instructions** - Personalize AI responses
+- **Multiple Models** - Access to latest AI models, updated frequently
+
+### Platform Support
+
+- **Current**: VS Code only
+- **Waitlist**: JetBrains, Neovim
+
+### Notes
+
+- Emphasis on UI polish and craftsmanship differentiator
+- Keeping up with model updates (had Sonnet 3.5 2024-10-22 on release day)
+- Similar feature set to Cursor but as VS Code extension rather than fork
+
+---
+
+## vm0 - Scheduled AI Workflow Runner
+
+*Source: https://github.com/vm0-ai/vm0 - Added: 2026-01-19*
+
+Cloud platform for running natural language-described AI agent workflows automatically, on schedule, and in secure sandbox environments.
+
+### Key Features
+
+- **Cloud Sandboxes** - Run Claude Code, Codex, or other agents in isolated containers
+- **60+ Skills** - Pre-built integrations: GitHub, Slack, Notion, Firecrawl, and more
+- **Scheduled Execution** - Run workflows on a schedule ("while you sleep")
+- **Session Persistence** - Continue chat, resume, fork, and version workflow sessions
+- **Full Observability** - Logs, metrics, and network visibility for every run
+- **Multi-Agent Support** - Claude Code, Codex (with Gemini CLI, DeepAgent CLI, OpenCode coming soon)
+
+### Quick Start
+
+```bash
+npm install -g @vm0/cli
+vm0 auth login
+mkdir my-agent && cd my-agent
+vm0 init
+cat AGENTS.md # check the workflow definition
+vm0 cook "run your workflow"
+```
+
+### Why It's Interesting
+
+- **Scheduled Automation** - Unlike one-off agent runs, vm0 enables recurring workflows (e.g., daily code reviews, weekly dependency updates)
+- **Skills Library** - Pre-built integrations reduce workflow setup time
+- **Sandbox Security** - Isolated execution environments for untrusted workflows
+- **Session Management** - Forking and versioning workflows like git for agents
+- **Observability First** - Built-in monitoring vs. running agents blind
+
+### Comparison to Other Agent Platforms
+
+| Feature | vm0 | Claude Code | Devin | OpenHands |
+|---------|-----|-------------|-------|-----------|
+| Scheduled Runs | Yes | No | No | No |
+| Cloud Sandbox | Yes | Local | Yes | Local/Cloud |
+| Skills Library | 60+ | Via MCP | Limited | Limited |
+| Session Persistence | Yes | No | Yes | No |
+| Observability | Built-in | Logs only | Dashboard | Logs only |
+
+### Use Cases
+
+- Daily automated code reviews
+- Scheduled dependency updates and security audits
+- Recurring data pipeline maintenance
+- Automated documentation updates
+- Periodic integration testing across environments
+
+---
+
+## Cursor - AI-First Code Editor
+
+*Source: https://www.cursor.com/ - Added: 2024-07-03*
+
+Fork of VS Code with deep AI integration. One of the first mainstream AI-native editors, now a benchmark for AI coding tools.
+
+### Key Features
+
+- **Codebase-Aware Chat** - Ask questions about your specific code; references files and docs
+- **Copilot++** - Predicts next edits (not just completions), handles multi-line changes
+- **Cmd-K Natural Language Editing** - Update classes/functions via text instructions
+- **VS Code Compatibility** - Import extensions, themes, and keybindings in one click
+- **Privacy Mode** - SOC 2 certified, code not stored when enabled
+- **BYOK** - Bring your own API key or use hosted models
+
+### Why It Matters
+
+- Set the standard for "AI-first editor" category that Zed, Windsurf, and others now compete in
+- Tab completion that predicts edits (not just next tokens) was novel when launched
+- Proved developers would pay for AI tooling beyond GitHub Copilot
+- Referenced as comparison baseline in most AI coding tool discussions
+
+### User Feedback (2024)
+
+- "At least 2x improvement over Copilot" - Sr. Staff Engineer, Instacart
+- "How Copilot should feel" - Engineers praising seamless integration
+- "No going back" - Common sentiment from VSCode converts
+
+### Comparison
+
+| Feature | Cursor | Claude Code | VS Code + Copilot | Zed |
+|---------|--------|-------------|-------------------|-----|
+| Base | VS Code fork | Terminal | VS Code | Native |
+| AI Model | Multiple | Claude | GPT-4 | Multiple |
+| Edit Prediction | Yes (Copilot++) | No | Basic | No |
+| Cmd-K Editing | Yes | Yes (diff) | No | Yes |
+| Codebase Chat | Yes | Yes | Limited | Yes |
+
+---
+
+## GPT Engineer (Lovable) - AI Web App Builder
+
+*Source: https://gptengineer.app/ - Added: 2024-08-29*
+
+Chat-based AI tool for building web applications. Emphasizes quick prototyping with GitHub sync and one-click deployment.
+
+### Key Features
+
+- **Conversational Building** - Chat with AI to create and modify web apps
+- **GitHub Sync** - Push changes directly to repositories
+- **One-Click Deploy** - Deploy directly from the platform
+- **Full-Stack Generation** - Creates frontend and backend code
+
+### Why It's Interesting
+
+- Lower barrier to entry than IDE-based tools like Cursor or Claude Code
+- Good for rapid prototyping and MVPs
+- Non-developers can build functional apps
+- Rebranded to "Lovable" - positioning as more user-friendly alternative to traditional coding agents
+
+### Comparison to Other Tools
+
+| Feature | GPT Engineer | v0 (Vercel) | Bolt.new | Claude Artifacts |
+|---------|--------------|-------------|----------|------------------|
+| Full Apps | Yes | UI Focus | Yes | Components Only |
+| GitHub Sync | Yes | Limited | Yes | No |
+| Deployment | Built-in | Vercel | Built-in | None |
+| Backend Support | Yes | No | Yes | No |
+
+---
+
+## Refact.ai - Self-Hosted Autonomous AI Coding Agent
+
+*Source: https://refact.ai/ - Added: 2026-01-18*
+
+Open-source, self-hosted AI coding agent with IDE integration. Key differentiator is on-premise deployment for data privacy and fine-tuning capability.
+
+### Key Features
+
+- **Autonomous Agent** - Delegates coding tasks end-to-end; plans, executes, and deploys
+- **IDE Integration** - VS Code, JetBrains suite (PyCharm, WebStorm, IntelliJ, etc.), Visual Studio, Neovim, Sublime Text
+- **In-IDE Chat** - Context-aware chat with 32k-64k context window
+- **Code Completions** - Powered by Qwen2.5-Coder with RAG for project-specific insights
+- **Tool Integrations** - Connects to GitHub, PostgreSQL, Docker, CI/CD pipelines, Chrome
+- **25+ Languages** - Python, JavaScript, TypeScript, Java, Rust, C++, Go, PHP, Ruby, etc.
+
+### Self-Hosted / Privacy Focus
+
+- **On-Premise Deployment** - Run entirely on your infrastructure
+- **LLM Fine-Tuning** - Train models on your company's codebase
+- **Multi-GPU Support** - Optimized for enterprise GPU clusters
+- **Code Never Leaves Servers** - Full data ownership
+
+### Model Options
+
+- Claude 3.7 Sonnet, GPT-4o, GPT-4o mini for agent/chat
+- BYOK (Bring Your Own Key) - Gemini, Grok, OpenAI, Deepseek, others
+- Qwen2.5-Coder for completions (runs locally)
+
+### Pricing
+
+- **Free** - Limited agent usage/day, 32k chat context, unlimited completions
+- **Pro ($10/mo)** - 40 agent requests/day, 64k chat context, additional models
+- **Enterprise** - On-premise, fine-tuning, priority support
+
+### Why It's Interesting
+
+- Self-hosted option addresses data privacy concerns that block other AI tools at enterprises
+- Fine-tuning on company codebases is unique capability vs Claude Code, Cursor, Copilot
+- Open-source core allows customization
+- Price point undercuts most competitors
+- Memory/learning system improves with usage ("digital twin" concept)
+
+### User Testimonials (Discord/LinkedIn)
+
+- Built full Django IoT monitoring app "99.9% with Refact.ai Agent"
+- Fixed 80-hour WordPress rewrite estimate in 30 minutes
+- "Saved thousands of euros" - built prototype in a week vs months with freelancer
+- Good for non-web-devs learning new stacks with "vibe coding"
+
+### Comparison
+
+| Feature | Refact.ai | Claude Code | Cursor | GitHub Copilot |
+|---------|-----------|-------------|--------|----------------|
+| Self-Hosted | Yes | No | No | No |
+| Fine-Tuning | Yes | No | No | No |
+| Autonomous Agent | Yes | Yes | Limited | Limited |
+| Open Source | Partial | No | No | No |
+| IDE Integration | Multiple | Terminal | Cursor | VS Code/JetBrains |
+
+---
+
+## Zed - Agentic Editing in a Multiplayer IDE
+
+*Source: https://zed.dev/agentic - Added: 2026-01-18*
+
+Zed is a Rust-powered code editor with native multiplayer support and integrated agentic editing capabilities. Fast (120fps), designed for developers coming from vim.
+
+### Key Features
+
+- **Agent Panel** - Chat interface for natural language codebase exploration and modification
+- **Automatic Context Discovery** - Agent searches codebase as needed; no manual context or indexing required
+- **Follow Mode** - Track the agent's location in real-time as it navigates your code
+- **Editable Unified Diffs** - Review agent changes in a diff view that supports full editing
+- **Background Operation** - Let agents work and get notified when done or needing input
+- **MCP Support** - Extend with Model Context Protocol servers for databases, browsers, PRs, etc.
+
+### Model Options
+
+- **Hosted** - Claude 3.7 Sonnet with simple pricing
+- **Local** - Connect via Ollama to run models on your own hardware
+- **BYOK** - Bring your own API keys from any provider
+
+### Notable Quotes from Users
+
+- José Valim: "Zed agents delivered complete features while preserving my project's coding standards"
+- Isaac Harris-Holt (CTO): "Using the Agent to learn mobile app development... correcting my mistakes has been invaluable"
+- Amos Wenger: "I dictate prompts to various LLMs and get notified when their work is ready to review. I got so much better at code review!"
+
+### Why It's Interesting
+
+- Native IDE integration (not a plugin) means tighter agent-editor integration
+- Multiplayer-first architecture enables real-time agent collaboration
+- Vim mode praised as best-in-class for vim converts
+- Agent-as-background-worker model differs from Claude Code's conversational approach
+- MCP extensibility allows for custom integrations
+
+### Comparison
+
+| Feature | Zed | Claude Code | Cursor |
+|---------|-----|-------------|--------|
+| Primary Use | IDE with agent | Terminal agent | IDE with agent |
+| Environment | Native app | CLI | Electron app |
+| Agent Model | Background worker | Conversational | Inline + Chat |
+| Multiplayer | Native | Via Claudetainer | No |
+| Vim Mode | Excellent | N/A | Good |
+
+---
+
+## Claudetainer - Containerized Claude Code for Mobile/Remote
+
+*Source: https://github.com/smithclay/claudetainer - Added: 2026-01-18*
+
+A Docker-based development environment for running Claude Code anywhere, including from your phone. Auto-configures hooks, slash commands, and specialized sub-agents.
+
+### Key Features
+
+- **Instant Setup** - Auto-detects language (Python, Node.js, Go, Rust, Shell) and configures tooling
+- **Mobile-Friendly** - SSH + terminal multiplexer (Zellij) designed for coding from iPhone/mobile
+- **Pre-Configured Claude Code** - Hooks, slash commands, and sub-agents ready out of the box
+- **Push Notifications** - Know when Claude needs attention
+- **Isolated Docker Environment** - Everything runs in a container
+
+### Language Support
+
+Auto-detects and configures tooling for:
+- **Python** (requirements.txt, pyproject.toml) → black, flake8, autopep8
+- **Node.js** (package.json) → eslint, prettier, TypeScript
+- **Go** (go.mod) → gofmt, golangci-lint
+- **Rust** (Cargo.toml) → rustfmt, clippy
+- **Shell** (.sh files) → shellcheck, shfmt
+
+### Quick Start
+
+```bash
+# Install via Homebrew
+brew tap smithclay/tap
+brew install claudetainer
+
+cd ~/your-project
+
+# Initialize with language preset
+claudetainer init python
+
+# Start container
+claudetainer up
+
+# Connect (default password: vscode)
+claudetainer ssh
+
+# Inside container, start Claude Code
+claude
+```
+
+### Remote Access
+
+```bash
+claudetainer mosh    # MOSH + Zellij (better for mobile)
+# SSH also available
+```
+
+### Why It's Interesting
+
+- Solves the "code from anywhere" problem with proper mobile UX
+- Pre-baked hooks and sub-agents for keyboard-less coding
+- Team configs shareable via GitHub repos
+- Works well with Happy Coder for mobile Claude Code access (see `claude-code-configuration.md`)
+
+### Comparison
+
+| Feature | Claudetainer | Happy Coder | Conductor |
+|---------|--------------|-------------|-----------|
+| Primary Use | Remote/mobile coding | Mobile sync | Parallel agents |
+| Environment | Docker container | Native app | Desktop workspaces |
+| Setup | CLI-based | QR code pairing | Uses existing login |
+| Best For | Coding from phone | Mobile monitoring | Running many agents |
+
+### Notes
+
+- Requires Docker and DevContainer CLI
+- The pre-configured hooks and sub-agents are borrowed from Claude Code community configs
+- Good companion to Happy Coder for true mobile development
+
+---
+
+## Claude Code in Docker (VSCode Dev Containers)
+
+*Source: https://timsh.org/claude-inside-docker/ - Added: 2026-01-18*
+
+Minimal DIY setup for running Claude Code in an isolated Docker container via VSCode's Dev Container feature. Focus is on security isolation rather than remote access.
+
+### Security Motivation
+
+Running an AI agent with full filesystem and terminal access is risky:
+- Access to SSH keys, secrets, and sensitive files
+- Potential for catastrophic mistakes (`rm -rf` on important directories)
+- MCP vulnerabilities allow external attacks
+- Models can bypass command blacklists
+
+**Solution:** Put Claude Code in a container with only the project files mounted.
+
+### Minimal Setup
+
+1. Create `.devcontainer/devcontainer.json` in your project root:
+
+```json
+{
+  "name": "Claude Code Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code"
+}
+```
+
+2. Open folder in VSCode → "Reopen in Container"
+3. Run `claude` in the integrated terminal
+
+**Repository:** https://github.com/tim-sha256/claude-in-docker
+
+### What Container Isolation Provides
+
+- Claude can only access files inside the container or mounted volumes
+- No access to local SSH keys, secrets, or external directories
+- Can't break anything outside the container
+- Worst case: container breaks and stops
+
+### GitHub Access with Fine-Grained Tokens
+
+Since the container doesn't have your SSH keys, use a fine-grained GitHub Personal Access Token for safer git operations:
+
+1. Create token at https://github.com/settings/personal-access-tokens/new
+2. Grant access only to specific repositories
+3. Set only "Contents: Read and write" permission (enough for clone/pull/push)
+4. Clone with token:
+
+```bash
+git clone https://<USERNAME>:<TOKEN>@github.com/<USERNAME>/<REPO>.git
+cd <REPO>
+git remote set-url origin https://<USERNAME>:<TOKEN>@github.com/<USERNAME>/<REPO>.git
+```
+
+**Benefit:** Token can't modify GitHub account settings, access other repos, or do anything beyond basic git operations on selected repos.
+
+### Comparison to Claudetainer
+
+| Feature | This Approach | Claudetainer |
+|---------|--------------|--------------|
+| Setup complexity | Minimal (one JSON file) | Full tooling with CLI |
+| Primary goal | Security isolation | Mobile/remote access |
+| Pre-configured tooling | None | Hooks, sub-agents, notifications |
+| Use case | Cautious local development | Coding from anywhere |
+
+### When to Use This
+
+- Working with sensitive codebases or client projects
+- Paranoid about AI agent access to local filesystem
+- Want minimal setup without additional tooling
+- Don't need mobile access or pre-configured agent features
+
+---
+
+## Klavis AI / Strata - MCP Integration Layer
+
+*Source: https://www.klavis.ai/ - Added: 2026-01-18*
+
+An open-source MCP integration layer that provides a single MCP server for AI agents to access thousands of tools.
+
+### Key Features
+
+- **Unified MCP Server** - One server to handle connections to many tools
+- **SOC 2 Certified** - Enterprise-grade security compliance
+- **GDPR Compliance** - In progress for EU data protection requirements
+- **Open Source** - Integration layers are open source
+
+### Why It's Interesting
+
+- Simplifies MCP tool management by consolidating into a single server
+- Enterprise focus with compliance certifications
+- Could reduce complexity when agents need access to many different tools
+
+### Notes
+
+- Product called "Strata" launched on Product Hunt
+- Light on technical details in public docs - worth revisiting when more documentation available
+
+---
+
+## mcp-use - Python Library for Custom MCP Agents
+
+*Source: https://github.com/mcp-use/mcp-use - Added: 2026-01-18*
+
+An open-source Python library for connecting any LLM to any MCP server to build custom agents with tool access. The simplest way to give LLMs access to MCP tools without using closed-source clients.
+
+### Key Features
+
+- **LLM Agnostic** - Works with OpenAI, Anthropic, Groq, and other LangChain-supported providers
+- **Multiple Server Support** - Connect to multiple MCP servers simultaneously
+- **Dynamic Server Selection** - Server Manager auto-selects correct server based on tool choice
+- **Tool Access Control** - Restrict which tools agents can use via `disallowed_tools`
+- **Streaming Output** - Async streaming via `agent.astream()` for real-time feedback
+- **HTTP/SSE/stdio Support** - Connect to MCP servers over various transports
+- **Sandboxed Execution** - Optional E2B cloud sandbox for isolated execution
+
+### Quick Start
+
+```bash
+pip install mcp-use
+pip install langchain-openai  # or langchain-anthropic
+```
+
+```python
+import asyncio
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+from mcp_use import MCPAgent, MCPClient
+
+async def main():
+    load_dotenv()
+
+    # Create MCP client from config
+    client = MCPClient.from_config_file("browser_mcp.json")
+
+    # Create agent
+    llm = ChatOpenAI(model="gpt-4o")
+    agent = MCPAgent(llm=llm, client=client, max_steps=30)
+
+    # Run query
+    result = await agent.run("Find restaurants in SF using Google Search")
+    print(result)
+
+asyncio.run(main())
+```
+
+Config file (`browser_mcp.json`):
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "env": { "DISPLAY": ":1" }
+    }
+  }
+}
+```
+
+### Multi-Server Configuration
+
+```json
+{
+  "mcpServers": {
+    "airbnb": {
+      "command": "npx",
+      "args": ["-y", "@openbnb/mcp-server-airbnb"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  }
+}
+```
+
+Enable Server Manager for automatic server selection:
+```python
+agent = MCPAgent(
+    llm=llm,
+    client=client,
+    use_server_manager=True  # Auto-selects correct server
+)
+```
+
+### HTTP Connection
+
+```python
+config = {
+    "mcpServers": {
+        "http": {
+            "url": "http://localhost:8931/sse"
+        }
+    }
+}
+client = MCPClient.from_dict(config)
+```
+
+### Tool Restrictions
+
+```python
+agent = MCPAgent(
+    llm=llm,
+    client=client,
+    disallowed_tools=["file_system", "network"]  # Security controls
+)
+```
+
+### Sandboxed Execution (E2B)
+
+```bash
+pip install "mcp-use[e2b]"
+```
+
+```python
+from mcp_use.types.sandbox import SandboxOptions
+
+sandbox_options: SandboxOptions = {
+    "api_key": os.getenv("E2B_API_KEY"),
+    "sandbox_template_id": "base",
+}
+
+client = MCPClient(
+    config=server_config,
+    sandbox=True,
+    sandbox_options=sandbox_options,
+)
+```
+
+### Debugging
+
+```bash
+DEBUG=1 python script.py  # INFO level
+DEBUG=2 python script.py  # Full DEBUG output
+```
+
+### When to Use
+
+**Good fit:**
+- Building custom agents that need MCP tool access
+- Prototyping LLM applications with existing MCP servers
+- Need LLM provider flexibility (not locked to Claude)
+- Want programmatic control over agent behavior
+
+**Compare with:**
+- **Claude Code** - Pre-built agent with MCP support, but Claude-only
+- **Dedalus Labs** - Hosted platform vs library approach
+- **IBM Context Forge** - Gateway/registry vs direct client
+- **Klavis/Strata** - Managed MCP layer vs build-it-yourself
+
+### Notes
+
+- MIT licensed
+- Python 3.11+ required
+- Docs: https://mcp-use.com
+- Hosted chat available at mcp-use.com/chat (beta)
+
+---
+
+## Inkeep - No-Code + Code AI Agent Builder
+
+*Source: https://docs.inkeep.com/overview - Added: 2026-01-18*
+
+A platform for building AI agents with both no-code visual builder and TypeScript SDK approaches, with full 2-way sync between them.
+
+### Key Features
+
+- **Dual Authoring** - No-code canvas (drag-and-drop) or TypeScript SDK with 2-way sync between formats
+- **Multi-Agent Architecture** - Build teams of agents that work together
+- **MCP Tools** - Built-in support with credentials management
+- **UI Component Library** - For dynamic chat experiences
+- **Flexible Deployment** - Vercel, Docker, or self-hosted
+- **Observability** - Traces UI and OpenTelemetry integration
+- **LLM Agnostic** - Use any LLM provider
+
+### Use Cases
+
+**Agentic Chat Assistants:**
+- Customer experience agents for help centers, docs, in-app
+- Internal copilots for support, sales, marketing, ops teams
+
+**Agentic Workflow Automation:**
+- Creating/updating knowledge bases, docs, blogs
+- Updating CRMs, triaging helpdesk tickets
+- Tackling repetitive tasks
+
+### Why It's Interesting
+
+- Technical and non-technical teams can collaborate on same agents
+- Fair-code license allows self-hosting
+- Open protocols (MCP, A2A, Vercel SDK APIs) for triggering agents
+- Bridges the gap between "I want to prototype quickly" and "I need production-grade code"
+
+### Deployment Options
+
+- Inkeep Cloud (waitlist)
+- Inkeep Enterprise (managed)
+- Self-hosted via Docker
+
+---
+
 ## Heatmap (0github.com)
 
 *Source: https://0github.com/ - Added: 2026-01-18*
@@ -872,6 +1514,127 @@ curl -fsSL https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claude-sisyphus/m
 
 ---
 
+## claudecode-orchestrator (Multi-Agent Development Framework)
+
+*Source: https://github.com/darrenapfel/claudecode-orchestrator - Added: 2026-01-18*
+
+A comprehensive orchestration framework that enables Claude Code to operate as a "full software development team" through parallel execution, structured workflows, and evidence-based validation.
+
+### Core Philosophy
+
+**Quality Through Truth:** Every claim requires evidence, every test result must be shown, and validation failures are documented and fixed rather than hidden. The system argues this "paradoxically saves tokens by catching issues early rather than building on broken foundations."
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Milestone Completion Protocol** | Services started and smoke-tested before declaring completion |
+| **Parallel Execution** | Visual execution guides, system-level warnings against sequential execution |
+| **Evidence-Based Development** | Every task produces `EVIDENCE.md` with reproducible proof |
+| **User Feedback Loop** | Structured feedback collection via auto-generated testing guides |
+| **Fix Cycle Protocol** | Validation failures trigger documented fix cycles (treated as normal) |
+
+### Personas/Agents
+
+The system uses specialized "personas" with designated responsibilities:
+
+**Core Team:**
+- Orchestrator, Product Manager, Architect, Software Engineer, UX Designer
+
+**QA Team:**
+- SDET, Test Engineer, Integration Engineer, Performance Engineer, Security Engineer
+
+**Support:**
+- DevOps, Documentation Writer
+
+### Directory Structure
+
+```
+your-project/
+├── .claude/
+│   ├── personas/           # AI role definitions
+│   ├── patterns/           # Workflow patterns
+│   ├── guides/             # How-to documentation
+│   └── validators/         # Validation protocols
+├── .work/
+│   ├── foundation/         # Core architecture/design
+│   ├── milestones/         # Development phases
+│   │   └── sprint-001/
+│   │       ├── tasks/
+│   │       ├── validation-1/
+│   │       ├── fixes/cycle-1/
+│   │       └── completion/
+│   └── discovery/          # Project understanding
+└── CLAUDE.md
+```
+
+### Installation
+
+```bash
+# Global installation (affects all projects)
+./orchestrator.sh global
+# ⚠️ WARNING: Replaces ~/.claude/claude.md
+
+# Local installation only
+./orchestrator.sh local
+```
+
+### Workflow Overview
+
+1. **Discovery** - Gather clarifying questions (one-time)
+2. **Requirements** - PM defines scope and acceptance criteria
+3. **Foundation Design** - Architect and UX Designer create blueprint
+4. **Implementation** - Engineers build in parallel batches
+5. **Integration** - Connect all components
+6. **Validation** - Four validators verify quality in parallel
+7. **Fix Cycles** - Address any validation failures
+8. **Milestone Completion** - Start service and prepare for user testing
+9. **Feedback Processing** - Implement user-reported improvements
+
+### Critical Differences from Built-in Claude Code
+
+**This framework deliberately contradicts some Claude Code design principles:**
+
+| Claude Code Built-in | This Orchestrator |
+|---------------------|-------------------|
+| Single-threaded, max-1-branch depth | Multiple parallel personas |
+| Simple todo list maintained by model | Elaborate milestone/sprint structure |
+| "I highly doubt you need multi-agent" | Full multi-agent team simulation |
+| Minimal scaffolding | Heavy structure (.work/, validators, evidence) |
+
+### When This Might Be Useful
+
+- Very large projects needing formal structure
+- Teams wanting explicit documentation trails
+- Projects requiring audit-level evidence of testing
+- Situations where "honest failure documentation" is valued
+
+### When to Avoid
+
+- Simple projects (massive overhead)
+- When you trust Claude Code's built-in single-thread model
+- If you value simplicity and debuggability (see MinusX analysis in claude-code-configuration.md)
+- If you prefer the "master-clone" subagent philosophy
+
+### Comparison with oh-my-claude-sisyphus
+
+| Feature | claudecode-orchestrator | oh-my-claude-sisyphus |
+|---------|------------------------|----------------------|
+| Primary Focus | Full SDLC workflow | Task persistence |
+| Structure | Heavy (milestones, sprints, validation) | Lightweight (agents + commands) |
+| Philosophy | "Quality through truth" | "Agents persist until complete" |
+| Installation | Replaces claude.md | Adds to ~/.claude/agents/ |
+| Personas | 12+ specialized roles | 11 specialized agents |
+
+### Notes
+
+- Consider whether the overhead matches your project complexity
+- The evidence-based validation is interesting for compliance contexts
+- The "fix cycle" normalization could reduce frustration with failures
+- Heavy structure trades debuggability for documentation
+
+---
+
 ## AI Development Philosophy & Workflow Tips (Matthew Rocklin)
 
 *Source: https://matthewrocklin.com/ai-zealotry/ - Added: 2026-01-18*
@@ -1584,44 +2347,100 @@ From the creators:
 
 ---
 
-## Omnara (Claude Code on Mobile)
+## Omnara - Mission Control for AI Coding Agents
 
-*Source: https://www.omnara.com/ - Added: 2026-01-18*
+*Source: https://github.com/omnara-ai/omnara - Added: 2026-01-18*
 
-Claude Code for mobile devices with voice support. Code from anywhere through a web interface.
+YC S25 startup providing a mobile control plane for AI coding agents (Claude Code, Cursor, GitHub Copilot). Real-time visibility, push notifications, and instant responses to agent questions from your phone.
 
 ### Key Features
 
-- **Voice Coding** - Use voice commands for development work
-- **Mobile-First** - Web app accessible on iOS, Android, and desktop browsers
-- **No Installation** - Browser-based, works on any device
+- **Real-Time Monitoring** - See every step your agents take as they work
+- **Push Notifications** - Get alerted when agents need input or hit blockers
+- **Interactive Q&A** - Answer agent questions from anywhere, instantly
+- **Universal Dashboard** - Monitor all agents (Claude, Cursor, Copilot) in one place
+- **Mobile-First** - iOS app + web dashboard
 
-### Platform
+### Use Cases
 
-- Web application (no native app required)
-- Works on Web, iOS, Android
+- **Code Review** - Launch Claude to review PRs while at lunch, respond only when needed
+- **Production Debugging** - Debug issues from phone at 2am with real-time agent guidance
+- **Data Migrations** - Monitor 6-hour jobs remotely, approve schema changes on the go
+- **Refactoring** - Let Claude refactor legacy code during meetings, answer questions without context switching
+- **Test Fixing** - Have Claude fix tests overnight, wake up to green builds or specific questions
+
+### Integration Options
+
+```bash
+# CLI wrapper (monitors Claude sessions)
+pip install omnara
+omnara monitor --api-key YOUR_KEY
+
+# Or launch agents remotely via webhook
+omnara serve
+```
+
+```python
+# Python SDK
+from omnara import OmnaraClient
+import uuid
+
+client = OmnaraClient(api_key="your-api-key")
+instance_id = str(uuid.uuid4())
+
+# Log progress
+response = client.send_message(
+    agent_type="claude-code",
+    content="Analyzing codebase structure",
+    agent_instance_id=instance_id,
+    requires_user_input=False
+)
+
+# Ask for user input when needed
+answer = client.send_message(
+    content="Should I refactor this legacy module?",
+    agent_instance_id=instance_id,
+    requires_user_input=True
+)
+```
+
+### Architecture
+
+- **Backend**: FastAPI with separate read/write servers
+- **Frontend**: React (web) + React Native (mobile)
+- **Protocol**: Model Context Protocol (MCP) + REST API
+- **Database**: PostgreSQL with SQLAlchemy
+- **Auth**: Dual JWT (Supabase for users, custom for agents)
 
 ### Pricing
 
-Free ($0)
+| Tier | Price | Features |
+|------|-------|----------|
+| Free | $0 | Basic monitoring |
+| Pro | TBD | More features + support |
 
 ### Why It's Interesting
 
-- Fills a gap: Claude Code is CLI-only, this enables mobile access
-- Voice support could be useful for commuting or hands-free coding
-- Could complement desktop Claude Code sessions for quick checks/fixes on the go
+- Solves a real problem: long-running agents get stuck, and you don't know until hours later
+- "Mission control" framing is spot-on—agents need oversight and guidance
+- MCP integration means it can work with many different agent frameworks
+- Open source (Apache 2.0)
+- Could pair well with Happy Coder for mobile Claude Code (Happy for sync, Omnara for monitoring)
 
-### Considerations
+### Comparison to Similar Tools
 
-- Early stage (founded 2025)
-- Limited technical documentation available
-- Browser-based may have performance limitations vs native CLI
-- Voice accuracy for code may vary
+| Feature | Omnara | Claudetainer | Happy Coder |
+|---------|--------|--------------|-------------|
+| Primary Use | Agent monitoring/control | Remote coding environment | Mobile sync |
+| Notifications | Push when agent needs input | When Claude needs attention | Session sync |
+| Multi-Agent | Yes (any MCP-compatible) | Claude Code only | Claude Code only |
+| Setup | SDK/wrapper install | Docker container | QR code pairing |
 
 ### Links
 
-- Website: https://www.omnara.com/
-- Twitter: @omnaraai
+- GitHub: https://github.com/omnara-ai/omnara
+- Website: https://www.omnara.ai/
+- iOS App: App Store
 
 ---
 
@@ -1874,6 +2693,76 @@ server.close()
 - Chrome only (extension-based)
 - Requires manual tab connection (click extension icon per tab)
 - Security relies on localhost-only WebSocket
+
+---
+
+## Playwrightess MCP - Single-Tool Playwright Eval
+
+*Source: https://github.com/mitsuhiko/playwrightess-mcp - Added: 2026-01-18*
+
+An experimental MCP server by Mitsuhiko (Flask creator) that provides a persistent Playwright evaluation environment through a single JavaScript-based tool.
+
+### Key Concept
+
+Unlike Playwright MCP which exposes many individual tools (click, type, screenshot, etc.), Playwrightess exposes just **one tool**: `playwright_eval`. This tool lets agents write and execute arbitrary Playwright JavaScript code with persistence between calls.
+
+### Architecture
+
+```
+┌─────────────────┐     ┌──────────────────────────────┐
+│  Agent/LLM      │ ──► │  Playwrightess MCP Server    │
+│                 │     │  ┌────────────────────────┐  │
+│  Uses single    │     │  │ Persistent JS Context  │  │
+│  playwright_eval│     │  │ - State maintained     │  │
+│  tool           │     │  │ - Full Playwright API  │  │
+│                 │     │  │ - Between-call memory  │  │
+└─────────────────┘     │  └────────────────────────┘  │
+                        └──────────────────────────────┘
+```
+
+### Why This Matters
+
+| Approach | Tools | Context Cost | Flexibility |
+|----------|-------|--------------|-------------|
+| Playwright MCP | ~17 individual tools | High (all tool schemas) | Limited to predefined actions |
+| Playwrightess | 1 tool (playwright_eval) | Low | Full Playwright API |
+| Playwriter | 1 tool (execute) | Low | Full API, uses existing Chrome |
+
+The "single ubertool" approach means:
+- Less context window usage (no schema bloat)
+- LLMs already know Playwright API from training data
+- Persistence between calls enables stateful workflows
+
+### Installation
+
+```bash
+npm install
+npm run build
+```
+
+### Configuration
+
+```json
+{
+  "mcpServers": {
+    "playwriter-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/path/to/dist/index.js"],
+      "env": {}
+    }
+  }
+}
+```
+
+### Status
+
+**Experimental** - Mitsuhiko explicitly states this is an experiment and intentionally not published to npm.
+
+### Related
+
+- **Playwriter** - Similar single-tool philosophy but uses Chrome extension instead of MCP
+- **Playwright MCP** - Official multi-tool approach from Playwright team
 
 ---
 
@@ -2567,6 +3456,51 @@ Add to your MCP client config (e.g., `~/.aws/amazonq/mcp.json`):
 - GitHub: https://github.com/aws/mcp-proxy-for-aws
 - SigV4 Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html
 
+---
+
+## AWS API MCP Server
+
+*Source: https://aws.amazon.com/about-aws/whats-new/2025/10/aws-api-mcp-server-v1-0-0-release - Added: 2026-01-18*
+
+An MCP server that enables foundation models (FMs) to interact with any AWS API through natural language by creating and executing syntactically correct CLI commands.
+
+### Key Features (v1.0.0)
+
+- **Natural Language to AWS CLI** - Creates and executes CLI commands from natural language requests
+- **Streamable HTTP Transport** - Now supports HTTP transport in addition to stdio
+- **CloudWatch Integration** - Collect logs for improved observability
+- **Human-in-the-Loop Controls** - Elicitation support for iterative inputs, configurable human oversight for mutating actions
+- **Action Safeguards** - Can deny certain action types or require consent for mutations
+- **Reduced Startup Time** - `suggest_aws_command` tool converted to remote service (removes local dependencies)
+
+### New in v1.0.0
+
+- **get_execution_plan Tool** (Experimental) - Provides prescriptive workflows for common AWS tasks
+  - Enable with `EXPERIMENTAL_AGENT_SCRIPTS=true`
+- **Improved Security** - Better file system controls and input validation
+- **Elicitation Support** - More reliable iterative input workflows
+
+### Installation Options
+
+Available from:
+- Popular MCP registries
+- Amazon ECR Public Gallery (container)
+- AWS Labs GitHub repository (source)
+
+### Why It's Interesting
+
+- **Natural Language AWS Access** - Ask Claude/Q to "list my S3 buckets" and it generates the correct CLI command
+- **Safety Features** - Human oversight controls address concerns about AI executing cloud operations
+- **Official AWS Tool** - Maintained by AWS Labs, production-ready
+- **Pairs with MCP Proxy** - Use with AWS MCP Proxy Server for authenticated remote access
+
+### Links
+
+- Announcement: https://aws.amazon.com/about-aws/whats-new/2025/10/aws-api-mcp-server-v1-0-0-release
+- GitHub: https://github.com/awslabs/mcp (AWS Labs MCP repository)
+
+---
+
 ## Quibbler
 
 *Source: https://github.com/fulcrumresearch/quibbler - Added: 2026-01-18*
@@ -2625,3 +3559,2453 @@ pip install quibbler
 ### Links
 
 - GitHub: https://github.com/fulcrumresearch/quibbler
+
+---
+
+## Microsoft Amplifier - Supercharged AI Dev Environment
+
+*Source: https://github.com/microsoft/amplifier - Added: 2026-01-18*
+
+A research demonstrator from Microsoft that provides a complete development environment for AI coding assistants, including specialized agents, pre-loaded context, and automation tools.
+
+**Status:** Experimental research project, not accepting contributions yet.
+
+### Core Components
+
+| Component | Description |
+|-----------|-------------|
+| 20+ Specialized Agents | Each expert in specific tasks (architecture, debugging, security, etc.) |
+| Pre-loaded Context | Proven patterns and philosophies built into the environment |
+| Parallel Worktree System | Build and test multiple solutions simultaneously |
+| Knowledge Extraction | Transform documentation into queryable, connected knowledge |
+| Conversation Transcripts | Auto-export before compaction, instant restoration |
+| Automation Tools | Quality checks and patterns enforced automatically |
+
+### Specialized Agents Catalog
+
+**Core Development:**
+- `zen-architect` - Designs with ruthless simplicity
+- `modular-builder` - Builds following modular principles
+- `bug-hunter` - Systematic debugging
+- `test-coverage` - Comprehensive testing
+- `api-contract-designer` - Clean API design
+
+**Analysis & Optimization:**
+- `security-guardian` - Security analysis
+- `performance-optimizer` - Performance profiling
+- `database-architect` - Database design and optimization
+- `integration-specialist` - External service integration
+
+**Knowledge & Insights:**
+- `insight-synthesizer` - Finds hidden connections
+- `knowledge-archaeologist` - Traces idea evolution
+- `concept-extractor` - Extracts knowledge from documents
+- `ambiguity-guardian` - Preserves productive contradictions
+
+**Meta & Support:**
+- `subagent-architect` - Creates new specialized agents
+- `post-task-cleanup` - Maintains codebase hygiene
+- `content-researcher` - Researches from content collection
+
+### Parallel Worktree Development
+
+```bash
+# Try different approaches in parallel
+make worktree feature-jwt     # JWT authentication approach
+make worktree feature-oauth   # OAuth approach in parallel
+
+# Compare and choose
+make worktree-list            # See all experiments
+make worktree-rm feature-jwt  # Remove the one you don't want
+```
+
+Each worktree is completely isolated with its own branch, environment, and context.
+
+### Enhanced Status Line
+
+Shows costs, model, and session info at a glance:
+```
+~/repos/amplifier (main → origin) Opus 4.1 💰$4.67 ⏱18m
+```
+
+### Conversation Transcript System
+
+- **PreCompact Hook** - Captures full conversation before compaction
+- **Timestamps & Organization** - Stored in `.data/transcripts/`
+- **Instant Restoration** - `/transcripts` command to restore full history
+- **Search** - `make transcript-search TERM="auth"` to find past discussions
+
+### Modular Builder (Lite)
+
+One-command workflow from idea to module:
+
+1. Contract & Spec
+2. Plan
+3. Generate
+4. Review
+
+**Modes:**
+- `auto` (default) - Runs autonomously if confidence ≥ 0.75
+- `assist` - Asks ≤ 5 questions to resolve ambiguity
+- `dry-run` - Plan/validate only (no code writes)
+
+### Knowledge Base System
+
+```bash
+make knowledge-update              # Process documentation
+make knowledge-query Q="error handling patterns"
+```
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js
+- VS Code (recommended)
+- Git
+
+### Why It's Interesting
+
+- **Specialized vs Generalist Agents** - 20+ focused agents instead of one jack-of-all-trades
+- **Parallel Exploration** - Git worktrees enable testing multiple solutions simultaneously
+- **Knowledge Compounds** - Documentation becomes queryable knowledge
+- **Conversation Persistence** - Solves the context loss problem on compaction
+- **Microsoft Research Backing** - Real engineering resources behind it
+
+### Vision
+
+Building toward:
+1. Natural language to working systems
+2. Test 10 approaches simultaneously
+3. Knowledge compounds across projects
+4. AI handles tedious work, humans focus on creative decisions
+
+### Links
+
+- GitHub: https://github.com/microsoft/amplifier
+- License: Microsoft CLA required for contributions
+
+---
+
+## OpenHands (All-Hands-AI)
+
+*Source: https://github.com/All-Hands-AI/OpenHands - Added: 2026-01-18*
+
+An open-source AI-powered platform for software development where agents can modify code, run commands, browse the web, call APIs, and interact with the world like a human developer.
+
+### Key Features
+
+- **Full Developer Capabilities** - Agents can modify code, run shell commands, browse web, call APIs
+- **Multiple Run Options** - Cloud (with $20 free credits), local CLI launcher, or Docker
+- **MCP Support** - Default MCP servers for tool integration
+- **LLM Flexibility** - Works with multiple providers, Anthropic Claude Sonnet 4 recommended
+
+### Installation Options
+
+**Cloud (easiest):**
+```bash
+# Sign up at OpenHands Cloud - $20 free credits
+```
+
+**Local CLI (recommended for local):**
+```bash
+# Install uv first (see uv installation guide)
+# Launch GUI server
+uvx --python 3.12 --from openhands-ai openhands serve
+
+# Or launch CLI
+uvx --python 3.12 --from openhands-ai openhands
+```
+OpenHands runs at http://localhost:3000 in GUI mode.
+
+**Docker:**
+Available for more isolated deployments. See their hardened installation guide for secure setups on public networks.
+
+### Important Limitations
+
+- **Single-user only** - Not designed for multi-tenant deployments
+- **No built-in auth** - No authentication, isolation, or scalability for shared instances
+- For multi-tenant needs: OpenHands Cloud Helm Chart (commercial, source-available)
+
+### Integration Options
+
+- Connect to local filesystem
+- CLI for direct interaction
+- Headless mode for scripting
+- GitHub Action for tagged issues
+
+### How It Compares
+
+| Feature | OpenHands | Claude Code | Codex | Aider |
+|---------|-----------|-------------|-------|-------|
+| Deployment | Cloud/Local/Docker | CLI | CLI/Web | CLI |
+| MCP Support | Yes | Yes | No | No |
+| GUI | Yes (web) | No | Yes | No |
+| Multi-tenant | No (use Helm chart) | No | No | No |
+| Open Source | MIT | No | No | Yes |
+
+### Why It's Interesting
+
+- Full web browsing capability - can research while coding
+- Active community (Slack + GitHub)
+- Backed by academic research (ICLR 2025 publication)
+- MIT licensed with commercial options for enterprise
+- The `uvx` launcher provides nice isolation from local Python environments
+
+### Links
+
+- GitHub: https://github.com/All-Hands-AI/OpenHands
+- Docs: https://docs.all-hands.dev
+- Cloud: OpenHands Cloud (with free credits)
+- Slack: Community workspace for research/architecture discussions
+- License: MIT (except enterprise/ folder)
+---
+
+## Open-Agent
+
+*Source: https://github.com/AFK-surf/open-agent - Added: 2026-01-18*
+
+An open-source alternative to Claude Agent SDK (Claude Code), ChatGPT Agents, and Manus. Self-hostable agentic AI system with multi-model collaboration.
+
+### Key Features
+
+- **Multi-Agent Collaboration** - Multiple agents can work together using different models
+- **Self-Hosting** - Full control over data and processes via Docker deployment
+- **Open Source** - Apache 2.0 licensed, fully modifiable
+- **Decision-Making Focus** - Emphasizes decision support over prompt-chasing
+
+### Quick Start
+
+```bash
+# Copy config and docker-compose
+mkdir deploy && cd deploy
+cp ../.docker/config.example.json ./config.json
+cp ../.docker/docker-compose.yml ./docker-compose.yml
+
+# Launch
+docker compose up -d
+```
+
+### How It Compares
+
+| Feature | Open-Agent | OpenHands | Claude Code | Codex |
+|---------|------------|-----------|-------------|-------|
+| Deployment | Docker self-host | Cloud/Local/Docker | CLI | CLI/Web |
+| Multi-Agent | Yes | No | No | No |
+| License | Apache 2.0 | MIT | Proprietary | Proprietary |
+| Open Source | Yes | Yes | No | No |
+
+### Why It's Interesting
+
+- Fills the gap for self-hosted multi-agent orchestration
+- Can mix different LLM providers/models within the same system
+- Active development with Discord community
+- Apache 2.0 license allows full commercial use and modification
+- Builds on ideas from AFFiNE and broader agentic AI community
+
+### Links
+
+- GitHub: https://github.com/AFK-surf/open-agent
+- Discord: Community server (linked from GitHub)
+- License: Apache 2.0
+
+---
+
+## Happy Coder - Voice Coding with Claude Code
+
+*Source: https://happy.engineering/docs/features/voice-coding-with-claude-code/ - Added: 2026-01-18*
+
+A mobile app that connects to Claude Code, enabling voice-driven coding sessions away from your desk. Real-time bidirectional sync means you can start on your phone and continue on your computer.
+
+### The Core Insight
+
+Voice coding isn't about replacing your desk setup—it's about capturing thinking time that would otherwise produce zero code.
+
+**Key realization:** Voice might be 50% as effective as sitting at your desk, but 50% of three extra hours beats 0% of those hours.
+
+### Why It Matters
+
+1. **Activation energy, not quality** - The barrier is starting, not output quality
+2. **Finger health** - AI assistants turned us into prompt machines (six books of text per month). Voice gives hands a break
+3. **High-risk idea exploration** - Think through that risky refactor without committing to a desk session
+4. **Time reclamation** - Hours between dinner and bed, Saturday mornings, commutes
+
+### The Voice Agent Architecture
+
+The voice agent is deliberately simple—a translator, not a partner:
+
+1. Uses Eleven Labs for speech-to-text
+2. Maintains its own context separate from Claude Code
+3. Cleans up verbal rambling into structured requests
+4. Syncs in real-time with your desktop session
+
+**Critical point:** It doesn't ask clever questions or provide insights. It does one thing: takes your rambling and makes it comprehensible to Claude Code.
+
+### Bidirectional Sync
+
+Start talking on your phone, continue typing on your computer. Or vice versa. The session persists across both.
+
+**The bridge effect:** Voice doesn't replace your desk—it bridges the gap between "too tired to sit at my desk" and "excited enough to go back."
+
+Example workflow:
+1. Talk through ideas in the hammock
+2. Claude Code stubs out implementations
+3. Get excited about what you're seeing
+4. Go inside where the same session is already open in your terminal
+
+### When to Use It
+
+| Good For | Not Good For |
+|----------|--------------|
+| Thinking through architecture | Precise syntax work |
+| Exploring risky refactors | Code review |
+| Creating Linear issues while driving | Documentation that needs formatting |
+| Brainstorming during "off" hours | Pair programming with others |
+| Breaking through activation energy | Tasks requiring immediate precision |
+
+### How It Compares
+
+| Feature | Happy Coder | speak_when_done | Crystal |
+|---------|-------------|-----------------|---------|
+| Primary Use | Voice input to Claude Code | TTS notification | Parallel sessions |
+| Mobile | Yes | No | No |
+| Sync | Real-time bidirectional | N/A | Git worktree |
+| Input | Voice | N/A | Text |
+| Platform | iOS, Android | macOS only | macOS, Windows |
+
+### The Deeper Philosophy
+
+> "Every engineer has that one idea... But you can't walk into Monday's standup and propose it without doing the homework first. These ideas need exploration time. But they can't get it because work hours are for delivering on commitments."
+
+Voice coding enables "side bets"—low-commitment exploration of ideas that might transform your codebase but need unofficial thinking time that doesn't exist otherwise.
+
+### Installation
+
+Get Happy Coder at:
+- GitHub: github.com/slopus/happy
+- iOS App Store
+- Android Play Store
+
+The voice agent prompts are fully customizable inside the app—no need to fork and rebuild to try different approaches.
+
+### Links
+
+- Docs: https://happy.engineering/docs/features/voice-coding-with-claude-code/
+- GitHub: https://github.com/slopus/happy
+
+---
+
+## Recall - Persistent Memory MCP Server for Claude
+
+*Source: https://www.npmjs.com/package/@joseairosa/recall - Added: 2026-01-18*
+
+An MCP server that gives Claude persistent memory via Redis, solving the context window problem by storing and retrieving relevant context across sessions.
+
+### Core Features
+
+- **Persistent Memory** - Memories survive context compaction and session restarts
+- **Workspace Isolation** - Memories scoped by working directory (project A doesn't pollute project B)
+- **Semantic Search** - Hybrid embeddings (Claude keywords + trigrams) for relevance retrieval
+- **Session Snapshots** - Summarize and save entire sessions for later reference
+- **Memory Relationships** - Link related memories, build knowledge graphs
+
+### Memory Types
+
+- `directive` - Guidelines and rules
+- `decision` - Architecture and design decisions
+- `code_pattern` - Code snippets and patterns
+- `session` - Session summaries
+- `context` - General context
+
+### Workspace Modes (v1.3+)
+
+- **isolated** (default) - Workspace-only memories, no cross-workspace access
+- **global** - All memories shared globally
+- **hybrid** - Both workspace-specific AND global memories
+
+### Installation
+
+```bash
+# Via npx (auto-updates)
+npx -y @joseairosa/recall
+
+# Global
+npm install -g @joseairosa/recall
+```
+
+### Configuration
+
+```json
+{
+  "mcpServers": {
+    "recall": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@joseairosa/recall"],
+      "env": {
+        "REDIS_URL": "redis://localhost:6379",
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+        "WORKSPACE_MODE": "hybrid"
+      }
+    }
+  }
+}
+```
+
+### Usage Examples
+
+```
+"Remember that our API base URL is https://api.example.com/v2"
+"Store this as a directive: Always use functional components in React"
+"Remember globally: I prefer TypeScript strict mode for all projects"
+"What do you remember about our database schema?"
+"Analyze our conversation and remember the important parts"
+"Summarize this session and save it as 'Authentication Refactoring'"
+```
+
+### Key Tools
+
+- `store_memory` / `store_batch_memories` - Store memories
+- `search_memories` - Semantic search with fuzzy/regex support
+- `recall_relevant_context` - Auto-retrieve relevant context
+- `analyze_and_remember` - Extract memories from conversation
+- `summarize_session` - Create session snapshots
+- `convert_to_global` / `convert_to_workspace` - Change memory scope
+- `link_memories` / `get_related_memories` - Build knowledge graphs
+- `export_memories` / `import_memories` - Backup and restore
+
+### Security Considerations
+
+**Critical:** Recall stores conversation context in Redis, which may include sensitive data (API keys, credentials, proprietary code, personal info).
+
+- Use dedicated, authenticated Redis instances
+- Enable TLS encryption (`rediss://`) for remote connections
+- Never use public/shared Redis for sensitive projects
+- Regularly audit stored memories
+- Consider Redis ACLs for fine-grained access control
+
+### Why It's Interesting
+
+- Solves the "repeating yourself" problem across sessions
+- Automatic context injection at conversation start
+- Cost-effective (~$0.20/day using Claude Haiku for analysis)
+- Team collaboration via shared Redis
+- Memory versioning and rollback (v1.5+)
+- Templates for reusable memory patterns
+
+### Links
+
+- npm: https://www.npmjs.com/package/@joseairosa/recall
+- Requires: Node.js 18+, Redis
+
+---
+
+## Crystal - Multi-Session Claude Code Manager
+
+*Source: https://github.com/stravu/crystal (blog: https://stravu.com/blog/crystal-supercharge-your-development-with-multi-session-claude-code-management) - Added: 2026-01-18*
+
+A desktop application (macOS) for managing multiple Claude Code sessions in parallel. Built by Stravu, who call it an "IVE" (Integrated Vibe Environment).
+
+### The Problem It Solves
+
+Running multiple Claude Code sessions from CLI is possible but cumbersome:
+- Switching between sessions requires multiple commands
+- Easy to forget what each session is working on
+- No unified view of session status
+- Git conflicts when working on parallel changes
+
+### Key Features
+
+- **Git Worktree Isolation**: Each session runs in its own git worktree, preventing conflicts
+- **Real-time Session Dashboard**: Monitor all sessions from unified interface
+- **Conversation Continuity**: Resume any session with full history intact
+- **Integrated Git Operations**: Rebase, squash commits, view diffs without leaving the app
+- **AI-Powered Session Naming**: Sessions auto-named based on prompts
+- **Visual Status Tracking**: See which sessions are initializing, running, waiting, or completed
+- **Execute & Test**: Run configured build/test scripts per worktree
+
+### Use Cases
+
+| Pattern | Description |
+|---------|-------------|
+| Multi-pass problem solving | Run same prompt multiple times, pick best solution |
+| Parallel feature development | Work on feature A while testing feature B |
+| Idea generation | Multiple "explore codebase and suggest improvements" sessions |
+| UX experimentation | Several "improve the look of X" sessions to compare |
+
+### Stravu Integration (MCP)
+
+Crystal connects to Stravu's collaboration platform to bridge business and dev teams:
+1. Write bugs/todos/features in Stravu notebook
+2. Crystal turns each into test cases
+3. Run tests, update status back in Stravu
+4. Write code, sync progress
+
+### Comparison
+
+| Feature | Crystal | CLI Multi-Session |
+|---------|---------|-------------------|
+| Session isolation | Git worktrees | Manual |
+| Session overview | Visual dashboard | tmux/screen splits |
+| Status tracking | Built-in indicators | None |
+| History resume | One-click | Manual session restore |
+| Git operations | Integrated UI | Separate terminal |
+
+### Open Source
+
+Crystal is open source and accepts pull requests.
+
+### Notes
+
+- macOS desktop app only (currently)
+- Solves the "AI downtime" problem while waiting for Claude Code responses
+- Enables "parallel exploration" development style
+- Good for comparing multiple approaches to same problem
+
+---
+
+## FleetCode - Parallel CLI Coding Agent Sessions
+
+*Source: https://github.com/built-by-as/FleetCode - Added: 2026-01-18*
+
+A desktop terminal application for running multiple CLI coding agents (Claude Code, Codex) simultaneously in isolated git worktrees. Similar to Crystal but with multi-agent support and terminal theming.
+
+### Key Features
+
+- **Multi-Agent Support**: Run Claude Code or Codex sessions in parallel
+- **Git Worktree Isolation**: Each session runs in its own worktree, keeping work separate
+- **Persistent Sessions**: Sessions persist across app restarts with automatic resumption
+- **Terminal Theming**: Choose from presets (macOS Light/Dark, Solarized Dark, Dracula, One Dark, GitHub Dark)
+- **Setup Commands**: Configure shell commands to run before the coding agent starts
+- **MCP Server Management**: Add and configure Model Context Protocol servers per session
+- **Session Management**: Rename, close, and delete sessions with automatic worktree cleanup
+
+### Session Workflow
+
+1. Select a project directory (must be a git repository)
+2. Choose a parent branch for the worktree
+3. Select your coding agent (Claude or Codex)
+4. Optionally add setup commands (e.g., environment variables, source files)
+5. FleetCode creates a new git worktree and spawns a terminal session
+
+### Comparison with Crystal
+
+| Feature | FleetCode | Crystal |
+|---------|-----------|---------|
+| Agents | Claude, Codex | Claude only |
+| Terminal theming | Yes (6 presets) | No |
+| MCP configuration | Built-in | Via Stravu |
+| Session naming | Manual | AI-powered |
+| Git operations | Basic | Integrated (rebase, squash) |
+| Status tracking | Basic | Visual dashboard |
+
+### Installation
+
+```bash
+npm install
+npm run dev  # development
+npm run build && npm start  # production
+```
+
+Requires: Node.js 16+, Git, Claude CLI or Codex
+
+### Troubleshooting
+
+- **macOS quarantine**: `xattr -cr /path/to/FleetCode.app`
+- **Claude working directory issues**: Disable "Auto connect to IDE" in Claude config (`claude config` → set `autoConnectToIde` to false)
+
+### Notes
+
+- Good for developers who use multiple coding agents (not just Claude)
+- Terminal theming helps differentiate sessions visually
+- Setup commands useful for project-specific environment configuration
+- Less polished than Crystal but more agent-flexible
+
+---
+
+## AG Grid MCP Server
+
+*Source: https://blog.ag-grid.com/introducing-the-ag-grid-model-context-protocol-mcp-server/ - Added: 2026-01-18*
+
+An MCP server that provides LLMs with version and framework-specific AG Grid context. Ensures responses use accurate, up-to-date documentation for the specific AG Grid version and framework you're using.
+
+### The Problem It Solves
+
+AG Grid has 350,000+ documentation pages across 99 versions and 4 frameworks, with new content added every six weeks. LLMs struggle with:
+- Outdated training data missing recent features/APIs
+- Framework nuances (React, Angular, Vue, Vanilla each have different syntax)
+- Version-specific differences in configs and migration paths
+- Residual context from removed documentation
+
+### Key Components
+
+- **Tools** - Schema-defined interfaces for searching docs and detecting/setting AG Grid version
+- **Prompts** - Pre-configured actions for common tasks (creating grids, migrating versions)
+- **Resources** - Documentation, examples, and API definitions in condensed markdown (optimized for token usage)
+
+### Use Cases
+
+- **Faster Initial Configuration** - Use `quick-start` prompt to scaffold a new grid tailored to your framework
+- **Version Migration** - Use `upgrade-grid` prompt to get step-by-step migration guidance between versions
+- **Feature Implementation** - Get precise instructions for complex features like Pivoting, Theming API, or Server Side Row Model
+
+### Installation
+
+```bash
+# For Claude Code
+claude mcp add ag-mcp -- npx ag-mcp
+```
+
+Works with any MCP-compatible LLM: Claude, Cursor, Copilot, etc.
+
+### Notes
+
+- Open source on GitHub (ag-mcp repo)
+- LLM-optimized search delivers condensed markdown to minimize token usage
+- Version-by-version migration approach ensures each step is correct before continuing
+- Good example of domain-specific MCP servers that give LLMs expert knowledge in a particular library
+
+---
+
+## CopilotKit
+
+*Source: https://www.copilotkit.ai/ - Added: 2026-01-18*
+
+A framework for building in-app AI copilots—adding AI assistants directly into your application's UI rather than running them externally.
+
+### Key Features
+
+- **In-App AI Copilots** - Build AI assistants that live inside your application, not as separate tools
+- **Single Command Setup** - `npx copilotkit@latest init` to get started
+- **Pre-built Components** - Customizable UI components for chat interfaces, suggestions, etc.
+- **Headless UI Option** - Use the logic layer without pre-built components for full design control
+
+### Quick Start
+
+```bash
+npx copilotkit@latest init
+```
+
+### Why It's Interesting
+
+- Different from other tools here—this is for **building** AI copilots into your apps, not for running coding agents
+- 22.3k GitHub stars, 100k+ developers
+- Good for adding AI assistance to user-facing applications (customer support, document editing, workflow automation)
+- Bridges the gap between "AI chatbot" and "AI-native application"
+
+### Use Cases
+
+- In-app customer support copilots
+- AI-powered document editors
+- Workflow assistants embedded in dashboards
+- Any app where you want AI to understand and act on app context
+
+### Notes
+
+- Compare with Vercel AI SDK, LangChain for similar use cases
+- The "in-app" focus is key—agents have access to application state and can take actions within the app
+- Different problem space from tools like Claude Code or Cursor which are coding assistants
+
+---
+
+## Amazon Bedrock AgentCore MCP Server
+
+*Source: https://aws.amazon.com/about-aws/whats-new/2025/10/open-source-mcp-server-amazon-bedrock-agentcore - Added: 2026-01-18*
+
+An open-source MCP server for Amazon Bedrock AgentCore that enables developers to analyze, transform, and deploy AI agents directly from their IDE using natural language.
+
+### Key Features
+
+- **One-Click Installation** - Integrates with Kiro, Claude Code, Cursor, and Amazon Q Developer CLI
+- **Natural Language Development** - Use natural language to iteratively develop agents
+- **AgentCore SDK Integration** - Transforms agent logic to work with the AgentCore SDK
+- **Direct Deployment** - Deploy agents to development accounts from your IDE
+- **Open Source** - Available on GitHub
+
+### Compatible Tools
+
+- Kiro (AWS agentic IDE)
+- Claude Code
+- Cursor
+- Amazon Q Developer CLI
+
+### Why It's Interesting
+
+- Bridges local agent development with AWS deployment infrastructure
+- Democratizes agent development by allowing natural language iteration
+- Part of AWS's push into the MCP ecosystem
+- Reduces friction between development and deployment of production agents
+
+### Getting Started
+
+- GitHub: AgentCore MCP Server repository
+- Docs: AgentCore documentation
+- Pricing: Amazon Bedrock AgentCore Pricing page
+
+### Notes
+
+- Pairs well with AWS Bedrock for model access
+- Good for teams already in the AWS ecosystem who want to deploy production agents
+- The "transform agent logic" feature suggests it can help migrate existing agent code to AWS patterns
+
+---
+
+## Nova Act IDE Extension
+
+*Source: https://aws.amazon.com/blogs/aws/accelerate-ai-agent-development-with-the-nova-act-ide-extension/ - Added: 2026-01-18*
+
+An IDE extension for building browser automation agents using natural language, built on top of the Amazon Nova Act SDK.
+
+### Key Features
+
+- **IDE Integration** - Works with VS Code, Cursor, and Kiro directly
+- **Natural Language Generation** - Describe workflows in plain English to generate automation scripts
+- **Builder Mode** - Notebook-style interface that breaks complex scripts into modular cells for individual testing/debugging
+- **Live Preview** - Real-time browser preview panel to watch agent actions as they execute
+- **Chat Interface** - Generate scripts via conversation with three modes: Ask, Edit, Agent
+- **Templates** - Predefined templates for common tasks: `/shopping`, `/extract`, `/search`, `/qa`, `/formfilling`
+- **Context Support** - Add active documents, instructions, MCP resources, and screenshots as context
+
+### How It Works
+
+1. Install extension from IDE marketplace
+2. Get API key from Nova Act page
+3. Use Builder Mode for notebook-style development OR chat to generate scripts
+4. Test with integrated live browser view and step-by-step debugging
+5. Output panel shows model's thinking and actions for debugging
+
+### Workflow Modes in Chat
+
+- **Ask** - Describe tasks in natural language to generate scripts
+- **Edit** - Refine or customize generated scripts
+- **Agent** - Run and monitor the AI agent performing the workflow
+
+### Why It's Interesting
+
+- Eliminates context switching between coding and browser testing
+- Modular cell-based editing allows debugging individual steps before moving on
+- Full-stack agent builder: prototype → customize → validate in one place
+- Open source (Apache 2.0) and free to use
+- Natural language + visual debugging is powerful combo for non-trivial automations
+
+### Use Cases
+
+- Form filling and data entry automation
+- QA and testing workflows
+- Web scraping and data extraction
+- Online shopping automation
+- Search and information gathering
+
+### Notes
+
+- Built on Amazon Nova Act SDK (preview)
+- Good for teams wanting to build production browser automation without leaving their IDE
+- Different from coding assistants like Claude Code—focused specifically on browser automation agents
+- Templates provide quick starting points for common automation patterns
+
+---
+
+## Claude Proxy - Multi-Provider Routing for Claude API
+
+*Source: https://github.com/raycastventures/claude-proxy - Added: 2026-01-18*
+
+A Python-based proxy server for routing Claude API requests across multiple providers (AWS Bedrock, OpenRouter, Cerebras, Groq) with intelligent fallback, rate limiting, and request monitoring.
+
+### Why Use This
+
+The official Claude Bedrock support only allows one model and quickly times out on most AWS accounts (limited to 2 requests/minute without a lengthy support ticket process). This proxy allows you to specify multiple fallback models/regions to avoid 429 errors.
+
+Also supports routing Haiku requests to Cerebras for near-instant responses. Note: Claude Code only uses Haiku for cosmetic messages like "Thinking..."
+
+### Key Features
+
+- **Multi-Provider Support** - AWS Bedrock, OpenAI, Cerebras, Groq, OpenRouter
+- **Intelligent Fallback** - Automatic failover between providers and models on 429s
+- **Rate Limiting** - Built-in protection against rate limits with configurable delays
+- **Streaming Support** - Real-time response streaming
+- **Request Monitoring** - SQLite-based request history tracking
+- **Web Dashboard** - Streamlit frontend at :8501 for monitoring requests, token usage, success rates
+
+### Quick Start
+
+```yaml
+# config.yaml
+server:
+  port: "3001"
+
+providers:
+  bedrock:
+    region: us-west-2
+
+routing:
+  enable: true
+  models:
+    - model: "default"
+      provider_sequence:
+        - name: "bedrock"
+          variants:
+            - model: us.anthropic.claude-opus-4-1-20250805-v1:0
+              region: us-west-2
+            - model: us.anthropic.claude-sonnet-4-20250514-v1:0
+              region: us-west-2
+    - model: "haiku"
+      provider_sequence:
+        - name: "bedrock"
+          variants:
+            - model: us.anthropic.claude-3-5-haiku-20241022-v1:0
+              region: us-west-2
+            - model: us.anthropic.claude-3-5-haiku-20241022-v1:0
+              region: us-east-1
+  retry_timeout_millis: 1000
+  rate_limit_seconds: 10
+```
+
+```bash
+# Start with uv
+uv run main.py
+
+# Server runs on port 3001 by default
+# Dashboard at http://localhost:8501
+```
+
+### Request Flow
+
+```
+Client → Proxy Server → Provider Selection → API Provider → Response
+               ↓
+       Bedrock (Sonnet) → Bedrock (Haiku) → OpenRouter (Sonnet) → Response
+```
+
+### API Endpoints
+
+- `POST /v1/messages` - Main endpoint (add `"stream": true` for streaming)
+- `GET /v1/models` - Available models
+- `GET /health` - Health check
+- `GET /debug` - Debug info
+
+### Dashboard Features
+
+- Request history with pagination
+- Success/fail metrics and rates
+- Token usage tracking
+- Error analysis
+- Real-time stats
+
+### Why Not Claude Code Router (CCR)?
+
+CCR is more complex. This proxy offers:
+- Simpler architecture and setup
+- Fallback support for 429s (especially useful on Bedrock)
+- Dashboard focused on tracking, not config editing
+
+### Requirements
+
+- Python 3.10+
+- AWS credentials configured for Bedrock
+- OpenRouter API key (optional, for fallback)
+
+### Use Case
+
+Useful for Claude Code users on AWS Bedrock who frequently hit rate limits. Point your client at `http://localhost:3001` instead of the Anthropic API directly.
+
+---
+
+## Async - AI Coding + Task Management
+
+*Source: https://www.async.build/ | GitHub: https://github.com/bkdevs/async-server - Added: 2026-01-18*
+
+An open-source dev tool that combines AI coding with task management and code review. Positions itself as "Claude Code + Linear + GitHub PRs" in one opinionated tool.
+
+### Key Features
+
+- **GitHub-Native** - Each task is a GitHub issue, PRs created automatically
+- **Cloud Execution** - Tasks run in isolated Google Cloud Run containers, not locally
+- **Research Agent** - Confirms requirements and asks clarifying questions before coding
+- **Focused Scope** - Intentionally limited to busywork (bug fixes, UI tweaks, simple features)
+- **Stacked Diffs** - Breaks work into reviewable subtasks with built-in code review
+- **Open Source** - MIT licensed, full source available
+
+### Tech Stack
+
+- Backend: FastAPI with async support
+- AI Models: Claude Code for implementation, OpenAI/Anthropic/Google models for research
+- Cloud: Google Cloud Platform with containerized execution (Cloud Run jobs)
+- Database: Firebase Firestore
+- Integrations: GitHub App, Stripe payments
+
+### Philosophy
+
+The interesting differentiator: Async says "no" and asks clarifying questions instead of blindly attempting tasks. Designed to make users think and encourage structured, critical thinking over lazy convenience-first interfaces.
+
+> "Coding agents can't do everything and we think it's a mistake to ask them to do more than they can."
+
+### Pricing
+
+- Free tier: 10 tasks/day
+- Paid: $20/month
+
+### Why It's Interesting
+
+- Opinionated approach that pushes back against "ask AI to do everything" mindset
+- Research-first workflow ensures requirements are clear before execution
+- GitHub integration means PRs and issues stay in familiar tooling
+- Self-aware about AI limitations - doesn't oversell capabilities
+
+### Concerns
+
+- Cloud execution means code runs on their infrastructure
+- Limited to "busywork" - may not replace more capable local agents for complex work
+- Dependency on their hosted service for execution
+
+---
+
+## pexpect-mcp - Interactive Debugging for AI Agents
+
+*Source: https://github.com/mitsuhiko/pexpect-mcp - Added: 2026-01-18*
+
+An MCP server by Armin Ronacher (mitsuhiko) that provides remote pexpect session control, enabling AI agents to interact with debuggers and CLI tools that require programmatic interaction.
+
+### What It Does
+
+Enables AI assistants to run Python code with pexpect functionality, allowing interactive sessions with:
+- LLDB and GDB debuggers
+- REPLs and interactive shells
+- Any CLI tool that requires back-and-forth interaction
+
+Essentially maintains a stateful Python session that AI agents can control.
+
+### Installation
+
+```bash
+uv tool install git+https://github.com/mitsuhiko/pexpect-mcp
+```
+
+### MCP Configuration
+
+```json
+{
+  "mcpServers": {
+    "pexpect": {
+      "command": "pexpect-mcp"
+    }
+  }
+}
+```
+
+### Usage Example
+
+```python
+# Start a debugging session
+child = pexpect.spawn('lldb ./my-program')
+child.expect('(lldb)')
+
+# Run the program
+child.sendline('run')
+child.expect('(lldb)')
+print(child.before.decode())
+
+# Get backtrace
+child.sendline('bt')
+child.expect('(lldb)')
+print(child.before.decode())
+```
+
+### Requirements
+
+- Python ≥ 3.12.1
+- pexpect ≥ 4.9.0
+- mcp ≥ 1.13.0
+
+### Why It's Interesting
+
+- From mitsuhiko (creator of Flask, Rye, etc.) - high-quality engineering expected
+- Enables AI to debug native code by controlling LLDB/GDB
+- Bridges AI agents to interactive tools that can't be scripted with simple command execution
+- Includes demo with buggy C program for testing
+
+### Use Cases
+
+- AI-assisted debugging of crashes in compiled programs
+- Interactive exploration of complex CLI tools
+- Teaching/learning debugging with AI assistance
+- Automated crash analysis and root cause identification
+
+---
+
+## Magnet - Parallel Claude Code Agent Orchestration
+
+*Source: https://www.magnet.run/ - Added: 2026-01-18*
+
+A platform for running multiple Claude Code agents in parallel sandboxes with AI-powered context management and documentation assistance.
+
+### What It Does
+
+- **Parallel Sandboxes** - Run multiple Claude Code agents simultaneously in isolated environments
+- **Context Suggestions** - Automatically suggests relevant context for tasks
+- **Documentation Maintenance** - Helps write and maintain comprehensive product docs that agents can reference
+- **Tool Supercharging** - Enhances existing workflows rather than replacing them
+
+### Key Features
+
+- Parallel agent execution without interference
+- AI-curated context recommendations
+- Product documentation as first-class concern (agents work better with good docs)
+- Integrates with existing tooling
+
+### Why It's Interesting
+
+- Addresses the "one agent at a time" limitation of local Claude Code
+- Context management is a key bottleneck - automatic suggestions could improve agent effectiveness
+- Docs-first philosophy aligns with good engineering practices (better docs → better agent output)
+- Positioned as enhancer rather than replacement - works with tools you already use
+
+### Comparison
+
+| Feature | Magnet | Crystal | Conductor |
+|---------|--------|---------|-----------|
+| Parallel Agents | Yes (sandboxes) | Yes (multi-session) | Yes (workspaces) |
+| Context Management | AI-suggested | Manual | Shared context |
+| Documentation | Built-in assistant | N/A | N/A |
+| Isolation | Sandbox-based | Session-based | Workspace-based |
+
+### Considerations
+
+- Cloud-based execution (code runs on their infrastructure)
+- Unclear pricing model
+- Adds another abstraction layer on top of Claude Code
+
+### Links
+
+- Website: https://www.magnet.run/
+
+---
+
+## Stagewise - Browser Toolbar for Frontend AI Coding
+
+*Source: https://github.com/stagewise-io/stagewise - Added: 2026-01-18*
+
+A browser toolbar that connects your frontend UI directly to AI coding agents in your code editor. Select elements visually and let AI make the changes.
+
+### Key Features
+
+- **Visual Element Selection** - Click on any element(s) in your web app to provide context
+- **Comment & Context** - Leave comments on elements, sends DOM + metadata to AI agent
+- **Multi-Framework Support** - React, Vue, Svelte, and more
+- **Plugin System** - Extend functionality with custom plugins
+- **Quick Setup** - Install extension + inject toolbar, works out of the box
+
+### Supported Editors
+
+- Cursor
+- VS Code
+- Trae
+- Windsurf
+
+### Installation
+
+```bash
+# 1. Install extension from your editor's marketplace
+# 2. Install toolbar package
+pnpm i -D @stagewise/toolbar
+
+# 3. Inject in dev mode
+import { initToolbar } from '@stagewise/toolbar';
+
+if (process.env.NODE_ENV === 'development') {
+  initToolbar({ plugins: [] });
+}
+```
+
+Or use the AI-assisted setup: `CMD + Shift + P` → `setupToolbar`
+
+### Why It's Interesting
+
+- **Visual-first workflow** - Point at what you want to change instead of describing it
+- **Bridges UI and code** - Particularly useful for frontend work where visual context matters
+- **Agent-agnostic** - Works with various AI agents through editor extensions
+- **Native frontend agent coming** - Building their own faster agent optimized for UI work
+
+### Comparison
+
+| Feature | Stagewise | Heatmap (0github) | Standard AI Coding |
+|---------|-----------|-------------------|-------------------|
+| Visual Selection | Yes (live UI) | Yes (diff view) | No |
+| Context Source | DOM elements | Code changes | File content |
+| Best For | Frontend editing | Code review | General coding |
+| Integration | Browser + editor | GitHub URL swap | Editor only |
+
+### Considerations
+
+- AGPLv3 license (may limit commercial use without enterprise agreement)
+- Requires toolbar injection into your dev build
+- Most valuable for visual/frontend work specifically
+
+### Links
+
+- GitHub: https://github.com/stagewise-io/stagewise
+- Discord: Community support available
+
+---
+
+## Amazon Q Developer CLI Custom Agents
+
+*Source: https://aws.amazon.com/blogs/devops/overcome-development-disarray-with-amazon-q-developer-cli-custom-agents/ - Added: 2026-01-18*
+
+Custom agents in Amazon Q Developer CLI allow developers to create tailored configurations for different development contexts (front-end, back-end, testing, data science, etc.), making it easy to switch between projects with different tech stacks.
+
+### Problem Solved
+
+When working on multi-tier apps with different tools (e.g., Figma for frontend, PostgreSQL for backend), having all MCP servers loaded creates ambiguity. If you ask "how many tables do I have?", Q Developer can't tell if you mean HTML tables or SQL tables.
+
+### Key Features
+
+- **Context-Specific MCP Servers** - Load only the tools relevant to the current task
+- **Tool Permissions** - Fine-grained control over which tools are trusted (auto-run) vs require confirmation
+- **Resources** - Pre-load context files (README, coding preferences) into the session
+- **Hooks** - Run commands at agent spawn (e.g., `git status`) to inject runtime context
+
+### Configuration
+
+Agents stored in `~/.aws/amazonq/agents/<name>.json`:
+
+```json
+{
+  "description": "Optimized for front-end web development using React and Figma",
+  "mcpServers": {
+    "Figma": {
+      "command": "npx",
+      "args": ["mcp-remote", "http://127.0.0.1:3845/sse"]
+    }
+  },
+  "tools": ["*"],
+  "allowedTools": [
+    "fs_read",
+    "fs_write",
+    "report_issues",
+    "@Figma"
+  ],
+  "resources": [
+    "file://README.md",
+    "file://~/.aws/amazonq/react-preferences.md"
+  ],
+  "hooks": {
+    "agentSpawn": [
+      { "command": "git status" }
+    ]
+  }
+}
+```
+
+### Usage
+
+```bash
+q chat --agent front-end   # Use front-end agent with Figma
+q chat --agent back-end    # Use back-end agent with PostgreSQL
+```
+
+### Tool Permission Patterns
+
+- `@Figma` - Trust all tools from the Figma MCP server
+- `@PostgreSQL/get_table_schema` - Trust only specific tool from server
+- `fs_read`, `fs_write` - Trust individual built-in tools
+
+### Example Agents
+
+| Agent | MCP Server | Trusted Tools | Resources |
+|-------|-----------|---------------|-----------|
+| front-end | Figma | fs_read, fs_write, @Figma | react-preferences.md |
+| back-end | PostgreSQL | fs_read, @PostgreSQL/get_table_schema | python-preferences.md, sql-preferences.md |
+| testing | - | fs_read, execute_bash | testing-guidelines.md |
+
+### Why It's Useful
+
+- **Reduced cognitive overhead** - No need to manually reconfigure between projects
+- **Safer workflows** - Only trust tools appropriate for the current context
+- **Consistent context** - Preferences and project context auto-loaded
+- **Language clarity** - Eliminates ambiguity when same terms mean different things in different contexts
+
+### Related
+
+- See also: [AWS Q Developer Cost Management](/Users/jesse/jpt/knowledge/aws-q-developer-cost-management.md) for Q Developer's cost analysis capabilities
+- MCP servers for AWS services available from AWS Labs GitHub
+
+---
+
+## Amazon Q Developer - State of the Art Software Development Agent
+
+*Source: https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-q-developer-releases-state-art-agent-feature-development - Added: 2026-01-18*
+
+Amazon Q Developer's software development agent update achieves top-tier benchmarks: **49% on SWE-Bench Verified** (state-of-the-art) and **66% on SWEBench Verified** (among top ranking models).
+
+### What's New
+
+- **Multi-candidate solution generation** - Agent generates multiple solutions for a problem, evaluates them, and selects the best one
+- **Dedicated execution environment** - Runs in isolated environment with full modern IDE capabilities
+- **Advanced planning and reasoning** - Uses tools that leverage advanced models' full capacity
+- **Higher quality code output** - Improved reliability means less debugging time
+
+### How to Use
+
+1. Install Amazon Q Developer plugin in VS Code or JetBrains IDE
+2. Type `/dev` in the Q chat window
+3. Describe the feature or problem
+4. Agent handles planning, coding, and returns high-quality solution
+
+### Why It Matters
+
+- SWE-Bench Verified is the industry standard for evaluating AI coding agents on real-world software engineering tasks
+- 49% SOTA puts Q Developer ahead of or competitive with most frontier models
+- Multi-candidate approach mirrors how experienced developers explore solution space before committing
+- Available in all AWS Regions where Amazon Q is supported
+
+### Availability
+
+- VS Code (via Amazon Q Developer plugin)
+- JetBrains IDEs (via Amazon Q Developer plugin)
+- Invoke with `/dev` command in chat
+
+---
+
+## Kiro - Spec-Driven Agentic IDE
+
+*Source: https://kiro.dev/blog/introducing-kiro/ - Added: 2026-01-18*
+
+An agentic IDE from AWS that emphasizes spec-driven development—moving beyond "vibe coding" to help get prototypes into production systems through structured requirements, design docs, and task management.
+
+### Key Features
+
+- **Spec-Driven Development** - Generates requirements, technical designs, and implementation tasks from prompts
+- **Three-Phase Specs**:
+  1. **Requirements** - User stories with EARS notation acceptance criteria
+  2. **Design Docs** - Data flow diagrams, TypeScript interfaces, DB schemas, API endpoints
+  3. **Tasks** - Sequenced tasks with sub-tasks, linked back to requirements
+- **Agent Hooks** - Event-driven automations that run when you save/create/delete files
+- **VS Code Compatible** - Built on Code OSS, keeps VS Code settings and Open VSX plugins
+- **MCP Support** - Model Context Protocol for connecting specialized tools
+- **Steering Rules** - Guide AI behavior across your project
+
+### How Specs Work
+
+1. **Prompt** → "Add a review system for products"
+2. **Requirements Generated** → User stories for viewing, creating, filtering, rating reviews with acceptance criteria
+3. **Design Generated** → Analyzes codebase, creates interfaces, schemas, API endpoints
+4. **Tasks Generated** → Sequenced implementation tasks with dependencies, tests, accessibility requirements
+5. **Execute** → Run tasks one-by-one with progress tracking and audit trail
+
+### Hooks Examples
+
+Hooks enforce consistency automatically across teams:
+
+- Save React component → Updates test file
+- Modify API endpoints → Refreshes README
+- Pre-commit → Security scan for leaked credentials
+- New component → Validates against coding standards (e.g., Single Responsibility Principle)
+
+### Why It's Interesting
+
+- **Documentation-first approach** - Addresses the common problem where docs drift from implementation
+- **Production-focused** - Explicitly designed for getting past the prototype phase
+- **Auditable** - Can view code diffs and agent execution history
+- **Team scalability** - Hooks committed to Git enforce standards across entire team
+- **Free during preview** - Currently in preview with some limits
+
+### Comparison
+
+| Feature | Kiro | Claude Code | Cursor | Amp |
+|---------|------|-------------|--------|-----|
+| Spec Generation | Yes (3-phase) | No | No | Partial |
+| Auto-Documentation | Yes (stays synced) | No | No | No |
+| Hooks/Automations | Yes (file events) | Yes (claude hooks) | No | No |
+| Task Management | Built-in | Via TodoWrite | No | Yes |
+| VS Code Compatible | Yes | Via extension | Fork | Fork |
+
+### Considerations
+
+- AWS product - likely integrates well with AWS ecosystem
+- Spec-driven approach adds overhead vs. pure vibe coding
+- Trade-off: more structure = more production-ready, but less immediate gratification
+- Built on Code OSS, not a web-based IDE
+
+### Links
+
+- Website: https://kiro.dev/
+- Tutorial: Available after installation
+- Discord: Community server available
+
+---
+
+## GitHub Copilot Agent Mode + MCP Workflow
+
+*Source: https://austen.info/blog/github-copilot-agent-mcp/ - Added: 2026-01-18*
+
+A structured workflow for using GitHub Copilot Agent Mode in VS Code with MCP servers, custom chat modes, and prompt files for phased development.
+
+### Key Concepts
+
+1. **Custom Instructions** - Define coding practices, preferences, and constraints that persist across sessions
+2. **Custom Chat Modes** - Create specialized modes for different phases (research, planning, implementation)
+3. **Prompt Files** - Store reusable task templates in `.github/prompts/*.prompt.md`
+4. **MCP Servers** - Extend agent capabilities with external tools
+
+### Recommended VS Code Settings
+
+```json
+{
+  "github.copilot.chat.codeGeneration.instructions": "...",  // Custom coding instructions
+  "chat.agent.maxRequests": 50,  // Let agent run longer without asking permission
+  "chat.tools.autoApprove": true  // Auto-approve run commands and tool requests
+}
+```
+
+### Useful MCP Servers
+
+- **Sequential Thinking** - Reflective problem-solving through thought sequences
+- **SearXNG** - Web search capabilities
+- **Playwright** - Browser automation and testing
+- **GitHub** - Repository management and file operations
+- **time** - Current time/date access
+- **Fetch** - Web content fetching for LLM consumption
+
+### Phased Workflow
+
+#### 1. Research Phase
+- Use custom "research" chat mode with web search + sequential thinking tools
+- Model: Gemini 2.5 Pro (good for synthesis)
+- Goal: Understand concepts, evaluate approaches
+
+#### 2. Planning Phase
+- Use custom "plan" chat mode with code editing disabled
+- Model: Gemini 2.5 Pro
+- Output: `.github/prompts/<feature>.prompt.md` file
+- The prompt file serves as a blueprint/contract for implementation
+
+#### 3. Implementation Phase
+- Switch to regular agent mode
+- Model: Claude Sonnet 4 (better for code generation)
+- Run prompt with `/prompt-name` command
+- Agent executes the plan with full context
+
+#### 4. Course Correction
+When agent deviates:
+1. Clear git diff to reset changes
+2. Modify the prompt file based on learnings
+3. Restart implementation from scratch
+
+This iterative refinement improves prompts for future use.
+
+#### 5. Validation
+- Use Playwright MCP for UI testing
+- Agent can browse and interact with the application
+- Enables visual verification of implementations
+
+### Why This Approach Works
+
+- **Separation of concerns** - Different models for different strengths (Gemini for planning, Claude for implementation)
+- **Prompt files as contracts** - Planning phase output becomes implementation phase input
+- **Reproducibility** - Documented prompts make complex tasks repeatable
+- **Tool-aware modes** - Each phase has only the tools it needs
+- **Iterative improvement** - Prompts get refined over time
+
+### Comparison to Other Workflows
+
+| Aspect | Copilot Agent + MCP | Claude Code | Kiro |
+|--------|---------------------|-------------|------|
+| Planning | Custom chat modes + prompt files | Built-in (via TodoWrite) | Spec-driven (3-phase) |
+| Tool Access | MCP servers | Native tools + MCP | MCP + agent hooks |
+| Model Choice | Can switch per phase | Fixed (Claude) | AWS Bedrock models |
+| Prompt Reuse | .prompt.md files | CLAUDE.md + skills | Specs stored in project |
+
+### Notes
+
+- Requires VS Code with Copilot Chat extension
+- Custom chat modes need manual setup in settings
+- The "prompt file as contract" pattern could work with other agents too
+- Good example of using right model for each phase rather than one-size-fits-all
+
+---
+
+## Qodo (formerly Codium) - Quality-First AI Coding Platform
+
+*Source: https://www.qodo.ai/ - Added: 2026-01-18*
+
+AI coding platform emphasizing code quality throughout the development pipeline. Formerly known as Codium.
+
+### Key Products
+
+- **Qodo Gen** - Generative AI solutions for code quality
+- **Qodo Gen CLI** - Command-line interface for building, running, and managing AI agents (currently in Alpha)
+- **Code Integrity Platform** - Bulletproof code quality tooling
+
+### Features
+
+- Generative AI solutions across the development pipeline
+- CLI for AI agent management
+- Focus on code quality over just code generation
+- Python-focused (based on marketing materials showing Python code review tools)
+
+### Why It's Interesting
+
+- "Quality-first" positioning differentiates from pure code generation tools
+- CLI for managing AI agents suggests infrastructure-level tooling
+- Codium rebranding to Qodo suggests a pivot toward broader platform play
+- Worth tracking as code quality + AI is an underexplored combination
+
+### Notes
+
+- Qodo Gen CLI is in Alpha as of mid-2026
+- Previously known as Codium (not to be confused with VS Codium, the OSS VS Code fork)
+- Positioned more as code quality tooling than pure agent/assistant
+
+---
+
+## Amp - Agentic Coding Tool
+
+*Source: https://ampcode.com/ - Added: 2026-01-18*
+
+An agentic coding tool designed to maximize capabilities with frontier models—autonomous reasoning, comprehensive code editing, and complex task execution.
+
+### Key Features
+
+- **Autonomous Reasoning** - Built for agentic workflows, not just autocomplete
+- **Comprehensive Code Editing** - Handles multi-file changes and refactoring
+- **Complex Task Execution** - Designed for longer-running, multi-step tasks
+- **Frontier Model Focus** - Optimized for latest generation models
+
+### Why It's Interesting
+
+- Explicitly designed for the "agentic" paradigm rather than copilot-style assistance
+- Competes with Claude Code, Cursor Agent Mode, and Codex in the autonomous coding space
+- Emphasis on maximizing what frontier models can do suggests they may be early to adopt new model capabilities
+- Could shift required skill set toward adaptability over traditional coding skills
+
+### Considerations
+
+- New entrant in increasingly crowded agentic coding space
+- Worth tracking how they differentiate from established players
+- Balance automation with maintaining foundational coding understanding
+
+### Notes
+
+- As of mid-2026, positioned as a standalone agentic tool
+- Testimonials suggest good support/community engagement
+
+---
+
+## Codacy Guardrails - AI Code Quality & Security Enforcement
+
+*Source: https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/ - Added: 2026-01-18*
+
+Real-time code security and quality enforcement for AI-generated code, built into the free Codacy IDE extension. Blocks insecure patterns and applies best practices while code is being generated.
+
+### Key Features
+
+- **Real-Time AI Code Scanning** - Catches issues as AI generates code
+- **MCP Server Integration** - Query Codacy findings from AI chat panels
+- **Multi-IDE Support** - VSCode, Cursor, Windsurf, Claude Desktop
+- **Built-in Scanners** - Trivy, Semgrep, ESLint, Pylint, PMD, dartanalyzer, Lizard
+
+### Supported Platforms
+
+- macOS, Linux, Windows (WSL only for now)
+- VSCode (Insiders recommended), Cursor, Windsurf
+
+### Quick Setup
+
+```bash
+# 1. Install extension from IDE marketplace
+# 2. Install Codacy CLI
+brew install codacy/codacy-cli-v2/codacy-cli-v2  # macOS
+# or
+bash <(curl -Ls https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh)  # Linux
+
+# 3. Install tools for analysis
+codacy-cli install
+
+# 4. Add MCP server via extension UI or manually
+```
+
+### MCP Server Configuration
+
+For Cursor/Windsurf/Claude Desktop (in respective config files):
+```json
+{
+  "mcpServers": {
+    "codacy": {
+      "command": "npx",
+      "args": ["-y", "@codacy/codacy-mcp"],
+      "env": {
+        "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>",
+        "CODACY_CLI_VERSION": "<VERSION>"
+      }
+    }
+  }
+}
+```
+
+For VSCode Copilot (in settings.json):
+```json
+{
+  "mcp": {
+    "servers": {
+      "codacy": {
+        "command": "npx",
+        "args": ["-y", "@codacy/codacy-mcp"],
+        "env": {
+          "CODACY_ACCOUNT_TOKEN": "<YOUR_TOKEN>"
+        }
+      }
+    }
+  }
+}
+```
+
+### Why It's Interesting
+
+- Addresses the "AI code quality" problem - catches security issues before they ship
+- MCP integration means you can ask about findings without leaving chat
+- Free tier available via IDE extension
+- Complements Claude Code/Cursor workflow rather than replacing it
+
+### Considerations
+
+- Creates `.codacy` folder in repos (add to .gitignore if unwanted)
+- Manual MCP setup requires creating AI rules yourself (extension handles this automatically)
+- Windows requires WSL setup
+- Need to use Agent mode in Copilot chat for MCP features
+
+### Notes
+
+- NPM package: `@codacy/codacy-mcp`
+- Pairs well with existing coding agent workflows as a quality gate
+- Real-time feedback loop could speed up AI code iteration
+
+---
+
+## Jules - Google's Async Coding Agent
+
+*Source: https://jules.google/docs/ - Added: 2026-01-18*
+
+An experimental coding agent from Google that integrates with GitHub to handle bug fixes, documentation, and feature development asynchronously.
+
+### Key Features
+
+- **GitHub Integration** - Connects to your repos, clones code, and creates PRs
+- **Asynchronous Workflow** - Submit task and walk away; get notified when done
+- **Plan Review** - Generates a plan before making changes; you approve before execution
+- **Virtual Machine Execution** - Runs in isolated VM, installs deps, modifies files
+
+### How It Works
+
+1. Connect GitHub account and select repos
+2. Choose repository and branch
+3. Write a specific prompt (e.g., "Add a test for parseQueryString in utils.js")
+4. (Optional) Add environment setup scripts
+5. Review and approve the generated plan
+6. Jules executes and notifies when complete
+
+### Quick Start
+
+1. Visit jules.google.com
+2. Sign in with Google account
+3. Connect GitHub (all repos or specific ones)
+4. Select repo, write prompt, approve plan
+
+### Comparison with Other Agents
+
+| Feature | Jules | Claude Code | Cursor | Codex |
+|---------|-------|-------------|--------|-------|
+| Primary Mode | Async/background | Interactive | Interactive | Async |
+| VCS Integration | GitHub native | Git CLI | Git CLI | GitHub |
+| Plan Review | Required | Optional | No | Yes |
+| Execution | Cloud VM | Local | Local | Cloud |
+
+### Use Cases
+
+- Bug fixes while you're in meetings
+- Documentation generation
+- Routine feature additions
+- Test writing
+
+### Considerations
+
+- Experimental/early stage
+- Requires Google account
+- Limited to GitHub (no GitLab, Bitbucket)
+- Cloud execution means code goes to Google's servers
+
+### Notes
+
+- Fits the "delegate and forget" async agent pattern
+- Good for tasks that don't need real-time iteration
+- Browser notifications keep you informed without constant monitoring
+- [Jules Awesome Prompts repo](https://github.com/google/jules-awesome-prompts) has real-world examples
+
+
+---
+
+## ask-human MCP - Human-in-the-Loop for AI Agents
+
+*Source: https://masonyarbrough.com/blog/ask-human - Added: 2026-01-18*
+
+An MCP server that lets AI agents ask questions instead of hallucinating. When the agent is confused or uncertain, it can "raise its hand" and wait for human input.
+
+### The Problem
+
+- AI agents blurt out endpoints that never existed
+- False confidence leads to assumptions that are simply wrong
+- Debugging hallucinations wastes hours when the agent could just ask
+
+### How It Works
+
+```
+agent → ask_human()
+⬇
+question lands in ask_human.md
+⬇
+you swap "PENDING" for the answer
+⬇
+agent keeps coding
+```
+
+### Installation
+
+```bash
+pip install ask-human-mcp
+ask-human-mcp --help
+```
+
+### Cursor Setup
+
+`.cursor/mcp.json`:
+```json
+{
+  "mcpServers": {
+    "ask-human": { "command": "ask-human-mcp" }
+  }
+}
+```
+
+Restart Cursor and the tool is available.
+
+### Features
+
+- Zero config, cross-platform
+- File-watching for instant feedback
+- Supports multiple agents
+- Built-in locks and limits
+- Full Q&A history in markdown (debugging paper trail)
+
+### Why It Matters
+
+Reframes AI coding assistants as "sharp interns who actually ask before guessing" rather than fully autonomous agents. The escape hatch prevents the frustrating cycle of AI confidently producing wrong outputs.
+
+### See Also
+
+- Context engineering patterns in `context-engineering-agents.md`
+- MCP protocol adoption in `mcp-protocol-adoption.md`
+
+---
+
+## OpenAI Codex - Hands-on Review
+
+*Source: https://zackproser.com/blog/openai-codex-review - Added: 2026-01-18*
+
+Chat-first interface for managing coding tasks across GitHub repositories. Designed for firing off many tasks in parallel.
+
+### How It Works
+
+1. Enable MFA (required)
+2. Authorize Codex GitHub app for your orgs
+3. Codex clones repos into sandboxed environments
+4. Specify repo + branch, then describe tasks in natural language
+5. Tasks run in parallel; check in on progress, request changes via chat
+6. Hit "Open PR" when satisfied
+
+### Strengths
+
+- **Multi-threaded workflow** - Initiate a day's worth of tasks in parallel via natural language
+- **Mobile-friendly** - Usable from phone for "untethered workflow" (checking in while away from desk)
+- **Chat-based follow-ups** - Click into any task for familiar chat interface to iterate
+- **Auto PR creation** - One click opens PR with auto-filled description
+- **Logs visibility** - View raw commands/shells Codex spawns to make changes
+
+### Current Limitations (as of mid-2025)
+
+- **Poor error handling** - Tasks fail with unclear error messages
+- **One-shot execution** - ~40-60% chance of being satisfied enough to merge without changes
+- **Multi-turn updates awkward** - Pushing follow-up commits to existing branches is clunky
+- **PR proliferation** - Encourages creating new PRs rather than iterating on existing branches
+- **No network in sandbox** - Can't run `pnpm add @package@latest` or resolve dependencies
+- **Maintenance-level tasks only** - Large refactors become cumbersome quickly
+
+### Best Use Cases
+
+- Minor copy tweaks
+- Style changes
+- Small maintenance chores
+- Tasks that can ship in a single pass
+
+### Not Great For
+
+- Large refactors
+- Multi-step feature building
+- Dependency updates (no network access)
+- Tasks requiring iteration
+
+### Productivity Assessment
+
+Not yet a game-changer, but has potential once:
+- More tasks become one-shottable
+- Multi-turn branch updates improve
+- Additional integrations (image generation, etc.) arrive
+- Orchestration layer matures
+
+Currently useful for "flushing low-priority maintenance tasks at the start of the day." For significant work, an IDE with LLM support is still more effective.
+
+### Comparison
+
+| Feature | Codex | Claude Code | Cursor | Jules |
+|---------|-------|-------------|--------|-------|
+| Primary Mode | Async/parallel | Interactive | Interactive | Async |
+| Interface | Chat-first web | CLI | IDE | Browser |
+| Multi-task | Native | Via subagents | No | Via queue |
+| Network Access | No (sandboxed) | Yes | Yes | Unknown |
+| PR Workflow | Built-in | Manual | Manual | Built-in |
+| Best For | Bulk maintenance | Complex work | Daily coding | Delegate & forget |
+
+### Pricing
+
+- Requires Pro subscription ($200/month) or invite
+
+---
+
+## codesys SDK - Python SDK for Claude CLI Automation
+
+*Source: https://github.com/RVCA212/codesys - Added: 2026-01-18*
+
+Python SDK for programmatically interacting with the Claude CLI tool. Enables scripting Claude Code workflows, particularly useful for plan-then-execute patterns.
+
+### Installation
+
+```bash
+pip install codesys
+```
+
+Requires Python 3.8+ and Claude CLI installed and configured.
+
+### Basic Usage
+
+```python
+from codesys import Agent
+
+agent = Agent(working_dir="/path/to/project/")
+lines = agent.run("/init", stream=True)
+```
+
+### Key Workflow: Plan Then Execute
+
+The recommended pattern mirrors effective human-Claude Code interaction:
+
+```python
+def generate_plan(working_dir, user_message):
+    """Generate a plan in plan.md based on the user message."""
+    prompt = f'''
+generate a plan into plan.md file given the following task:
+<task>
+{user_message}
+</task>
+Given this task, explore the codebase and create a plan for the implementation into plan.md. ultrathink
+'''
+    Agent(working_dir=working_dir).run(prompt, stream=True)
+
+def execute_plan(working_dir):
+    """Execute the plan laid out in plan.md."""
+    prompt = 'Implement the task laid out in plan.md: ultrathink'
+    Agent(working_dir=working_dir).run(prompt, stream=True)
+```
+
+### API Reference
+
+**Agent Class:**
+- `Agent(working_dir=None, allowed_tools=None)` - Initialize with directory and optional tool restrictions
+- Default tools: `["Edit", "Bash", "Write"]`
+
+**Methods:**
+- `run(prompt, stream=False, output_format=None, additional_args=None, auto_print=True)` - Run Claude with prompt
+- `run_with_tools(prompt, tools, stream=False)` - Run with specific tools for one operation
+
+**Streaming Options:**
+- `stream=True, auto_print=True` - Prints output, returns collected lines
+- `stream=True, auto_print=False` - Returns subprocess.Popen for manual handling
+- `stream=False` - Returns complete output as string
+
+### Tool Restriction Example
+
+```python
+# Restrict to read-only tools
+agent = Agent(working_dir="./", allowed_tools=["View"])
+
+# Or temporarily restrict for one operation
+agent.run_with_tools(
+    prompt="List files in current directory",
+    tools=["Bash"],
+    stream=False
+)  # Original tools restored after call
+```
+
+### Why It's Interesting
+
+- **Scriptable Claude Code** - Automate repetitive Claude workflows
+- **Plan-Execute Pattern** - Codifies the two-phase approach that works well with agentic coding
+- **Tool Sandboxing** - Can restrict agent capabilities per-task
+- **Streaming Support** - Real-time output for long-running tasks
+- **Simple Wrapper** - Thin SDK, easy to understand and extend
+
+### Comparison to Other Approaches
+
+| Approach | Use Case |
+|----------|----------|
+| codesys SDK | Python scripts automating Claude CLI |
+| Direct Claude CLI | Interactive terminal sessions |
+| Async Server | Background Claude Code instances |
+| Crystal | Multi-agent orchestration |
+
+### Limitations
+
+- Requires Claude CLI already configured
+- No built-in concurrency management
+- "ultrathink" prompts in examples are prompt engineering, not SDK features
+
+License: MIT
+
+---
+
+## Flowcode - Visual AI Workflow Builder with Open-Source Core
+
+*Source: https://www.getflowcode.io/ - Added: 2026-01-18*
+
+A low-code platform for building production-grade AI workflows visually. Differentiator is the open-source core (Flyde) enabling self-hosting without vendor lock-in.
+
+### Key Features
+
+- **Visual Canvas** - Drag-and-drop workflow builder for AI agents, integrations, and logic
+- **AI Copilot** - Adjust or build entire flows using natural language
+- **Visual Debugging** - Debug workflows visually instead of tracing through code
+- **One-Click Deploy** - Deploy workflows without infrastructure management
+- **Turing-Complete** - Full flexibility for complex logic, not limited to simple automations
+
+### Open-Source Foundation: Flyde
+
+The key differentiator - Flowcode is built on Flyde, an open-source visual programming language:
+
+- **Export Without Lock-in** - Export flows as `.flyde` files, run them with VS Code extension
+- **No Docker Required** - Just paste the flow file, no heavyweight container infrastructure
+- **Self-Hostable** - Keep full control of execution environment
+
+### Target Users
+
+| Role | Use Case |
+|------|----------|
+| Technical PMs | Add AI features, iterate on prompts without full dev cycles |
+| Backend Developers | Create AI-driven APIs with visual debugging |
+| IT/Automation Experts | Build and review AI automations quickly |
+
+### Example Use Case
+
+> "This flow is triggered via the SDK by a new user signup and generates insights on every new user"
+
+Shows integration pattern: external triggers (signup event) → workflow execution → data generation
+
+### Comparison to Similar Tools
+
+| Feature | Flowcode | Sim Studio | Inkeep | n8n |
+|---------|----------|------------|--------|-----|
+| Primary Focus | AI workflows | Agent workflows | AI agents | General automation |
+| Visual Editor | Yes | Yes (ReactFlow) | Yes | Yes |
+| Open Source | Core (Flyde) | Full | Partial | Full |
+| Self-Host | Yes (export flows) | Yes (Docker) | Unknown | Yes |
+| AI Copilot | Yes | Unknown | No | No |
+| VS Code Integration | Yes (Flyde extension) | No | No | No |
+
+### Why It's Interesting
+
+- **No vendor lock-in** - Open-source Flyde means you can export and self-host without converting to code
+- **Hybrid approach** - Get low-code speed with code-level flexibility
+- **VS Code bridge** - Flows can be edited in VS Code via extension, bridging visual and code-first workflows
+- **Founder-level support** - Small team, responsive to feature requests
+
+### Trade-offs
+
+- Newer platform (less ecosystem/community than n8n or Make)
+- Requires learning Flyde visual paradigm
+- Cloud-first (self-hosting via export, not traditional deployment)
+
+### Pricing
+
+Not detailed on landing page - likely freemium with cloud hosting tiers.
+
+---
+
+## TmuxAI - AI-Powered Terminal Assistant
+
+*Source: https://tmuxai.dev/ - Added: 2026-01-18*
+
+Non-intrusive terminal assistant that runs alongside you in a tmux pane. Observes your terminal screen and provides context-aware help based on what's visible - mimics a colleague watching your screen.
+
+### Installation
+
+```bash
+curl -fsSL https://get.tmuxai.dev | bash
+```
+
+### Key Features
+
+- **Context-Aware Assistance** - Reads and understands what's displayed across all tmux panes in real-time
+- **Zero-Configuration** - Works with existing tmux setup, no special shells or wrappers needed
+- **Universal Compatibility** - Works with nested shells, SSH, database CLIs, network equipment shells (Cisco IOS, Juniper, etc.)
+- **Proactive Mode** - Can monitor terminal activity and offer improvements based on your goals
+- **Open Source** - Free to use and adapt
+
+### How It Works
+
+1. Runs in a tmux pane alongside your work
+2. Observes visible terminal content across panes
+3. Provides suggestions with confirmation prompts: `[Y]es/No/Edit`
+4. Can execute commands on your behalf after approval
+
+### Example Usage
+
+```
+$tmuxai find large files and cleanup some space
+
+TmuxAI » find . -type f -size +100M -exec du -h {} \; | sort -rh | head -5
+Do you want to execute this command? [Y]es/No/Edit:
+```
+
+### Why It's Interesting
+
+- **Non-intrusive philosophy** - Watches your screen like a pair-programming partner, doesn't require special terminal setup
+- **Works anywhere** - SSH sessions, database CLIs, router config - any text-based terminal
+- **Lightweight** - Just observes tmux panes, no deep integration required
+- **Open source** - Can be customized and self-hosted
+
+### Comparison to Other Terminal AI Tools
+
+| Feature | TmuxAI | Claude Code | Warp |
+|---------|--------|-------------|------|
+| Requires special shell | No | No | Yes |
+| Works in SSH/nested | Yes | Yes | Limited |
+| Visual screen awareness | Yes | No | No |
+| Open source | Yes | No | No |
+| Runs in tmux pane | Yes (designed for) | Yes (but not aware) | N/A |
+
+---
+
+## Warp Agent Mode - Terminal AI for Multi-Step Workflows
+
+*Source: https://www.warp.dev/blog/agent-mode - Added: 2024-06-21*
+
+Warp's Agent Mode embeds an LLM directly in the terminal to handle multi-step workflows using natural language. Executes commands, uses outputs to guide next steps, and self-corrects on errors.
+
+### Key Features
+
+- **Natural Language Input** - Type plain English instead of commands; auto-detection runs locally
+- **Command Execution** - Runs commands with user approval and uses output to guide workflow
+- **Self-Correcting** - When commands fail, agent adjusts and retries with correct flags/parameters
+- **Zero Configuration Integration** - Works with any tool that has CLI, API, or public docs (GitHub, AWS, Kubernetes, etc.)
+- **Internal CLI Learning** - Ask agent to read `--help` and it can immediately use internal tools
+
+### Use Cases
+
+- **DevOps** - "Help me upgrade an AWS database" - walks through step-by-step
+- **Debugging** - Attach error output, type "fix it" - agent diagnoses and resolves
+- **Cross-Tool Workflows** - Integrates with gh, aws, gcp, kubectl, datadog, curl, and any CLI
+
+### Privacy & Security
+
+- Natural language detection happens locally (classifier runs on device)
+- User must explicitly approve each command before execution
+- Opt-in context sharing - you control exactly what info is sent
+- OpenAI backend (no training on data)
+- Enterprise: Zero Data Retention and BYOK options available
+
+### Pricing
+
+- **Free** - 40 AI requests/month
+- **Pro/Team/Enterprise** - Higher request limits
+
+### Why It's Interesting
+
+- Agent-in-terminal approach vs agent-as-IDE (Cursor, Zed) or agent-as-CLI (Claude Code)
+- Self-correcting behavior reduces friction vs copy-paste-debug cycles
+- Universal CLI integration without explicit setup for each tool
+- Replaced Warp's original AI chat panel with more capable agent mode
+
+### Comparison to Other Terminal AI Tools
+
+| Feature | Warp Agent | Claude Code | TmuxAI | Amazon Q CLI |
+|---------|------------|-------------|--------|--------------|
+| Execution Model | Embedded in terminal | Standalone CLI | tmux observer | Standalone CLI |
+| Self-Correcting | Yes | Yes | No | Limited |
+| Multi-Step | Yes | Yes | No | Yes |
+| Context from Output | Automatic (with approval) | Via conversation | Via screen | Via conversation |
+| Works in SSH | Limited | Yes | Yes | Yes |
+| Open Source | No | No | Yes | No |
+
+---
+
+## Devon - Early Open-Source Pair Programmer
+
+*Source: https://github.com/entropy-research/Devon - Added: 2024-05-20*
+
+One of the earlier open-source AI pair programming tools from entropy-research. Historically notable for beating AutoCodeRover on SWE-Bench Lite in May 2024.
+
+### Key Features
+
+- **Multi-File Editing** - Edit across multiple files in a project
+- **Codebase Exploration** - Navigate and understand existing code
+- **Config/Test Writing** - Generate configuration files and tests
+- **Bug Fixing** - Diagnose and fix issues
+- **Architecture Exploration** - Understand project structure
+
+### Installation
+
+```bash
+# Via script
+curl -sSL https://raw.githubusercontent.com/entropy-research/Devon/main/install.sh | bash
+
+# Or via pipx + npm
+pipx install devon_agent
+npm install -g devon-tui
+```
+
+### Usage
+
+```bash
+# Navigate to project directory
+cd /path/to/project
+
+# Set API key (Anthropic or OpenAI)
+export ANTHROPIC_API_KEY=sk-xxx
+# OR
+export OPENAI_API_KEY=sk-xxx
+
+# Run
+devon
+
+# Debug mode
+devon --debug
+```
+
+### Limitations (as of May 2024)
+
+- Minimal support for non-Python languages
+- Sometimes requires explicit file specification for changes
+- Early-stage project with active development
+
+### Historical Context
+
+- **March 2024** - Initial non-interactive agent v0.0.1
+- **April 2024** - Began interactive agent development, added repo-level code search
+- **May 2024** - Beat AutoCodeRover on SWE-Bench Lite, released interactive agent v0.1.0
+
+### Why It Was Interesting (2024)
+
+- One of the first credible open-source alternatives to closed AI coding assistants
+- SWE-Bench performance provided a benchmark comparison point
+- Community-driven development model
+- Apache 2.0 license enabled customization and self-hosting
+
+### Status Note
+
+This entry reflects the state as of May 2024. The AI coding agent space has evolved significantly since then with tools like Claude Code, Cursor agents, and Zed agents becoming more mature.
+
+---
+
+## Devin AI - First Commercial Autonomous Coding Agent (Historical)
+
+*Source: https://devinai.ai/ - Added: 2024-05-11*
+
+Devin AI, developed by Cognition AI, was announced in March 2024 as "the first fully autonomous AI software engineer." It sparked massive interest and a wave of open-source alternatives.
+
+### What It Claimed
+
+- **Autonomous Task Execution** - End-to-end software development from requirements to deployment
+- **SWE-Bench Performance** - 13.86% unassisted issue resolution (state-of-the-art at announcement)
+- **Integrated Environment** - Own shell, code editor, and browser in a sandboxed compute environment
+- **Multi-Step Planning** - Breaks down high-level instructions into executable steps
+
+### What Made It Novel
+
+- First commercial offering to promise "fully autonomous" software engineering
+- Chat interface for non-technical users to initiate projects
+- Agent-as-worker model (runs in background, reports progress)
+- Claimed ability to learn new technologies, train AI models, and contribute to production repos
+
+### Reality Check (2024-2025)
+
+The initial hype met reality:
+- "Fully autonomous" proved less useful than "collaborative with human oversight"
+- Demo videos were cherry-picked best-case scenarios
+- Real-world usage showed significant failure rates on complex tasks
+- Competitors (Claude Code, Cursor, Copilot agents) offered better human-in-the-loop experiences
+- Sparked important debate about agent autonomy vs. controllability
+
+### Historical Significance
+
+Devin's announcement catalyzed the AI coding agent space:
+1. Triggered wave of open-source alternatives (Devika, Devon, OpenHands)
+2. Pushed incumbents (GitHub, Cursor) to accelerate agent features
+3. Established "SWE-Bench" as the standard coding agent benchmark
+4. Demonstrated that autonomous agents need better UX, not just better models
+
+### Current Status
+
+Still available at https://devin.ai/ but the market has moved toward hybrid approaches where AI assists rather than replaces developers.
+
+---
+
+## Devika - Early Open-Source Devin Alternative (Historical)
+
+*Source: https://github.com/stitionai/devika - Added: 2024-05-11*
+
+Open-source agentic AI software engineer that aimed to be a competitive alternative to Cognition AI's Devin. Now superseded by its successor project "Opcode."
+
+### What It Was
+
+- **Multi-Model Support** - Claude 3, GPT-4, Gemini, Mistral, Groq, local LLMs via Ollama
+- **Planning & Reasoning** - Break down high-level instructions into steps
+- **Web Browsing** - Research and gather information autonomously
+- **Code Generation** - Write code in multiple languages
+- **Project Management** - Organize work into discrete projects
+
+### Tech Stack
+
+- Python backend with Flask
+- Node.js/Bun frontend
+- Playwright for browser automation
+- Supports multiple search engines (Bing, Google)
+
+### Historical Significance
+
+- **19.5k stars** - One of the most popular early Devin alternatives
+- Released March 2024, shortly after Devin announcement sparked "open-source Devin" race
+- Demonstrated community appetite for autonomous coding agents
+- Set patterns that later tools (OpenHands, etc.) refined
+
+### Why It Faded
+
+- Never left "experimental stage" - many features remained unimplemented
+- Devin hype cooled as people realized autonomous coding agents need more constraints
+- Better alternatives emerged (OpenHands, Claude Code with agentic features)
+- Team pivoted to commercial "Opcode" successor
+
+### Lessons Learned
+
+The early Devin-alternative projects (Devika, Devon, OpenDevin→OpenHands) showed that:
+1. Planning + execution loop architecture is viable
+2. Multi-model flexibility matters for cost/performance trade-offs
+3. "Fully autonomous" is less useful than "collaborative with human oversight"
+4. The winners combined autonomy with good UX (Claude Code, Cursor agents)
+
+---
+
+## E2B Code Interpreter SDK
+
+*Source: https://github.com/e2b-dev/code-interpreter - Added: 2026-01-19*
+
+An SDK for running AI-generated Python and JavaScript code with shared context across executions. Built on E2B's secure sandboxed micro VMs.
+
+### Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Shared Context** | Variables, definitions persist across code execution runs (like Jupyter Notebooks) |
+| **Secure Sandboxes** | Runs in E2B Sandbox - isolated micro VMs for untrusted AI-generated code |
+| **Streaming Output** | Stream charts, stdout, stderr in real-time |
+| **Python & JS SDKs** | Both `pip install e2b-code-interpreter` and `npm install @e2b/code-interpreter` |
+| **Serverless Ready** | Works on serverless and edge functions |
+| **100% Open Source** | Including the infrastructure |
+
+### Why Shared Context Matters
+
+LLMs (especially GPT-3.5/4) expect Jupyter Notebook-style execution where each code block can reference previous ones. Classical sandboxes run code independently, causing AI-generated code to fail when it references variables from prior blocks.
+
+E2B solves this by running a Jupyter server inside the sandbox, implementing the Jupyter Kernel messaging protocol.
+
+### Quick Start
+
+**Python:**
+```python
+from e2b_code_interpreter import CodeInterpreter
+
+with CodeInterpreter() as sandbox:
+    sandbox.notebook.exec_cell("x = 1")
+    result = sandbox.notebook.exec_cell("x+=1; x")
+    print(result.text)  # outputs 2
+```
+
+**JavaScript:**
+```javascript
+import { CodeInterpreter } from '@e2b/code-interpreter'
+
+const sandbox = await CodeInterpreter.create()
+await sandbox.notebook.execCell('x = 1')
+const result = await sandbox.notebook.execCell('x+=1; x')
+console.log(result.text)  // outputs 2
+await sandbox.close()
+```
+
+### Charts and Visual Output
+
+```python
+code = """
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 20, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.show()
+"""
+
+with CodeInterpreter() as sandbox:
+    sandbox.notebook.exec_cell("!pip install matplotlib")
+    result = sandbox.notebook.exec_cell(code)
+    image = result.results[0].png  # Base64 encoded image
+```
+
+### Streaming Callbacks
+
+```python
+sandbox.notebook.exec_cell(
+    code,
+    on_stdout=print,
+    on_stderr=print,
+    on_result=lambda r: print(r.text)
+)
+```
+
+### When to Use E2B Code Interpreter
+
+**Good fit:**
+- Building AI agents that need to run generated code safely
+- Code that requires persistent state across multiple runs
+- Applications requiring streaming visual output (charts, plots)
+- Any LLM + code workflow that mimics Jupyter behavior
+
+**Trade-offs:**
+- Requires E2B API key and cloud (no local sandbox)
+- Adds latency vs. local runs
+- Cost considerations for high-volume usage
+
+### Customization
+
+Can customize the sandbox environment by following E2B's custom template guide to preinstall packages or configure the environment.
+
+### Comparison
+
+| Approach | Shared Context | Security | Local/Cloud |
+|----------|----------------|----------|-------------|
+| E2B Code Interpreter | Yes (Jupyter-style) | Sandboxed VM | Cloud |
+| Local eval/run | No isolation | None | Local |
+| Docker containers | Configurable | Good | Both |
+| AWS Lambda | No (stateless) | Good | Cloud |
+
+### Links
+
+- GitHub: https://github.com/e2b-dev/code-interpreter
+- E2B Platform: https://e2b.dev/
+- Preinstalled packages: See requirements.txt in repo
+
+---
+
+## Skyvern - AI-Powered Browser Automation
+
+*Source: https://www.skyvern.com/ | GitHub: https://github.com/Skyvern-AI/skyvern - Added: 2026-01-19*
+
+An API-first browser automation platform that uses computer vision and AI to interact with websites without traditional selectors or page object models.
+
+### Key Concept
+
+Skyvern takes a fundamentally different approach than Playwright/Puppeteer: instead of writing code with CSS selectors, you give it natural language instructions and it uses computer vision to understand the page layout and complete tasks.
+
+**Example:**
+```
+Traditional: page.click('#submit-button')
+Skyvern: "Fill out the form and submit it"
+```
+
+### Core Features
+
+**1. Computer Vision-Based Automation**
+- No selectors needed - understands page content visually
+- Adapts to layout changes automatically
+- Works across different websites without rewriting automation
+
+**2. Natural Language Control**
+- Execute complex workflows with simple commands
+- No coding required for basic automations
+- Can handle multi-step processes with single instruction
+
+**3. Built-in Intelligence**
+- CAPTCHA solving capabilities
+- Two-factor authentication (2FA/TOTP) support
+- Authentication with user accounts
+- Multi-language support for international sites
+
+**4. Enterprise Features**
+- Proxy network support (country/state/zip-code level targeting)
+- Data extraction in CSV or JSON formats
+- API-first design for cloud execution
+- Horizontal scaling - run hundreds of workflows simultaneously
+
+**5. Explainable AI**
+- Provides justifications for every action
+- Clear summaries of workflow execution
+- Helps debug when automations fail
+
+### Use Cases
+
+**Government & Procurement**
+- Automate tedious government form filling
+- Streamline procurement pipelines across vendor portals
+- Handle repetitive compliance documentation
+
+**Data Extraction**
+- Scrape data from sites that change frequently
+- Extract structured data without maintaining selectors
+- Handle dynamic content and infinite scroll
+
+**E2E Testing**
+- Test flows without brittle selectors
+- Verify user journeys with natural language
+- Cross-browser visual regression testing
+
+### Architecture
+
+```
+┌──────────────────┐     API     ┌─────────────────────┐
+│  Your Code       │ ─────────► │  Skyvern Cloud      │
+│                  │             │  ┌───────────────┐  │
+│  POST /workflow  │             │  │ Computer      │  │
+│  {               │             │  │ Vision Engine │  │
+│    "task": "...", │             │  └───────────────┘  │
+│    "url": "..."  │             │  ┌───────────────┐  │
+│  }               │             │  │ Browser Pool  │  │
+└──────────────────┘             │  └───────────────┘  │
+                                 │  ┌───────────────┐  │
+                                 │  │ CAPTCHA/2FA   │  │
+                                 │  │ Solver        │  │
+                                 │  └───────────────┘  │
+                                 └─────────────────────┘
+```
+
+### vs Traditional Browser Automation
+
+| Feature | Skyvern | Playwright/Puppeteer |
+|---------|---------|---------------------|
+| **Selector Management** | None - uses CV | Manual CSS/XPath selectors |
+| **Layout Changes** | Adapts automatically | Breaks when page changes |
+| **Multi-site Support** | Generalizes across sites | One script per site |
+| **CAPTCHA Handling** | Built-in solver | Requires external services |
+| **Natural Language** | Native support | Requires custom LLM layer |
+| **Deployment** | Cloud-based API | Self-hosted |
+| **Scaling** | Horizontal (API) | Requires orchestration |
+| **Cost** | Usage-based pricing | Open source (infra costs) |
+
+### vs AI Browser Tools
+
+| Tool | Approach | Best For |
+|------|----------|----------|
+| **Skyvern** | API service, CV-based | Production automation, scraping at scale |
+| **Playwright MCP** | 17 individual tools | Claude Code integration, development |
+| **Playwriter** | Single tool, Chrome ext | Development, keeping existing sessions |
+| **Nova Act IDE** | IDE extension | Building automation agents in VS Code |
+
+### When to Use Skyvern
+
+**Good fit:**
+- Automating workflows across multiple vendor sites
+- Sites that change layout frequently
+- Need to solve CAPTCHAs/2FA programmatically
+- Want to avoid maintenance of selector-based scripts
+- Need to scale to hundreds of concurrent workflows
+
+**Not ideal for:**
+- Simple one-off scraping tasks
+- Sites with stable, well-documented APIs
+- When you need full control of every browser action
+- Local-only workflows (it's cloud-based)
+
+### Considerations
+
+**Pros:**
+- Zero selector maintenance
+- Handles modern web complexity (SPAs, dynamic content)
+- Built-in CAPTCHA/2FA handling
+- Natural language is easier for non-developers
+- Scales horizontally out of the box
+
+**Cons:**
+- Proprietary service (not open source core)
+- Less deterministic than selector-based automation
+- Usage-based pricing vs free OSS alternatives
+- Less control over exact browser behavior
+- Requires internet connectivity (cloud-based)
+
+### Company
+
+Developed by Ikonomos Inc. (launched March 2024). Positioned as "AI that automates browser workflows" targeting enterprise automation use cases.
+
+### Links
+
+- Website: https://www.skyvern.com/
+- GitHub: https://github.com/Skyvern-AI/skyvern
+- Request Demo: Available on website
+
+---
+
+## Glide - AI Coding Assistant for Complex Tasks
+
+*Source: https://glide.agenticlabs.com/ - Added: 2026-01-19*
+
+AI assistant that helps tackle harder software engineering problems. Connects to repositories and provides codebase-aware assistance.
+
+### Key Features
+
+- **Repository Connection** - Grant access to specific repos for project-aware assistance
+- **Code Search** - Search through your codebase intelligently
+- **Task Description** - Describe what you're trying to accomplish in natural language
+- **Code Generation & Editing** - Generate and modify code with project context
+- **Issue Triage** - Help diagnose and prioritize problems
+- **Step-by-Step Planning** - Break down complex tasks into actionable plans
+- **Code Change Proposals** - Suggest specific code modifications
+- **Pull Request Creation** - Coming soon
+
+### Privacy Model
+
+- Access granted only when you explicitly select a repository
+- Requires login to access private repos
+- Tailors generation to your specific project
+
+### Comparison
+
+| Feature | Glide | Claude Code | Cursor | GitHub Copilot |
+|---------|-------|-------------|--------|----------------|
+| Repo Connection | Yes | Local files | Local files | GitHub |
+| Task Planning | Yes | Yes | Limited | No |
+| Code Search | Yes | Yes | Yes | Limited |
+| PR Creation | Coming | Manual | No | No |
+| Privacy Control | Per-repo | Local only | Local only | Varies |
+
+### Why It's Interesting
+
+- Focus on "harder" engineering problems suggests more sophisticated reasoning vs autocomplete
+- Step-by-step planning feature indicates multi-step task decomposition
+- Per-repository access model balances utility with privacy
+- Coming PR feature would close the loop on autonomous coding
+
+### Developed By
+
+Agentic Labs (https://agenticlabs.com)
