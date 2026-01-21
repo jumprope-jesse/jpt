@@ -1,5 +1,7 @@
 # Caleb Allen
 
+> **Note**: Sometimes referred to as just "Caleb" in meeting notes.
+
 ## Role & Organization
 - **Title**: Senior Developer, Lead of Strategic Team 2
 - **Company/Division**: Aeries
@@ -27,3 +29,5 @@
 - Technical lead for JumpRope integration from Aeries side
 - Key contact for API and authentication questions
 - Previously worked on SBG API with Jesse
+- "Getting another chance" on OE 2.0 suggests previous performance concerns
+- Being moved from SBG API work to OE 2.0

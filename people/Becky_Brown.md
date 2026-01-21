@@ -1,4 +1,4 @@
-# Becky
+# Becky Brown
 
 ## Role & Organization
 - **Title**: Customer Support/Success role

@@ -1,5 +1,7 @@
 # Alicia Gragnani
 
+> **Note**: Sometimes transcribed as just "Alicia" in meeting notes.
+
 ## Role & Organization
 - **Title**: PMO (Project Management Office) / Project Manager
 - **Company/Division**: Aeries
@@ -21,7 +23,7 @@
 - Presenting phased messaging approach to Jim and ELT for approval
 
 ## Meeting History
-- 2026-01-16: Identified as good resource for developing AI effectiveness measurement framework.
+- 2026-01-16: Identified as good resource for developing AI effectiveness measurement framework. Has authority to decide on format requirements; currently has no expected format for tech requirements; will likely want to handle conversion herself; understands source of truth problems
 - 2026-01-14: (mentioned in product meeting) Team checking on her after Jason's departure; will be asked about Aries TRD timeline
 - 2026-01-12: ACE Leadership - Referenced as "the PMO" who will give Jon a 3-day grace period before asking process questions; noted humorous rapport with team ("office of one")
 - 2025-12-11: Project tracking and process alignment for Q1 strategic initiatives - Testing visualization approaches with team; working on Q1 implementation framework with Gantt chart perspective; goal alignment around PMP documentation

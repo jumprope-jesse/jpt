@@ -6,7 +6,7 @@
     <string>com.jpt.knowledge-reviewer</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/homebrew/bin/python3</string>
+        <string>/usr/bin/python3</string>
         <string>/Users/jesse/jpt/lib/knowledge_reviewer.py</string>
         <string>run</string>
     </array>

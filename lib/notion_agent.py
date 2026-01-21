@@ -270,7 +270,7 @@ If you cannot complete the task, explain why.
 
 Work in the ~/jpt directory. Be concise but thorough."""
 
-    happy_bin = Path.home() / "Library/pnpm/happy"
+    happy_bin = Path("/opt/homebrew/bin/happy")
 
     try:
         result = subprocess.run(

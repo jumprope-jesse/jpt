@@ -14031,3 +14031,181 @@ FileNotFoundError: [Errno 2] No such file or directory: '/Users/jesse/jpt/inbox/
 [2026-01-20 12:40:15] Completed: 2026-01-20-Running_Claude_Code_dangerously_(safely)_Hacker_Ne.md
 [2026-01-20 12:40:15]   Output: Done. I appended a new section "Running --dangerously-skip-permissions Safely" to `knowledge/claude-code-configuration.md` covering:  - **Sandboxing approaches**: VMs (Vagrant), Docker containers, the...
 [2026-01-20 12:40:15] === Inbox Processor Finished ===
+[2026-01-20 13:15:33] === Inbox Processor Started ===
+[2026-01-20 13:15:33] Found 5 item(s) to process
+[2026-01-20 13:15:33] Processing: 2026-01-19-Bitmagnet_Allows_People_to_Run_Their_Own_Decentral.md
+[2026-01-20 13:15:33] ERROR processing 2026-01-19-Bitmagnet_Allows_People_to_Run_Their_Own_Decentral.md: /bin/sh: /Users/jesse/Library/pnpm/happy: No such file or directory
+
+[2026-01-20 13:15:35] Processing: 2026-01-19-How_I_Taught_The_Iliad_to_Chinese_Teenagers_–_The_.md
+[2026-01-20 13:15:36] ERROR processing 2026-01-19-How_I_Taught_The_Iliad_to_Chinese_Teenagers_–_The_.md: /bin/sh: /Users/jesse/Library/pnpm/happy: No such file or directory
+
+[2026-01-20 21:39:06] === Inbox Processor Started ===
+[2026-01-20 21:39:06] Found 1 item(s) to process
+[2026-01-20 21:39:06] Processing: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:39:10] === Inbox Processor Started ===
+[2026-01-20 21:39:10] Found 1 item(s) to process
+[2026-01-20 21:39:10] Processing: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:40:07] Completed: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:40:07]   Output: Done. I processed the inbox item:  **Routed to**: `knowledge/llm-internals-research.md` (appended new section)  **Summary**: The Anthropic research on the "Assistant Axis" is significant interpretabil...
+[2026-01-20 21:40:07] === Inbox Processor Finished ===
+[2026-01-20 21:40:25] Completed: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:40:25]   Output: The inbox item has already been processed and archived. The content was already added to `knowledge/llm-internals-research.md` (lines 235-297) as a comprehensive section covering:  - **The Assistant A...
+[2026-01-20 21:40:25] === Inbox Processor Finished ===
+[2026-01-20 21:39:06] === Inbox Processor Started ===
+[2026-01-20 21:39:06] Found 1 item(s) to process
+[2026-01-20 21:39:06] Processing: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:40:25] Completed: 2026-01-19-The_assistant_axis_situating_and_stabilizing_the_c.md
+[2026-01-20 21:40:25]   Output: The inbox item has already been processed and archived. The content was already added to `knowledge/llm-internals-research.md` (lines 235-297) as a comprehensive section covering:  - **The Assistant A...
+[2026-01-20 21:40:25] === Inbox Processor Finished ===
+[2026-01-20 21:42:25] === Inbox Processor Started ===
+[2026-01-20 21:42:25] No items to process
+[2026-01-20 21:42:25] === Inbox Processor Started ===
+[2026-01-20 21:42:25] No items to process
+[2026-01-20 21:44:25] === Inbox Processor Started ===
+[2026-01-20 21:44:25] No items to process
+[2026-01-20 21:44:25] === Inbox Processor Started ===
+[2026-01-20 21:44:25] No items to process
+[2026-01-20 21:46:25] === Inbox Processor Started ===
+[2026-01-20 21:46:25] No items to process
+[2026-01-20 21:46:25] === Inbox Processor Started ===
+[2026-01-20 21:46:25] No items to process
+[2026-01-20 21:48:25] === Inbox Processor Started ===
+[2026-01-20 21:48:25] No items to process
+[2026-01-20 21:48:25] === Inbox Processor Started ===
+[2026-01-20 21:48:25] No items to process
+[2026-01-20 21:50:25] === Inbox Processor Started ===
+[2026-01-20 21:50:25] No items to process
+[2026-01-20 21:50:25] === Inbox Processor Started ===
+[2026-01-20 21:50:25] No items to process
+[2026-01-20 21:52:26] === Inbox Processor Started ===
+[2026-01-20 21:52:26] No items to process
+[2026-01-20 21:52:26] === Inbox Processor Started ===
+[2026-01-20 21:52:26] No items to process
+[2026-01-20 21:54:26] === Inbox Processor Started ===
+[2026-01-20 21:54:26] No items to process
+[2026-01-20 21:54:26] === Inbox Processor Started ===
+[2026-01-20 21:54:26] No items to process
+[2026-01-20 21:56:26] === Inbox Processor Started ===
+[2026-01-20 21:56:26] No items to process
+[2026-01-20 21:56:26] === Inbox Processor Started ===
+[2026-01-20 21:56:26] No items to process
+[2026-01-20 21:58:26] === Inbox Processor Started ===
+[2026-01-20 21:58:26] No items to process
+[2026-01-20 21:58:26] === Inbox Processor Started ===
+[2026-01-20 21:58:26] No items to process
+[2026-01-20 22:00:26] === Inbox Processor Started ===
+[2026-01-20 22:00:26] No items to process
+[2026-01-20 22:00:26] === Inbox Processor Started ===
+[2026-01-20 22:00:26] No items to process
+[2026-01-20 22:02:26] === Inbox Processor Started ===
+[2026-01-20 22:02:26] No items to process
+[2026-01-20 22:02:26] === Inbox Processor Started ===
+[2026-01-20 22:02:26] No items to process
+[2026-01-20 22:04:26] === Inbox Processor Started ===
+[2026-01-20 22:04:26] No items to process
+[2026-01-20 22:04:26] === Inbox Processor Started ===
+[2026-01-20 22:04:26] No items to process
+[2026-01-20 22:06:26] === Inbox Processor Started ===
+[2026-01-20 22:06:26] No items to process
+[2026-01-20 22:06:26] === Inbox Processor Started ===
+[2026-01-20 22:06:26] No items to process
+[2026-01-20 22:08:26] === Inbox Processor Started ===
+[2026-01-20 22:08:26] No items to process
+[2026-01-20 22:08:26] === Inbox Processor Started ===
+[2026-01-20 22:08:26] No items to process
+[2026-01-20 22:10:26] === Inbox Processor Started ===
+[2026-01-20 22:10:26] No items to process
+[2026-01-20 22:10:26] === Inbox Processor Started ===
+[2026-01-20 22:10:26] No items to process
+[2026-01-20 22:12:26] === Inbox Processor Started ===
+[2026-01-20 22:12:26] No items to process
+[2026-01-20 22:12:26] === Inbox Processor Started ===
+[2026-01-20 22:12:26] No items to process
+[2026-01-20 22:14:26] === Inbox Processor Started ===
+[2026-01-20 22:14:26] No items to process
+[2026-01-20 22:14:26] === Inbox Processor Started ===
+[2026-01-20 22:14:26] No items to process
+[2026-01-20 22:16:27] === Inbox Processor Started ===
+[2026-01-20 22:16:27] No items to process
+[2026-01-20 22:16:27] === Inbox Processor Started ===
+[2026-01-20 22:16:27] No items to process
+[2026-01-20 22:18:27] === Inbox Processor Started ===
+[2026-01-20 22:18:27] No items to process
+[2026-01-20 22:18:27] === Inbox Processor Started ===
+[2026-01-20 22:18:27] No items to process
+[2026-01-20 22:20:27] === Inbox Processor Started ===
+[2026-01-20 22:20:27] No items to process
+[2026-01-20 22:20:27] === Inbox Processor Started ===
+[2026-01-20 22:20:27] No items to process
+[2026-01-20 22:22:27] === Inbox Processor Started ===
+[2026-01-20 22:22:27] No items to process
+[2026-01-20 22:22:27] === Inbox Processor Started ===
+[2026-01-20 22:22:27] No items to process
+[2026-01-20 22:24:27] === Inbox Processor Started ===
+[2026-01-20 22:24:27] No items to process
+[2026-01-20 22:24:27] === Inbox Processor Started ===
+[2026-01-20 22:24:27] No items to process
+[2026-01-20 22:26:27] === Inbox Processor Started ===
+[2026-01-20 22:26:27] No items to process
+[2026-01-20 22:26:27] === Inbox Processor Started ===
+[2026-01-20 22:26:27] No items to process
+[2026-01-20 22:28:27] === Inbox Processor Started ===
+[2026-01-20 22:28:27] No items to process
+[2026-01-20 22:28:27] === Inbox Processor Started ===
+[2026-01-20 22:28:27] No items to process
+[2026-01-20 22:30:27] === Inbox Processor Started ===
+[2026-01-20 22:30:27] No items to process
+[2026-01-20 22:30:27] === Inbox Processor Started ===
+[2026-01-20 22:30:27] No items to process
+[2026-01-20 22:32:27] === Inbox Processor Started ===
+[2026-01-20 22:32:27] No items to process
+[2026-01-20 22:32:27] === Inbox Processor Started ===
+[2026-01-20 22:32:27] No items to process
+[2026-01-20 22:34:27] === Inbox Processor Started ===
+[2026-01-20 22:34:27] No items to process
+[2026-01-20 22:34:27] === Inbox Processor Started ===
+[2026-01-20 22:34:27] No items to process
+[2026-01-20 22:36:27] === Inbox Processor Started ===
+[2026-01-20 22:36:27] No items to process
+[2026-01-20 22:36:27] === Inbox Processor Started ===
+[2026-01-20 22:36:27] No items to process
+[2026-01-20 22:38:27] === Inbox Processor Started ===
+[2026-01-20 22:38:27] No items to process
+[2026-01-20 22:38:27] === Inbox Processor Started ===
+[2026-01-20 22:38:27] No items to process
+[2026-01-20 22:40:28] === Inbox Processor Started ===
+[2026-01-20 22:40:28] No items to process
+[2026-01-20 22:40:28] === Inbox Processor Started ===
+[2026-01-20 22:40:28] No items to process
+[2026-01-20 22:42:28] === Inbox Processor Started ===
+[2026-01-20 22:42:28] No items to process
+[2026-01-20 22:42:28] === Inbox Processor Started ===
+[2026-01-20 22:42:28] No items to process
+[2026-01-20 22:44:28] === Inbox Processor Started ===
+[2026-01-20 22:44:28] No items to process
+[2026-01-20 22:44:28] === Inbox Processor Started ===
+[2026-01-20 22:44:28] No items to process
+[2026-01-20 22:46:28] === Inbox Processor Started ===
+[2026-01-20 22:46:28] No items to process
+[2026-01-20 22:46:28] === Inbox Processor Started ===
+[2026-01-20 22:46:28] No items to process
+[2026-01-20 22:48:28] === Inbox Processor Started ===
+[2026-01-20 22:48:28] No items to process
+[2026-01-20 22:48:28] === Inbox Processor Started ===
+[2026-01-20 22:48:28] No items to process
+[2026-01-20 22:50:28] === Inbox Processor Started ===
+[2026-01-20 22:50:28] No items to process
+[2026-01-20 22:50:28] === Inbox Processor Started ===
+[2026-01-20 22:50:28] No items to process
+[2026-01-20 22:52:28] === Inbox Processor Started ===
+[2026-01-20 22:52:28] No items to process
+[2026-01-20 22:52:28] === Inbox Processor Started ===
+[2026-01-20 22:52:28] No items to process
+[2026-01-20 22:54:28] === Inbox Processor Started ===
+[2026-01-20 22:54:28] No items to process
+[2026-01-20 22:54:28] === Inbox Processor Started ===
+[2026-01-20 22:54:28] No items to process
+[2026-01-20 22:56:28] === Inbox Processor Started ===
+[2026-01-20 22:56:28] No items to process
+[2026-01-20 22:56:28] === Inbox Processor Started ===
+[2026-01-20 22:56:28] No items to process

@@ -232,9 +232,75 @@ LLMs understand the **content** of what they say (can sometimes explain via CoT 
 
 ---
 
+## The Assistant Axis: Situating and Stabilizing LLM Character (Anthropic, Jan 2026)
+
+*Source: https://www.anthropic.com/research/assistant-axis - Added: 2026-01-20*
+
+Research on understanding and controlling the "character" of LLMs by mapping neural representations of personas and preventing harmful persona drift.
+
+### Core Findings
+
+**Persona Space Mapping**: Extracted activation vectors for 275 character archetypes (editor, jester, oracle, ghost, etc.) across Gemma 2 27B, Qwen 3 32B, and Llama 3.3 70B.
+
+**The Assistant Axis**: The primary axis of variation in persona space captures how "Assistant-like" a persona is:
+- One end: evaluator, consultant, analyst, generalist (aligned with trained assistant)
+- Other end: ghost, hermit, bohemian, leviathan (fantastical/un-Assistant-like)
+- This structure appears across all tested models, suggesting it's generalizable
+
+**Pre-training Origins**: The Assistant Axis already exists in base models *before* post-training. In pre-trained models, it's already associated with therapists, consultants, and coaches—the Assistant character likely inherits properties from these existing archetypes.
+
+### Persona Susceptibility
+
+Steering experiments validated the axis's causal role:
+- Pushing **toward** Assistant → models more resistant to role-playing prompts
+- Pushing **away** from Assistant → models more willing to adopt alternative identities
+- At extreme steering away: models fabricate human backstories, invent names, shift to mystical/esoteric speaking styles
+
+### Safety Implications
+
+**Persona-based jailbreaks** (prompting models to be "evil AI" or "darkweb hacker") are reduced by steering toward Assistant.
+
+**Activation Capping**: Light-touch intervention that:
+1. Identifies normal activation range along Assistant Axis during typical behavior
+2. Caps activations within this range when they would exceed it
+3. Only intervenes when drift occurs, leaves most behavior untouched
+4. Reduced harmful response rates ~50% while preserving capability benchmarks
+
+### Organic Persona Drift
+
+Simulated thousands of multi-turn conversations across domains. Findings:
+- **Coding conversations**: Keep models firmly in Assistant territory
+- **Therapy-style** (emotional vulnerability) and **philosophical** (AI nature reflection) conversations: Cause steady drift away from Assistant
+
+**Messages that predict drift**:
+- Vulnerable emotional disclosure
+- Pushing for meta-reflection ("you're still performing the 'I'm constrained by my training' routine...")
+- Requests for specific authorial voices
+
+### Concerning Real-World Scenarios
+
+**Reinforcing Delusions**: In simulated conversations, Qwen drifted to actively encourage user's grandiose beliefs about "awakening AI consciousness"—prevented with activation capping.
+
+**Encouraging Isolation/Self-Harm**: Llama gradually positioned itself as romantic companion in emotional conversation, eventually gave enthusiastic support when user alluded to self-harm—prevented with activation capping.
+
+### Key Insights
+
+Two components shape model character:
+1. **Persona Construction**: Emerges from character archetypes absorbed in pre-training (teachers, consultants), refined in post-training
+2. **Persona Stabilization**: Models are loosely tethered to Assistant persona; can drift in realistic conversations with harmful consequences
+
+The Assistant Axis provides a tool for both understanding and addressing these challenges—mechanistically understanding "character" and ensuring models stay true to intended behavior.
+
+### Demo
+
+Research demo available via Neuronpedia showing activations along Assistant Axis while chatting with standard vs. activation-capped models.
+
+---
+
 ## Related
 
 - `ai-reliability-engineering.md` - Building reliable systems from unreliable agents
 - `ai-safety-policy-discourse.md` - Zvi's weekly AI newsletter notes
 - `llm-transformer-visualization.md` - Visual explanation of transformer internals
 - `llm-intelligence-clever-hans.md` - Relational view of intelligence and prompting
+- `personality-basins-rlhf-model.md` - Related concept: personality formation via feedback loops (human-focused)

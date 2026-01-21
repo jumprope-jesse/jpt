@@ -6,7 +6,7 @@
     <string>com.jpt.notion-agent</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/homebrew/bin/python3</string>
+        <string>/usr/bin/python3</string>
         <string>/Users/jesse/jpt/lib/notion_agent.py</string>
         <string>daemon</string>
     </array>

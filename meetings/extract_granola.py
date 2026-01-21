@@ -11,6 +11,7 @@ Usage:
     python extract_granola.py --list             # List available meetings
     python extract_granola.py --id <doc_id>      # Extract specific meeting by ID
 """
+from __future__ import annotations
 
 import json
 import os

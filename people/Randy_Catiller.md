@@ -1,4 +1,6 @@
-# Randy
+# Randy Catiller
+
+> **Note**: Full name is Randall Catiller, but goes by Randy.
 
 ## Role & Organization
 - **Title**: Director (Product team)

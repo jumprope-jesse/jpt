@@ -1,5 +1,7 @@
 # James Mallory
 
+> **Note**: Almost always goes by "Jim".
+
 ## Role & Organization
 - **Title**: Technical/Infrastructure leadership
 - **Company/Division**: Aeries

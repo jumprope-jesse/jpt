@@ -490,7 +490,7 @@ Output ONLY the JSON, no other text."""
 
 def call_claude(prompt: str) -> Optional[str]:
     """Call Claude via happy CLI."""
-    happy_bin = Path.home() / "Library/pnpm/happy"
+    happy_bin = Path("/opt/homebrew/bin/happy")
 
     try:
         result = subprocess.run(

@@ -99,7 +99,7 @@ Process this item now. Read any existing files you need to check for context, th
 
     # Call Claude via happy CLI
     # Using shell=True and a delay to reduce EDR false positives
-    happy_bin = Path.home() / "Library/pnpm/happy"
+    happy_bin = Path("/opt/homebrew/bin/happy")
     
     # Small delay before subprocess to reduce rapid-spawn detection
     time.sleep(0.5)

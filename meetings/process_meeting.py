@@ -8,6 +8,7 @@ and outputs:
 - Action items → Notion Tasks database
 - People insights → /people/*.md updates
 """
+from __future__ import annotations
 
 import sqlite3
 import json
@@ -70,7 +71,7 @@ def call_claude(prompt: str, system: str = "") -> str:
     # --dangerously-skip-permissions avoids interactive permission prompts
     # Full path to happy binary (launchd doesn't have shell PATH)
     # happy --yolo is equivalent to claude --dangerously-skip-permissions
-    happy_bin = Path.home() / "Library/pnpm/happy"
+    happy_bin = Path("/opt/homebrew/bin/happy")
 
     result = subprocess.run(
         [str(happy_bin), "--yolo", "--print", full_prompt],

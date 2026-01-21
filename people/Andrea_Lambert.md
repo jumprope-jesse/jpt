@@ -1,4 +1,4 @@
-# Andrea
+# Andrea Lambert
 
 ## Role & Organization
 - **Title**: Executive/Finance leadership role at Aeries

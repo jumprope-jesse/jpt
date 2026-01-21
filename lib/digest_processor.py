@@ -280,7 +280,7 @@ Be concise but comprehensive. This is for Jesse to review, so write in second pe
 Output ONLY the markdown digest, nothing else."""
 
     # Call Claude
-    happy_bin = Path.home() / "Library/pnpm/happy"
+    happy_bin = Path("/opt/homebrew/bin/happy")
 
     try:
         log(f"Calling Claude to generate {period} digest...")

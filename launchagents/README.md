@@ -33,7 +33,7 @@ Before loading services, ensure:
 1. **jpt repo cloned** to `~/jpt`
 2. **Homebrew installed** with Python 3: `/opt/homebrew/bin/python3`
 3. **Notion credentials** in `~/.config/notion_sync.json`
-4. **Claude CLI** (happy) installed at `~/Library/pnpm/happy`
+4. **Claude CLI** (happy) installed at `/opt/homebrew/bin/happy`
 
 ## Services
 

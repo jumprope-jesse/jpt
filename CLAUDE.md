@@ -48,7 +48,7 @@ tail -f ~/jpt/<service>/.processor.log
     <string>com.jpt.SERVICE_NAME</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/homebrew/bin/python3</string>
+        <string>/usr/bin/python3</string>
         <string>/Users/jesse/jpt/PATH/TO/script.py</string>
     </array>
     <key>EnvironmentVariables</key>
@@ -78,7 +78,7 @@ When calling Claude from scripts (for Claude Max users):
 
 ```python
 # Use happy (Claude Code wrapper) with full path
-happy_bin = Path.home() / "Library/pnpm/happy"
+happy_bin = Path("/opt/homebrew/bin/happy")
 result = subprocess.run(
     [str(happy_bin), "--yolo", "--print", prompt],
     capture_output=True,

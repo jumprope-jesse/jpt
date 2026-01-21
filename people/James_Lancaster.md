@@ -1,7 +1,9 @@
 # James Lancaster
 
+> **Note**: Also goes by "Jim". Sometimes referred to as just "James" in meeting notes (not to be confused with James Mallory).
+
 ## Role & Organization
-- **Title**: Unknown (Leadership/Technical role) - also goes by "Jim"
+- **Title**: Leadership/Technical role
 - **Company/Division**: Aeries
 - **Reports to**: Andrea (post-restructure)
 - **Direct reports**: Unknown

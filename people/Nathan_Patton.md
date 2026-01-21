@@ -1,4 +1,4 @@
-# Nathan
+# Nathan Patton
 
 ## Role & Organization
 - **Title**: (Former employee, potential rehire candidate)

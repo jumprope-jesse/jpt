@@ -1,4 +1,4 @@
-# Jenna
+# Jenna Brown
 
 ## Role & Organization
 - **Title**: Product Owner (or similar product role)

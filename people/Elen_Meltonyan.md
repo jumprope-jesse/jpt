@@ -1,15 +1,17 @@
 # Elen Meltonyan
 
+> **Note**: Sometimes transcribed as "Ellen" in meeting notes.
+
 ## Role & Organization
-- **Title**: Development Lead / Roadmap Coordinator
-- **Company/Division**: Aeries (Development)
-- **Reports to**: Unknown
+- **Title**: Director (Product Division) / Development Lead / Roadmap Coordinator
+- **Company/Division**: Aeries (Development / Product Division)
+- **Reports to**: Brent (post-restructure)
 - **Direct reports**: Unknown
 
 ## Working Relationship
-- **How we interact**: Roadmap coordination for integration projects
-- **Communication style**: Unknown
-- **Notes**: Key contact for development roadmap planning
+- **How we interact**: Roadmap coordination for integration projects, meetings, rock tracking
+- **Communication style**: Rule-follower, procedural
+- **Notes**: Key contact for development roadmap planning; part of the directors group that remained after Randy's termination
 
 ## Projects & Responsibilities
 - Grade passback integration development - highest priority and complexity for JR/Aeries integration
@@ -23,6 +25,8 @@
 - Needs JumpRope admin and parent portal access for product evaluation
 - Online Enrollment 2.0 pricing/packaging
 - Competitive analysis support for Focus product (Natasha/Charity may request sales/marketing document)
+- Tracking JumpRope Communications progress and rocks
+- Part of Product Division leadership
 
 ## Meeting History
 - 2026-01-12: ACE Leadership - Meeting with Brent, Randy, and James after ACE Leadership to check in post-leadership changes; directly impacted by recent leadership transitions
@@ -39,3 +43,7 @@
 - Grade passback is Row 27 in requirements - highest priority item
 - Knows difference between BRD (Business Requirements Document - Alicia's template) and PRD (Product Requirements Document - includes market research, personas, go-to-market)
 - Has access to Aha for PRD templates
+- Described as "the rule follower"
+- Quick to note hierarchy/seniority after Randy's departure
+- Will report to Brent going forward
+- 2026-01-12: (per Jesse/Justin discussion) Pointed out Jesse is now most senior in product division after Randy left; following up on JumpRope Communications rock progress

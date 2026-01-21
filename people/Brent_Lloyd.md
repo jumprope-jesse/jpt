@@ -1,4 +1,4 @@
-# Brent
+# Brent Lloyd
 
 ## Role & Organization
 - **Title**: Executive/VP level at Aeries
