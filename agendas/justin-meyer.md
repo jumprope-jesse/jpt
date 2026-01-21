@@ -18,6 +18,7 @@ frequency: Weekly
 ## NEXT
 
 ### Topics
+- [ ] discuss 2025 tax prep
 - [ ]
 
 ### Questions

@@ -16,10 +16,17 @@ Usage:
 import os
 import re
 import sys
-import yaml
+import json
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Optional
+
+# Try to import yaml, fall back to simple parser
+try:
+    import yaml
+    HAS_YAML = True
+except ImportError:
+    HAS_YAML = False
 
 # Paths
 JPT_ROOT = Path.home() / "jpt"
@@ -56,12 +63,49 @@ def parse_frontmatter(content: str) -> tuple[dict, str]:
     if len(parts) < 3:
         return {}, content
 
-    try:
-        frontmatter = yaml.safe_load(parts[1])
-        body = parts[2].lstrip("\n")
-        return frontmatter or {}, body
-    except yaml.YAMLError:
-        return {}, content
+    frontmatter_text = parts[1].strip()
+    body = parts[2].lstrip("\n")
+
+    if HAS_YAML:
+        try:
+            frontmatter = yaml.safe_load(frontmatter_text)
+            return frontmatter or {}, body
+        except Exception:
+            pass
+
+    # Simple fallback parser for basic YAML
+    frontmatter = {}
+    current_key = None
+    current_list = None
+
+    for line in frontmatter_text.split("\n"):
+        line = line.rstrip()
+        if not line:
+            continue
+
+        # Check for list item
+        if line.startswith("  - "):
+            if current_list is not None:
+                current_list.append(line[4:].strip())
+            continue
+
+        # Check for key: value
+        if ":" in line:
+            key, _, value = line.partition(":")
+            key = key.strip()
+            value = value.strip()
+
+            if value:
+                frontmatter[key] = value
+                current_key = None
+                current_list = None
+            else:
+                # Starting a list
+                frontmatter[key] = []
+                current_key = key
+                current_list = frontmatter[key]
+
+    return frontmatter, body
 
 
 def get_all_agendas() -> list[dict]:
