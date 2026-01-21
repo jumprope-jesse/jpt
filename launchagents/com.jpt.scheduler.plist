@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jpt.scheduler</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/jesse/jpt/lib/jpt_scheduler.py</string>
+        <string>daemon</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jesse/Library/pnpm:/Users/jesse/.local/bin</string>
+        <key>HOME</key>
+        <string>/Users/jesse</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/jesse/jpt/lib/.scheduler.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jesse/jpt/lib/.scheduler.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/jesse/jpt</string>
+</dict>
+</plist>

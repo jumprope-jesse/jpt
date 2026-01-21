@@ -332,15 +332,119 @@ python3 ~/jpt/lib/people_curator.py digest    # Generate digest only
 - State: `lib/.people_curator_state.json`
 - Branch pattern: `curator/YYYY-MM-DD-people`
 
-## Active Services
+## Meeting Agendas
 
-| Service | Plist | Interval | Purpose |
-|---------|-------|----------|---------|
-| meeting-processor | `com.jpt.meeting-processor.plist` | 120s | Process Meetily transcripts |
-| notion-agent | `com.jpt.notion-agent.plist` | 60s (daemon) | Execute AI-delegated tasks |
-| digest-daily | `com.jpt.digest-daily.plist` | Daily 6PM | Generate daily digest |
-| digest-weekly | `com.jpt.digest-weekly.plist` | Sunday 10AM | Generate weekly digest |
-| digest-monthly | `com.jpt.digest-monthly.plist` | 1st of month 9AM | Generate monthly digest |
-| knowledge-curator | `com.jpt.knowledge-curator.plist` | Daily 2AM | Organize knowledge, create PR |
-| knowledge-reviewer | `com.jpt.knowledge-reviewer.plist` | Sunday 3AM | Review staleness, create PR |
-| people-curator | `com.jpt.people-curator.plist` | Sunday 4AM | Curate people profiles, create PR |
+The `agendas/` directory maintains running agendas for meetings with two-way integration:
+- Agendas feed meeting processing (tracks what was discussed vs missed)
+- Meeting processing updates agendas (adds links, annotates outcomes)
+
+### Directory Structure
+```
+agendas/
+├── justin-meyer.md           # 1-on-1 agendas use full names
+├── jenna-brown.md
+├── jumprope-product-meeting.md
+└── README.md
+```
+
+### File Format
+Each agenda has YAML frontmatter with regex patterns for matching meeting titles:
+```yaml
+---
+patterns:
+  - jesse.*justin
+  - justin.*1:1
+person: Justin Meyer
+frequency: Weekly
+---
+```
+
+### Sections
+- **NEXT** - Topics, questions, to share, waiting for (always at top)
+- **Meetings** - History with links to summaries/transcripts
+
+### Commands
+```bash
+# List all agendas with item counts
+python3 ~/jpt/lib/agenda_processor.py status
+
+# Pre-meeting briefing
+python3 ~/jpt/lib/agenda_processor.py briefing justin
+
+# Add item to agenda
+python3 ~/jpt/lib/agenda_processor.py add justin "discuss 2025 tax prep"
+
+# Check for stale items
+python3 ~/jpt/lib/agenda_processor.py check
+```
+
+### Quick Add via Claude
+```
+/agenda-add justin discuss 2025 tax prep
+/agenda-add product-meeting review Q1 roadmap
+```
+
+### Integration with Meeting Processing
+When `meetings/process_meeting.py` runs:
+1. Loads agenda items for the meeting (if matched)
+2. Claude compares transcript against agenda items
+3. Notes covered items with outcomes, flags missed items
+4. Updates agenda file with meeting links and annotations
+
+## Unified Scheduler
+
+All background tasks are managed by a single scheduler (`lib/jpt_scheduler.py`).
+
+### Commands
+```bash
+# Show all tasks and last run times
+python3 ~/jpt/lib/jpt_scheduler.py status
+
+# Run one dispatch cycle
+python3 ~/jpt/lib/jpt_scheduler.py run
+
+# Force run a specific task
+python3 ~/jpt/lib/jpt_scheduler.py trigger meeting-processor
+
+# Start daemon mode (for launchd)
+python3 ~/jpt/lib/jpt_scheduler.py daemon
+```
+
+### Managed Tasks
+
+| Task | Type | Schedule | Purpose |
+|------|------|----------|---------|
+| inbox-fetcher | interval | 60s | Fetch inbox items |
+| inbox-processor | interval | 120s | Process inbox items |
+| meeting-processor | interval | 120s | Process Meetily transcripts |
+| notion-agent | interval | 60s | Execute AI-delegated tasks |
+| digest-daily | schedule | Daily 6PM | Generate daily digest |
+| digest-weekly | schedule | Sunday 10AM | Generate weekly digest |
+| digest-monthly | schedule | 1st 9AM | Generate monthly digest |
+| knowledge-curator | schedule | Daily 2AM | Organize knowledge, create PR |
+| knowledge-reviewer | schedule | Sunday 3AM | Review staleness, create PR |
+| people-curator | schedule | Sunday 4AM | Curate people profiles |
+| agenda-check | schedule | Daily 7AM | Check for stale agenda items |
+
+### LaunchAgent
+Single plist manages all tasks: `com.jpt.scheduler.plist`
+
+```bash
+# Load unified scheduler
+launchctl load ~/Library/LaunchAgents/com.jpt.scheduler.plist
+
+# Check status
+python3 ~/jpt/lib/jpt_scheduler.py status
+
+# View logs
+tail -f ~/jpt/lib/.scheduler.log
+```
+
+### Migration from Individual Plists
+The unified scheduler replaces the 10+ individual plists. After confirming the scheduler works:
+```bash
+# Unload old plists
+launchctl unload ~/Library/LaunchAgents/com.jpt.meeting-processor.plist
+launchctl unload ~/Library/LaunchAgents/com.jpt.notion-agent.plist
+# ... etc
+```

@@ -29,6 +29,14 @@ PEOPLE_DIR = JPT_ROOT / "people"
 # Notion tasks module
 sys.path.insert(0, str(JPT_ROOT / "lib"))
 from notion_tasks import create_task
+
+# Agenda processor (optional - won't fail if not available)
+try:
+    from agenda_processor import get_agenda_for_meeting, update_agenda_after_meeting
+    AGENDA_AVAILABLE = True
+except ImportError:
+    AGENDA_AVAILABLE = False
+
 PROCESSED_FILE = JPT_ROOT / "meetings/.processed_meetings.json"
 
 # Template definitions with detection rules
@@ -218,7 +226,7 @@ Identify the speakers:"""
     return []
 
 
-def process_meeting(meeting: dict) -> dict:
+def process_meeting(meeting: dict, agenda_context: dict = None) -> dict:
     """Process a meeting through Claude to generate structured output."""
     template_name = detect_template(meeting)
     template_file = TEMPLATES_DIR / TEMPLATES[template_name]["file"]
@@ -229,6 +237,33 @@ def process_meeting(meeting: dict) -> dict:
     # First, try to identify speakers if not already known
     if not meeting.get("speakers"):
         meeting["speakers"] = identify_speakers(meeting, known_people)
+
+    # Build agenda section for prompt if available
+    agenda_prompt_section = ""
+    if agenda_context:
+        agenda_items = []
+        for topic in agenda_context.get("topics", []):
+            # Strip checkbox prefix for cleaner display
+            clean_topic = re.sub(r'^- \[.\] ', '', topic)
+            if clean_topic:
+                agenda_items.append(f"  - {clean_topic}")
+        for question in agenda_context.get("questions", []):
+            if question:
+                agenda_items.append(f"  - Question: {question}")
+        for share in agenda_context.get("to_share", []):
+            if share:
+                agenda_items.append(f"  - Share: {share}")
+
+        if agenda_items:
+            agenda_prompt_section = f"""
+
+JESSE'S AGENDA ITEMS FOR THIS MEETING:
+{chr(10).join(agenda_items)}
+
+Compare the transcript against these agenda items:
+- For items that WERE discussed, note them in "covered_agenda_items" with the outcome/decision
+- For items NOT discussed, list them in "missed_agenda_items"
+"""
 
     system_prompt = """You are a meeting processing assistant. Analyze transcripts and output ONLY valid JSON, no other text.
 
@@ -241,7 +276,9 @@ Required JSON structure:
   "risks": ["risk or concern 1"],
   "people_insights": [{"name": "PersonName", "insight": "what we learned about them"}],
   "participants": ["Name1", "Name2"],
-  "meeting_type_confidence": 85
+  "meeting_type_confidence": 85,
+  "covered_agenda_items": [{"item": "agenda item text", "outcome": "what was decided/discussed"}],
+  "missed_agenda_items": ["agenda item that was not discussed"]
 }
 
 Rules:
@@ -249,14 +286,16 @@ Rules:
 - Be concise and actionable
 - For people_insights, only include substantive new information about people mentioned
 - Match names to known people when possible
-- For participants, list everyone who spoke in the meeting"""
+- For participants, list everyone who spoke in the meeting
+- For covered_agenda_items, match against the provided agenda items and note outcomes
+- For missed_agenda_items, list any agenda items that were NOT addressed in the meeting"""
 
     speakers_hint = f"\nIdentified Speakers: {', '.join(meeting['speakers'])}" if meeting.get('speakers') else ""
 
     user_prompt = f"""Meeting Title: {meeting["title"]}
 Date: {meeting["created_at"]}
 Detected Type: {template_name}
-Known People: {", ".join(known_people)}{speakers_hint}
+Known People: {", ".join(known_people)}{speakers_hint}{agenda_prompt_section}
 
 TRANSCRIPT:
 {meeting["transcript"]}
@@ -513,9 +552,16 @@ def process_new_meetings():
             template_name = detect_template(meeting)
             print(f"  Template: {template_name}")
 
+            # Load agenda context if available
+            agenda_context = None
+            if AGENDA_AVAILABLE:
+                agenda_context = get_agenda_for_meeting(meeting["title"])
+                if agenda_context:
+                    print(f"  Agenda loaded: {agenda_context['name']}")
+
             # Process through Claude
             print("  Calling Claude API...")
-            processed = process_meeting(meeting)
+            processed = process_meeting(meeting, agenda_context)
 
             # Generate markdown
             markdown = format_meeting_markdown(meeting, processed, template_name)
@@ -534,6 +580,21 @@ def process_new_meetings():
             # Append tasks
             if processed.get("action_items"):
                 append_tasks(processed["action_items"], meeting["title"])
+
+            # Update agenda with meeting results
+            if AGENDA_AVAILABLE and agenda_context:
+                try:
+                    update_agenda_after_meeting(
+                        agenda_path=agenda_context["path"],
+                        meeting_date=date_str,
+                        summary_path=output_file,
+                        transcript_path=output_file,  # Same file for now
+                        covered_items=processed.get("covered_agenda_items", []),
+                        missed_items=processed.get("missed_agenda_items", [])
+                    )
+                    print("  Agenda updated")
+                except Exception as e:
+                    print(f"  Agenda update failed: {e}")
 
             # Mark as processed
             mark_processed(meeting["id"])
